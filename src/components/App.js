@@ -9,7 +9,12 @@ export default class extends Component {
         exercises
     }
 
+    getExercisesByCategory(){
+        return this.state.exercises
+    }
+
     render(){
+        console.log(this)
         return <Fragment>
             <Header />
 
