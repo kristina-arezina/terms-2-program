@@ -5,13 +5,19 @@ import {muscles, exercises} from "../store";
 
 
 export default class extends Component {
+    states = {
+        exercises
+    }
+
     render(){
         return <Fragment>
             <Header />
 
-            <Exercises/>
+            <Exercises
+            />
 
-            <Footer />
+            <Footer
+            muscles = {muscles}/>
         </Fragment>
     }
 }
