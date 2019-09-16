@@ -1,5 +1,5 @@
 import React from "react"
-import { Grid, Paper } from "@material-ui/core"
+import { Grid, Paper, Typography } from "@material-ui/core"
 
 
 
@@ -7,11 +7,15 @@ const styles = {
     Paper: {padding:20, margin:10,}
 };
 
-export default props =>
+export default ({exercises}) =>
     <Grid container>
         <Grid item sm>
             <Paper style={styles.Paper}>
-                Left Pane
+                {exercises.map(([group, exercises]) =>
+                    <Typography>
+                        {group}
+                    </Typography>
+                )}
         </Paper>
 
         </Grid>
