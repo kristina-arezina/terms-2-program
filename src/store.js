@@ -1,6 +1,6 @@
 //Muscle groups
 export const muscles = [
-    "shoulders", "chest", "arms", "back", "legs"
+    "Skill Level", "Languages", "Framework", "Library"
 ]
 
 //exersie object
