@@ -12,7 +12,10 @@ export default ({exercises}) =>
         <Grid item sm>
             <Paper style={styles.Paper}>
                 {exercises.map(([group, exercises]) =>
-                    <Typography>
+                    <Typography
+                        variant="headline"
+                        style={{textTransform: "capitalize"}}
+                    >
                         {group}
                     </Typography>
                 )}
