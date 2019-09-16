@@ -5,7 +5,7 @@ import {muscles, exercises} from "../store";
 
 
 export default class extends Component {
-    states = {
+    state = {
         exercises
     }
 
@@ -14,7 +14,7 @@ export default class extends Component {
     }
 
     render(){
-        console.log(this)
+        console.log(this.getExercisesByCategory())
         return <Fragment>
             <Header />
 

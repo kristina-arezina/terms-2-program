@@ -10,7 +10,7 @@ function Header() {
         <AppBar position="static">
             <Toolbar>
                 <Typography variant="headline" color="inherit">
-                    Exercise Database
+                    Learn2Program
                 </Typography>
             </Toolbar>
         </AppBar>

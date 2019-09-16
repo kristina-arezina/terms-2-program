@@ -4,5 +4,5 @@ import { Paper } from "@material-ui/core"
 
 export default ({styles}) =>
     <Paper style={styles.Paper}>
-        Left Pane
+        Our Mission
     </Paper>
