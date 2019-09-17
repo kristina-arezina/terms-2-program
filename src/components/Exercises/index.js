@@ -15,22 +15,34 @@ function ListItemLink(props) {
     return <ListItem button component="a" {...props} />;
 }
 
-export default ({exercises, category, onSelect, exercise}) =>
+export default ({
+                    exercises,
+                    category,
+                    onSelect,
+                    exercise: {
+                        id,
+                        title = "Welcome!",
+                        description ="Please select an exerise from the list on the left."
+}
+}) =>
     <Grid container>
         <Grid item sm>
             <Paper style={styles.Paper}>
-                {exercises.map(([group, exercises, onSelect]) =>
+                {exercises.map(([group, exercises]) =>
                     !category || category === group
                     ? <Fragment>
                             <Typography variant={"h6"}
-                                        style={{textTransform: 'uppercase'}}>
+                                        style={{textTransform: 'uppercase'}}
+                            >
                                 {group}
                             </Typography>
                             <List component="ul" >
                                 {exercises.map(({id, title}) =>
                                     <ListItem button>
-                                        <ListItemText primary={title}
-                                        onClick={() => onSelect(id)}/>
+                                        <ListItemText
+                                            primary={title}
+                                        onClick={() => onSelect(id)}
+                                        />
                                     </ListItem>
                                 )}
 
@@ -44,13 +56,16 @@ export default ({exercises, category, onSelect, exercise}) =>
         </Grid>
     <Grid item sm>
         <Paper style={styles.Paper}>
-            <Typography>
-Welcome
+            <Typography
+            variant="h3"
+            >
+                {title}
             </Typography>
             <Typography
             variant={"h4"}
-            style={{marginTop:20}}>
-Please select an exerise from the list on the left.
+            style={{marginTop:20}}
+            >
+                {description}
             </Typography>
 
         </Paper>
