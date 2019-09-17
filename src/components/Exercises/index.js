@@ -30,7 +30,7 @@ export default ({
             <Paper style={styles.Paper}>
                 {exercises.map(([group, exercises]) =>
                     !category || category === group
-                    ? <Fragment>
+                    ? <Fragment key={group}>
                             <Typography variant={"h6"}
                                         style={{textTransform: 'uppercase'}}
                             >
@@ -39,6 +39,7 @@ export default ({
                             <List component="ul" >
                                 {exercises.map(({id, title}) =>
                                     <ListItem
+                                        key={id}
                                         button
                                         onClick={() => onSelect(id)}
                                     >
