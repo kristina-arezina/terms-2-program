@@ -1,5 +1,6 @@
 import React from "react"
 import { Grid, Paper, Typography } from "@material-ui/core"
+import {exercises} from "../../store";
 
 
 
@@ -12,14 +13,13 @@ export default ({exercises}) =>
         <Grid item sm>
             <Paper style={styles.Paper}>
                 {exercises.map(([group, exercises]) =>
-                    <Typography
-                        variant="headline"
-                        style={{textTransform: "capitalize"}}
-                    >
+                    <Typography>
                         {group}
                     </Typography>
+
                 )}
-        </Paper>
+
+            </Paper>
 
         </Grid>
     <Grid item sm>

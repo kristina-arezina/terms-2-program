@@ -3,7 +3,6 @@ export const muscles = [
     "shoulders", "chest", "arms", "back", "legs"
 ]
 
-//exersie object
 export const exercises = [
     {
         id: 'overhead-press',
