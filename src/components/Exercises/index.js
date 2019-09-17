@@ -9,7 +9,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 const styles = {
     Paper: {padding:20, margin:10, height:500, overflowY:"auto"},
-    Typography: {textTransform: "capitalize"}
 };
 
 function ListItemLink(props) {
@@ -23,7 +22,7 @@ export default ({exercises}) =>
                 {exercises.map(([group, exercises]) =>
                     <Fragment>
                         <Typography variant={"h6"}
-                        style={{textTransform: 'capitalize'}}>
+                        style={{textTransform: 'uppercase'}}>
                             {group}
                         </Typography>
                         <List component="ul" >
