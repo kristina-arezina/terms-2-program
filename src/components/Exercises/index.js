@@ -25,13 +25,13 @@ export default ({exercises}) =>
                         <Typography >
                             {group}
                         </Typography>
-                        <List component="nav" aria-label="secondary mailbox folders">
-                            <ListItem button>
-                                <ListItemText primary="Trash" />
-                            </ListItem>
-                            <ListItemLink href="#simple-list">
-                                <ListItemText primary="Spam" />
-                            </ListItemLink>
+                        <List component="ul" >
+                            {exercises.map(({title}) =>
+                                <ListItem button>
+                                    <ListItemText primary={title} />
+                                </ListItem>
+                            )}
+
                         </List>
                     </Fragment>
                 )}
