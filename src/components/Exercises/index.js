@@ -8,7 +8,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 
 const styles = {
-    Paper: {padding:20, margin:10,},
+    Paper: {padding:20, margin:10, height:500, overflowY:"auto"},
     Typography: {textTransform: "capitalize"}
 };
 
@@ -22,7 +22,8 @@ export default ({exercises}) =>
             <Paper style={styles.Paper}>
                 {exercises.map(([group, exercises]) =>
                     <Fragment>
-                        <Typography >
+                        <Typography variant={"h6"}
+                        style={{textTransform: 'capitalize'}}>
                             {group}
                         </Typography>
                         <List component="ul" >
@@ -41,7 +42,15 @@ export default ({exercises}) =>
         </Grid>
     <Grid item sm>
         <Paper style={styles.Paper}>
-            Right Pane
+            <Typography>
+Welcome
+            </Typography>
+            <Typography
+            variant={"h4"}
+            style={{marginTop:20}}>
+Please select an exerise from the list on the left.
+            </Typography>
+
         </Paper>
 
     </Grid>
