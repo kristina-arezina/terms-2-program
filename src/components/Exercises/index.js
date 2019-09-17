@@ -38,11 +38,11 @@ export default ({
                             </Typography>
                             <List component="ul" >
                                 {exercises.map(({id, title}) =>
-                                    <ListItem button>
-                                        <ListItemText
-                                            primary={title}
+                                    <ListItem
+                                        button
                                         onClick={() => onSelect(id)}
-                                        />
+                                    >
+                                        <ListItemText primary={title}/>
                                     </ListItem>
                                 )}
 
