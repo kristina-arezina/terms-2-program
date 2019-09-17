@@ -6,7 +6,8 @@ import {muscles, exercises} from "../store";
 
 export default class extends Component {
     state = {
-        exercises
+        exercises,
+        exercise: {}
     }
 
     getExercisesByMuscles(){
@@ -29,16 +30,24 @@ export default class extends Component {
         })
     }
 
+    handleExerciseSelected = id => {
+        this.setState(({exercises}) => ({
+            exercise: exercises. find(ex => ex.id ===id)
+            }))
+    }
+
     render(){
         const exercises = this.getExercisesByMuscles(),
-        { catergory } = this.state
+        { catergory, exercise } = this.state
 
         return <Fragment>
             <Header />
 
             <Exercises
+                exercise={exercise}
                 category = {catergory}
                 exercises = {exercises}
+                onSelect={this.handleExerciseSelected}
             />
 
             <Footer

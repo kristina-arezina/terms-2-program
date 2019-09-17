@@ -15,11 +15,11 @@ function ListItemLink(props) {
     return <ListItem button component="a" {...props} />;
 }
 
-export default ({exercises, category}) =>
+export default ({exercises, category, onSelect, exercise}) =>
     <Grid container>
         <Grid item sm>
             <Paper style={styles.Paper}>
-                {exercises.map(([group, exercises]) =>
+                {exercises.map(([group, exercises, onSelect]) =>
                     !category || category === group
                     ? <Fragment>
                             <Typography variant={"h6"}
@@ -27,9 +27,10 @@ export default ({exercises, category}) =>
                                 {group}
                             </Typography>
                             <List component="ul" >
-                                {exercises.map(({title}) =>
+                                {exercises.map(({id, title}) =>
                                     <ListItem button>
-                                        <ListItemText primary={title} />
+                                        <ListItemText primary={title}
+                                        onClick={() => onSelect(id)}/>
                                     </ListItem>
                                 )}
 
