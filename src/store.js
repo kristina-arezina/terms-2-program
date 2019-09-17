@@ -1,6 +1,6 @@
 //Muscle groups
 export const muscles = [
-    "languages", "frameworks", "arms", "back", "legs"
+    "languages", "frameworks", "libraries", "back", "legs"
 ]
 
 export const exercises = [
@@ -8,13 +8,13 @@ export const exercises = [
         id: 'overhead-press',
         title: 'Overhead Press',
         description: 'Delts exercise...',
-        muscles: 'shoulders'
+        muscles: 'frameworks'
     },
     {
         id: 'dips',
         title: 'Dips',
         description: 'Triceps exercise...',
-        muscles: 'arms'
+        muscles: 'frameworks'
     },
     {
         id: 'barbell-curls',
@@ -32,13 +32,37 @@ export const exercises = [
         id: 'pull-ups',
         title: 'Pull Ups',
         description: 'Back and biceps exercise...',
-        muscles: 'back'
+        muscles: 'libraries'
     },
     {
         id: 'deadlifts',
         title: 'Deadlifts',
         description: 'Back and leg exercise...',
-        muscles: 'back'
+        muscles: 'libraries'
+    },
+    {
+        id: 'squats',
+        title: 'Squats',
+        description: 'Legs exercise...',
+        muscles: 'languages'
+    },
+    {
+        id: 'squats',
+        title: 'Squats',
+        description: 'Legs exercise...',
+        muscles: 'languages'
+    },
+    {
+        id: 'squats',
+        title: 'Squats',
+        description: 'Legs exercise...',
+        muscles: 'languages'
+    },
+    {
+        id: 'squats',
+        title: 'Squats',
+        description: 'Legs exercise...',
+        muscles: 'languages'
     },
     {
         id: 'squats',
