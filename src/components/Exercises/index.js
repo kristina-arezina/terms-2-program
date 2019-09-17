@@ -8,22 +8,27 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 
 const styles = {
-    Paper: {padding:20, margin:10, height:500, overflowY:"auto"},
-};
+    Paper: {
+        padding:20,
+        margin:10,
+        height:500,
+        overflowY:"auto"
+    }
+}
 
 function ListItemLink(props) {
     return <ListItem button component="a" {...props} />;
 }
 
 export default ({
-                    exercises,
-                    category,
-                    onSelect,
-                    exercise: {
-                        id,
-                        title = "Welcome!",
-                        description ="Please select an exerise from the list on the left."
-}
+     exercises,
+     category,
+     onSelect,
+     exercise: {
+        id,
+        title = "Welcome!",
+        description ="Please select an exerise from the list on the left."
+     }
 }) =>
     <Grid container>
         <Grid item sm>
@@ -46,7 +51,6 @@ export default ({
                                         <ListItemText primary={title}/>
                                     </ListItem>
                                 )}
-
                             </List>
                         </Fragment>
                         : null
@@ -57,15 +61,10 @@ export default ({
         </Grid>
     <Grid item sm>
         <Paper style={styles.Paper}>
-            <Typography
-            variant="h3"
-            >
+            <Typography variant="h3">
                 {title}
             </Typography>
-            <Typography
-            variant={"h4"}
-            style={{marginTop:20}}
-            >
+            <Typography variant={"h4"} style={{marginTop:20}}>
                 {description}
             </Typography>
 
