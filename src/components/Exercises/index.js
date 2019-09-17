@@ -15,25 +15,27 @@ function ListItemLink(props) {
     return <ListItem button component="a" {...props} />;
 }
 
-export default ({exercises}) =>
+export default ({exercises, category}) =>
     <Grid container>
         <Grid item sm>
             <Paper style={styles.Paper}>
                 {exercises.map(([group, exercises]) =>
-                    <Fragment>
-                        <Typography variant={"h6"}
-                        style={{textTransform: 'uppercase'}}>
-                            {group}
-                        </Typography>
-                        <List component="ul" >
-                            {exercises.map(({title}) =>
-                                <ListItem button>
-                                    <ListItemText primary={title} />
-                                </ListItem>
-                            )}
+                    !category || category === group
+                    ? <Fragment>
+                            <Typography variant={"h6"}
+                                        style={{textTransform: 'uppercase'}}>
+                                {group}
+                            </Typography>
+                            <List component="ul" >
+                                {exercises.map(({title}) =>
+                                    <ListItem button>
+                                        <ListItemText primary={title} />
+                                    </ListItem>
+                                )}
 
-                        </List>
-                    </Fragment>
+                            </List>
+                        </Fragment>
+                        : null
                 )}
 
             </Paper>

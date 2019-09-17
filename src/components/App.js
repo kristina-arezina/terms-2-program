@@ -37,6 +37,7 @@ export default class extends Component {
             <Header />
 
             <Exercises
+                category = {catergory}
                 exercises = {exercises}
             />
 
