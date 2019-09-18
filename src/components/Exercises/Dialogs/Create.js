@@ -23,31 +23,31 @@ export default class extends Component {
     render(){
         const {open} = this.state
             return <Fragment>
-<Fab onClick={this.handleToggle} size="medium" >
-    <AddIcon/>
-</Fab>
+    <Fab onClick={this.handleToggle} size="medium" >
+        <AddIcon/>
+    </Fab>
 
-<Dialog
-    open={open}
+    <Dialog
+        open={open}
         onClose={this.handleClose}
         aria-labelledby="form-dialog-title">
-<DialogTitle id="form-dialog-title">
-    Create a New Exercise
-</DialogTitle>
-<DialogContent>
-    <DialogContentText>
-    Please fill out the form below.
-    </DialogContentText>
-<form>
-</form>
+            <DialogTitle id="form-dialog-title">
+                Create a New Exercise
+            </DialogTitle>
+            <DialogContent>
+            <DialogContentText>
+                Please fill out the form below.
+            </DialogContentText>
+            <form>
+            </form>
 
-</DialogContent>
-<DialogActions>
-<Button color="primary">
-Create
-</Button>
-</DialogActions>
-</Dialog>
-</Fragment>
+            </DialogContent>
+    <DialogActions>
+        <Button color="primary">
+        Create
+        </Button>
+    </DialogActions>
+    </Dialog>
+    </Fragment>
     }
 }
