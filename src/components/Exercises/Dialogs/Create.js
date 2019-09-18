@@ -1,19 +1,20 @@
 import React, {Fragment} from "react"
 import {Dialog, Button} from "@material-ui/core"
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import AddIcon from '@material-ui/icons/Add';
-
+import {
+    DialogActions,
+    DialogContent,
+    DialogContentText,
+    DialogTitle,
+} from "material-ui/Dialog";
+import {Add} from "material-ui-icons"
 
 export default props =>
     <Fragment>
         <Button varient="fab" color="primary" mini>
-            <AddIcon />
+            <Add/>
         </Button>
 
-        <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+        <Dialog open={this.state.open} onClose={this.handleClose} aria-labelledby="form-dialog-title">
             <DialogTitle id="form-dialog-title">Create a New Exercise </DialogTitle>
             <DialogContent>
                 <DialogContentText>

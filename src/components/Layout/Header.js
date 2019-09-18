@@ -2,7 +2,7 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-
+import CreateDialog from "../Exercises/Dialogs/Create"
 
 
 function Header() {
@@ -12,6 +12,8 @@ function Header() {
                 <Typography variant="headline" color="inherit">
                     Learn2Program
                 </Typography>
+
+                <CreateDialog/>
             </Toolbar>
         </AppBar>
     );
