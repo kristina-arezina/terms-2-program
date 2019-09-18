@@ -36,6 +36,8 @@ export default class extends Component {
             }))
     }
 
+    handleChange = name => event => {}
+
     render(){
         const exercises = this.getExercisesByMuscles(),
         { catergory, exercise } = this.state

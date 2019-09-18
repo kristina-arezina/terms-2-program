@@ -6,6 +6,8 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import AddIcon from '@material-ui/icons/AddRounded';
 import Fab from '@material-ui/core/Fab';
+import TextField from '@material-ui/core/TextField';
+
 
 
 
@@ -19,6 +21,12 @@ export default class extends Component {
             open: !this.state.open
         })
     }
+
+    handleChange= name => event =>{
+        this.setState({
+            [name] event.target.value,
+        });
+    };
 
     render(){
         const {open} = this.state
@@ -39,6 +47,14 @@ export default class extends Component {
                 Please fill out the form below.
             </DialogContentText>
             <form>
+                <TextField
+                    id="name"
+                    label="Name"
+                    className={classes.textField}
+                    value={this.state.name}
+                    onChange={this.handleChange('name')}
+                    margin="normal"
+                />
             </form>
 
             </DialogContent>
