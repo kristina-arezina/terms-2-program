@@ -4,8 +4,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import SvgIcon from '@material-ui/core/SvgIcon';
-
+import AddIcon from '@material-ui/icons/Add';
 
 export default class extends Component {
     state = {
@@ -22,7 +21,7 @@ export default class extends Component {
         const {open} = this.state
             return <Fragment>
 <Button varient="fab" onClick={this.handleToggle} mini>
-    <SvgIcon/>
+    <AddIcon/>
 </Button>
 
 <Dialog
