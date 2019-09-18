@@ -5,8 +5,8 @@ export const muscles = [
 
 export const exercises = [
     {
-        id: 'squats',
-        title: 'Squats',
+        id: 'cloud',
+        title: 'Cloud',
         description: 'Legs exercise...',
         muscles: 'web basics'
     },
@@ -77,26 +77,26 @@ export const exercises = [
         muscles: 'languages'
     },
     {
-        id: 'squats',
-        title: 'Squats',
+        id: 'microsoft',
+        title: 'Microsoft',
         description: 'Legs exercise...',
         muscles: 'web basics'
     },
     {
-        id: 'squats',
-        title: 'Squats',
+        id: 'windows',
+        title: 'Windows',
         description: 'Legs exercise...',
         muscles: 'web basics'
     },
     {
-        id: 'squats',
-        title: 'Squats',
+        id: 'syntax',
+        title: 'Syntax',
         description: 'Legs exercise...',
         muscles: 'web basics'
     },
     {
-        id: 'squats',
-        title: 'Squats',
+        id: 'repositories',
+        title: 'Repositories',
         description: 'Legs exercise...',
         muscles: 'web basics'
     },
