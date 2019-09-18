@@ -43,7 +43,7 @@ export default class extends Component {
 
             </DialogContent>
             <DialogActions>
-        <Button color="primary">
+        <Button color="primary" variant="raised">
         Create
         </Button>
     </DialogActions>
