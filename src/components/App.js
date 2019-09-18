@@ -42,18 +42,17 @@ export default class extends Component {
 
         return <Fragment>
             <Header />
-
+            <Footer
+                style={{marginTop:20}}
+                category = {catergory}
+                muscles = {muscles}
+                onSelect={this.handleCategorySelected}/>
             <Exercises
                 exercise={exercise}
                 category = {catergory}
                 exercises = {exercises}
                 onSelect={this.handleExerciseSelected}
             />
-
-            <Footer
-                category = {catergory}
-            muscles = {muscles}
-                onSelect={this.handleCategorySelected}/>
 
         </Fragment>
     }
