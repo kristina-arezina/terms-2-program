@@ -5,7 +5,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import AddIcon from '@material-ui/icons/AddRounded';
-import { white } from '@material-ui/core/colors';
 import Fab from '@material-ui/core/Fab';
 
 
@@ -24,7 +23,7 @@ export default class extends Component {
     render(){
         const {open} = this.state
             return <Fragment>
-<Fab style={{color: 'white' }} onClick={this.handleToggle} mini>
+<Fab onClick={this.handleToggle} size="medium" >
     <AddIcon/>
 </Fab>
 
