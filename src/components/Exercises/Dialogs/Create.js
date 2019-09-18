@@ -1,34 +1,48 @@
-import React, {Fragment} from "react"
+import React, {Fragment, Component} from "react"
 import {Dialog, Button} from "@material-ui/core"
-import {
-    DialogActions,
-    DialogContent,
-    DialogContentText,
-    DialogTitle,
-} from "material-ui/Dialog";
-import {Add} from "material-ui-icons"
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
-export default props =>
-    <Fragment>
-        <Button varient="fab" color="primary" mini>
-            <Add/>
-        </Button>
+export default class extends Component {
+    state = {
+        open: false
+    }
 
-        <Dialog open={this.state.open} onClose={this.handleClose} aria-labelledby="form-dialog-title">
-            <DialogTitle id="form-dialog-title">Create a New Exercise </DialogTitle>
-            <DialogContent>
-                <DialogContentText>
-                   Please fill out the form below.
-                </DialogContentText>
-                <form>
+    handleToggle = () => {
+        this.setState({
+            open: !this.state.open
+        })
+    }
 
-                </form>
+    render(){
+        const {open} = this.state
+            return <Fragment>
+<Button varient="fab" onClick={this.handleToggle} mini>
+</Button>
 
-            </DialogContent>
-            <DialogActions>
-                <Button color="primary">
-                    Create
-                </Button>
-            </DialogActions>
-        </Dialog>
-    </Fragment>
+<Dialog
+    open={open}
+        onClose={this.handleClose}
+        aria-labelledby="form-dialog-title">
+<DialogTitle id="form-dialog-title">
+    Create a New Exercise
+</DialogTitle>
+<DialogContent>
+    <DialogContentText>
+    Please fill out the form below.
+    </DialogContentText>
+<form>
+</form>
+
+</DialogContent>
+<DialogActions>
+<Button color="primary">
+Create
+</Button>
+</DialogActions>
+</Dialog>
+</Fragment>
+    }
+}

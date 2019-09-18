@@ -9,7 +9,7 @@ function Header() {
     return (
         <AppBar position="static">
             <Toolbar>
-                <Typography variant="headline" color="inherit">
+                <Typography variant="headline" color="inherit" style={{flex: 1}}>
                     Learn2Program
                 </Typography>
 
