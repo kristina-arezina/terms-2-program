@@ -23,16 +23,16 @@ export const exercises = [
         muscles: 'languages'
     },
     {
-        'id': 'bench-press',
-        title: 'Bench Press',
+        id: 'python',
+        title: 'Python',
         description: 'Chest exercise...',
         muscles: 'languages'
     },
     {
-        id: 'pull-ups',
-        title: 'Pull Ups',
+        id: 'java',
+        title: 'Java',
         description: 'Back and biceps exercise...',
-        muscles: 'libraries'
+        muscles: 'languages'
     },
     {
         id: 'deadlifts',
@@ -53,8 +53,8 @@ export const exercises = [
         muscles: 'libraries'
     },
     {
-        id: 'squats',
-        title: 'Squats',
+        id: 'html',
+        title: 'HTML',
         description: 'Legs exercise...',
         muscles: 'languages'
     },
