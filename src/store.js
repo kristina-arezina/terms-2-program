@@ -11,14 +11,14 @@ export const exercises = [
         muscles: 'web basics'
     },
     {
-        id: 'squats',
-        title: 'Squats',
+        id: 'statically-typed-language',
+        title: 'Statically-Typed Language',
         description: 'Legs exercise...',
         muscles: 'web development basics'
     },
     {
-        id: 'squats',
-        title: 'Squats',
+        id: 'dynamic v.s static',
+        title: 'Dynamic v.s Static',
         description: 'Legs exercise...',
         muscles: 'web development basics'
     },
@@ -29,14 +29,14 @@ export const exercises = [
         muscles: 'languages'
     },
     {
-        id: 'overhead-press',
-        title: 'Overhead Press',
+        id: 'angular',
+        title: 'Angular',
         description: 'Delts exercise...',
         muscles: 'frameworks'
     },
     {
-        id: 'dips',
-        title: 'Dips',
+        id: 'vue',
+        title: 'Vue',
         description: 'Triceps exercise...',
         muscles: 'frameworks'
     },
@@ -53,21 +53,9 @@ export const exercises = [
         muscles: 'languages'
     },
     {
-        id: 'deadlifts',
-        title: 'Deadlifts',
+        id: 'react',
+        title: 'React',
         description: 'Back and leg exercise...',
-        muscles: 'libraries'
-    },
-    {
-        id: 'squats',
-        title: 'Squats',
-        description: 'Legs exercise...',
-        muscles: 'libraries'
-    },
-    {
-        id: 'squats',
-        title: 'Squats',
-        description: 'Legs exercise...',
         muscles: 'libraries'
     },
     {
