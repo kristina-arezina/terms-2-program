@@ -27,10 +27,9 @@ export default class extends Component {
         <AddIcon/>
     </Fab>
 
-    <Dialog
+    <Dialog>
         open={open}
-        onClose={this.handleClose}
-        aria-labelledby="form-dialog-title">
+        onClose={this.handleToggle}
             <DialogTitle id="form-dialog-title">
                 Create a New Exercise
             </DialogTitle>
@@ -42,7 +41,7 @@ export default class extends Component {
             </form>
 
             </DialogContent>
-    <DialogActions>
+            <DialogActions>
         <Button color="primary">
         Create
         </Button>
