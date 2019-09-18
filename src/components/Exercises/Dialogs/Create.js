@@ -4,7 +4,9 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import AddIcon from '@material-ui/icons/Add';
+import AddIcon from '@material-ui/icons/AddRounded';
+import { white } from '@material-ui/core/colors';
+
 
 export default class extends Component {
     state = {
@@ -20,7 +22,7 @@ export default class extends Component {
     render(){
         const {open} = this.state
             return <Fragment>
-<Button varient="fab" onClick={this.handleToggle} mini>
+<Button style={{color: 'white'}} varient="fab" onClick={this.handleToggle} mini>
     <AddIcon/>
 </Button>
 
