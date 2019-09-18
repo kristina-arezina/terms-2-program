@@ -17,8 +17,8 @@ export const exercises = [
         muscles: 'frameworks'
     },
     {
-        id: 'barbell-curls',
-        title: 'Barbell Curls',
+        id: 'java-script',
+        title: 'JavaScript',
         description: 'Biceps exercise...',
         muscles: 'languages'
     },
