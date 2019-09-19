@@ -13,7 +13,12 @@ import TextField from '@material-ui/core/TextField';
 
 export default class extends Component {
     state = {
-        open: false
+        open: false,
+        exercise:{
+            title:"",
+            description:"",
+            muscles:"",
+        }
     }
 
     handleToggle = () => {
@@ -22,14 +27,18 @@ export default class extends Component {
         })
     }
 
-    handleChange= name => event =>{
+    handleChange= name => ({target: {value}}) =>{
         this.setState({
-            [name] event.target.value,
-        });
-    };
+            exercise: {
+        ...this.state.exercise,
+                [name]:value
+        }
+        })
+    }
+
 
     render(){
-        const {open} = this.state
+        const {open, exercise:{title,description,muscles }} = this.state
             return <Fragment>
     <Fab onClick={this.handleToggle} size="medium" >
         <AddIcon/>
@@ -48,11 +57,9 @@ export default class extends Component {
             </DialogContentText>
             <form>
                 <TextField
-                    id="name"
-                    label="Name"
-                    className={classes.textField}
-                    value={this.state.name}
-                    onChange={this.handleChange('name')}
+                    label="Title"
+                    value={title}
+                    onChange={this.handleChange('title')}
                     margin="normal"
                 />
             </form>
