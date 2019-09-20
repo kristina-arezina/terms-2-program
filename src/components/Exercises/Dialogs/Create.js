@@ -59,6 +59,12 @@ export default class extends Component {
                     onChange={this.handleChange('title')}
                     margin="normal"
                 />
+                <TextField
+                    label="Description"
+                    value={description}
+                    onChange={this.handleChange('description')}
+                    margin="normal"
+                />
             </form>
 
             </DialogContent>
