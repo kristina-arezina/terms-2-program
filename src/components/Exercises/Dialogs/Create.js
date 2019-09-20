@@ -41,8 +41,10 @@ export default class extends Component {
     //    To do: must create validation
         const {exercise} = this.state
         this.props.onCreate(exercise)
+
         this.setState({
             exercise:"",
+            open:false,
             description:"",
             muscles:""
         })
