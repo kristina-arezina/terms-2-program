@@ -12,8 +12,6 @@ import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 
-
-
 export default class extends Component {
     state = {
         open: false,
@@ -41,8 +39,7 @@ export default class extends Component {
 
     render(){
         const {open, exercise:{title,description,muscles }} = this.state,
-        {muscles: categoires } = this.props
-
+        {classes, muscles: categoires } = this.props
             return <Fragment>
     <Fab onClick={this.handleToggle} size="medium" >
         <AddIcon/>
@@ -65,6 +62,7 @@ export default class extends Component {
                     value={title}
                     onChange={this.handleChange('title')}
                     margin="normal"
+                    style={{width:500}}
                 />
                 <br/>
                 <FormControl >
