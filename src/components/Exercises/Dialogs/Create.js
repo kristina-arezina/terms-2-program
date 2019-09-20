@@ -68,6 +68,7 @@ export default class extends Component {
                 <FormControl >
                     <InputLabel htmlFor="muscles">Muscles</InputLabel>
                     <Select
+                        style={{width:500}}
                         value={muscles}
                         onChange={this.handleChange("muscles")}
                         >
@@ -79,6 +80,7 @@ export default class extends Component {
                 </FormControl>
                 <br/>
                 <TextField
+                    style={{width:500}}
                     multiline
                     rows="6"
                     label="Description"
