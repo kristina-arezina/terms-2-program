@@ -10,6 +10,7 @@ import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
+import Select from '@material-ui/core/Select';
 
 
 
@@ -39,7 +40,9 @@ export default class extends Component {
     }
 
     render(){
-        const {open, exercise:{title,description,muscles }} = this.state
+        const {open, exercise:{title,description,muscles }} = this.state,
+        {muscles: categoires } = this.props
+
             return <Fragment>
     <Fab onClick={this.handleToggle} size="medium" >
         <AddIcon/>
@@ -64,19 +67,16 @@ export default class extends Component {
                     margin="normal"
                 />
                 <br/>
-                <FormControl className={classes.formControl}>
-                    <InputLabel htmlFor="age-simple">Age</InputLabel>
+                <FormControl >
+                    <InputLabel htmlFor="muscles">Muscles</InputLabel>
                     <Select
-                        value={values.age}
-                        onChange={handleChange}
-                        inputProps={{
-                            name: 'age',
-                            id: 'age-simple',
-                        }}
-                    >
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
+                        value={muscles}
+                        onChange={this.handleChange("muscles")}
+                        >
+                        {categoires.map(category =>
+                            <MenuItem value={category}>{category}</MenuItem>
+                        )}
+
                     </Select>
                 </FormControl>
                 <br/>

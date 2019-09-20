@@ -41,7 +41,9 @@ export default class extends Component {
         { catergory, exercise } = this.state
 
         return <Fragment>
-            <Header />
+            <Header
+            muscles={muscles}
+            />
             <Footer
                 style={{marginTop:20}}
                 category = {catergory}
