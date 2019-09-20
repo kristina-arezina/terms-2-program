@@ -37,6 +37,12 @@ export default class extends Component {
         })
     }
 
+    handleSubmit = () => {
+    //    To do: must create validation
+        const {exercise} = this.state
+        this.props.onCreate(exercise)
+    }
+
     render(){
         const {open, exercise:{title,description,muscles }} = this.state,
         {classes, muscles: categoires } = this.props
@@ -92,7 +98,11 @@ export default class extends Component {
 
             </DialogContent>
             <DialogActions>
-        <Button color="primary" variant="raised">
+        <Button
+            color="primary"
+            variant="raised"
+            onClick={this.handleSubmit}
+        >
         Create
         </Button>
     </DialogActions>

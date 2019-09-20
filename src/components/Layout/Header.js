@@ -5,14 +5,17 @@ import Typography from '@material-ui/core/Typography';
 import CreateDialog from "../Exercises/Dialogs/Create"
 
 
-export default ({muscles}) => {
+export default ({muscles,onExerciseCreate}) => {
     return <AppBar position="static">
             <Toolbar>
                 <Typography variant="headline" color="inherit" style={{flex: 1}}>
                     Learn2Program
                 </Typography>
 
-                <CreateDialog muscles={muscles}/>
+                <CreateDialog
+                    muscles={muscles}
+                    onCreate={onExerciseCreate}
+                />
             </Toolbar>
         </AppBar>
 }
