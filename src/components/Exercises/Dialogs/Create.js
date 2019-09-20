@@ -7,6 +7,10 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import AddIcon from '@material-ui/icons/AddRounded';
 import Fab from '@material-ui/core/Fab';
 import TextField from '@material-ui/core/TextField';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import InputLabel from '@material-ui/core/InputLabel';
+
 
 
 export default class extends Component {
@@ -59,6 +63,22 @@ export default class extends Component {
                     onChange={this.handleChange('title')}
                     margin="normal"
                 />
+                <br/>
+                <FormControl className={classes.formControl}>
+                    <InputLabel htmlFor="age-simple">Age</InputLabel>
+                    <Select
+                        value={values.age}
+                        onChange={handleChange}
+                        inputProps={{
+                            name: 'age',
+                            id: 'age-simple',
+                        }}
+                    >
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                    </Select>
+                </FormControl>
                 <br/>
                 <TextField
                     multiline
