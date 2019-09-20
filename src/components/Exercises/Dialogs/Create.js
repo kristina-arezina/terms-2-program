@@ -40,7 +40,11 @@ export default class extends Component {
     handleSubmit = () => {
     //    To do: must create validation
         const {exercise} = this.state
-        this.props.onCreate(exercise)
+
+        this.props.onCreate({
+            ...exercise,
+            id:exercise.title.toLowerCase().replace(/ /g, "-")
+        })
 
         this.setState({
             exercise:"",
@@ -86,7 +90,7 @@ export default class extends Component {
                         onChange={this.handleChange("muscles")}
                         >
                         {categoires.map(category =>
-                            <MenuItem value={category}>{category}</MenuItem>
+                            <MenuItem key={category} value={category}>{category}</MenuItem>
                         )}
 
                     </Select>
