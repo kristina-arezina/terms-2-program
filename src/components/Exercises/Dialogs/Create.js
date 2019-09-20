@@ -59,6 +59,7 @@ export default class extends Component {
                     onChange={this.handleChange('title')}
                     margin="normal"
                 />
+                <br/>
                 <TextField
                     label="Description"
                     value={description}
