@@ -61,6 +61,8 @@ export default class extends Component {
                 />
                 <br/>
                 <TextField
+                    multiline
+                    rows="6"
                     label="Description"
                     value={description}
                     onChange={this.handleChange('description')}
