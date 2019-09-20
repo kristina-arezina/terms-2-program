@@ -9,8 +9,6 @@ import Fab from '@material-ui/core/Fab';
 import TextField from '@material-ui/core/TextField';
 
 
-
-
 export default class extends Component {
     state = {
         open: false,
@@ -35,7 +33,6 @@ export default class extends Component {
         }
         })
     }
-
 
     render(){
         const {open, exercise:{title,description,muscles }} = this.state
