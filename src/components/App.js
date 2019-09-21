@@ -2,12 +2,14 @@ import React, {Component, Fragment} from 'react';
 import {Header, Footer} from "./Layout"
 import Exercises from "./Exercises"
 import {muscles, exercises} from "../store";
+import Journey from "././Layout/Journey.js"
 
 
 export default class extends Component {
     state = {
+        step:1,
         exercises,
-        exercise: {}
+        exercise: {},
     }
 
     getExercisesByMuscles(){
@@ -22,6 +24,13 @@ export default class extends Component {
             return exercises
         }, {})
         )
+    }
+    //Proceed to next step method
+    nextStep = () => {
+        const { step } = this.state;
+        this.setState({
+            step: step +1
+        });
     }
 
     handleCategorySelect = catergory => {
@@ -51,30 +60,38 @@ export default class extends Component {
         }))
     }
 
-    render(){
+
+
+    render() {
         const exercises = this.getExercisesByMuscles(),
-        { catergory, exercise } = this.state
+            {catergory, exercise, step} = this.state
 
-        return <Fragment>
-            <Header
-            muscles={muscles}
-            onExerciseCreate={this.handleExerciseCreate}
-            />
-            <Footer
-                style={{marginTop:20}}
-                category = {catergory}
-                muscles = {muscles}
-                onSelect={this.handleCategorySelect}/>
-            <Exercises
-                exercise={exercise}
-                category = {catergory}
-                exercises = {exercises}
-                onSelect={this.handleExerciseSelect}
-                onDelete={this.handleExerciseDelete}
-            />
+        switch (step) {
+            case 1:
+                return (<Fragment>
+                        <Header
+                            muscles={muscles}
+                            onExerciseCreate={this.handleExerciseCreate}
+                            nextStep={this.nextStep}
 
-        </Fragment>
+                        />
+                        <Footer
+                            style={{marginTop: 20}}
+                            category={catergory}
+                            muscles={muscles}
+                            onSelect={this.handleCategorySelect}/>
+                        <Exercises
+                            exercise={exercise}
+                            category={catergory}
+                            exercises={exercises}
+                            onSelect={this.handleExerciseSelect}
+                            onDelete={this.handleExerciseDelete}
+                        /></Fragment>
+                )
+            case 2:
+                return (
+                    <Journey/>
+                )
+        }
     }
 }
-
-
