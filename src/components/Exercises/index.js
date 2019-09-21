@@ -30,7 +30,8 @@ export default ({
         id,
         title = "Welcome!",
         description ="Please select an exerise from the list on the left."
-     }
+     },
+    onDelete
 }) =>
     <Grid container>
         <Grid item sm>
@@ -52,7 +53,7 @@ export default ({
                                     >
                                         <ListItemText primary={title}/>
                                         <ListItemSecondaryAction>
-                                            <IconButton>
+                                            <IconButton onClick={() => onDelete(id)}>
                                                 <DeleteIcon/>
                                             </IconButton>
                                         </ListItemSecondaryAction>
