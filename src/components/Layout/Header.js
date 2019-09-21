@@ -21,7 +21,7 @@ export class Header extends Component {
                     Learn2Program
                 </Typography>
                 <Button onClick={this.continue}>
-                    Hello
+                    Programing Journeys
                 </Button>
             </Toolbar>
         </AppBar>

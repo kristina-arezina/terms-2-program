@@ -27,7 +27,7 @@ export class Journey extends Component {
                 primary={true}
                 onClick={this.back}
             >
-                Back
+                Glossary
             </Button>
 
         <CreateDialog
