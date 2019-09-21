@@ -3,7 +3,8 @@ import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
-import CreateDialog from "../Exercises/Dialogs/Create"
+import CreateDialog from "../Exercises/Dialogs/Create";
+import PageJourney from "./PageJourney";
 
 
 export class Journey extends Component {
@@ -17,6 +18,7 @@ export class Journey extends Component {
 
 
     return (
+        <div>
     <AppBar position="static">
         <Toolbar>
             <Typography variant="headline" color="inherit" style={{flex: 1}}>
@@ -36,6 +38,8 @@ export class Journey extends Component {
         />
         </Toolbar>
     </AppBar>
+        <PageJourney/>
+        </div>
 
     )
     }
