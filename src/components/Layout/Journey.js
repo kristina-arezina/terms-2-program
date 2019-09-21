@@ -17,7 +17,10 @@ export class Journey extends Component {
             label="Back"
             primary={true}
             onClick={this.back}
-            />
+            >
+                Back
+            </Button>
+
         </div>
     )
 }
