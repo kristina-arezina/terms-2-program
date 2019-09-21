@@ -79,8 +79,6 @@ export default class extends Component {
             case 1:
                 return (<Fragment>
                         <Header
-                            muscles={muscles}
-                            onExerciseCreate={this.handleExerciseCreate}
                             nextStep={this.nextStep}
 
                         />
@@ -95,12 +93,15 @@ export default class extends Component {
                             exercises={exercises}
                             onSelect={this.handleExerciseSelect}
                             onDelete={this.handleExerciseDelete}
-                        /></Fragment>
+                        />
+                        </Fragment>
                 )
             case 2:
                 return (
                     <Journey
                         prevStep={this.prevStep}
+                        muscles={muscles}
+                        onExerciseCreate={this.handleExerciseCreate}
                     />
                 )
         }

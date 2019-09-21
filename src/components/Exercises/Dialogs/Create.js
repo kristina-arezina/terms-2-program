@@ -1,3 +1,4 @@
+
 import React, {Fragment, Component} from "react"
 import {Dialog, Button} from "@material-ui/core"
 import DialogActions from '@material-ui/core/DialogActions';
@@ -31,14 +32,14 @@ export default class extends Component {
     handleChange= name => ({target: {value}}) =>{
         this.setState({
             exercise: {
-        ...this.state.exercise,
+                ...this.state.exercise,
                 [name]:value
-        }
+            }
         })
     }
 
     handleSubmit = () => {
-    //    To do: must create validation
+        //    To do: must create validation
         const {exercise} = this.state
 
         this.props.onCreate({
@@ -56,68 +57,68 @@ export default class extends Component {
 
     render(){
         const {open, exercise:{title,description,muscles }} = this.state,
-        {classes, muscles: categoires } = this.props
-            return <Fragment>
-    <Fab onClick={this.handleToggle} size="medium" >
-        <AddIcon/>
-    </Fab>
+            {classes, muscles: categoires } = this.props
+        return <Fragment>
+            <Fab onClick={this.handleToggle} size="medium" >
+                <AddIcon/>
+            </Fab>
 
-    <Dialog
-        open={open}
-        onClose={this.handleToggle}
-        >
-            <DialogTitle id="form-dialog-title">
-                Create a New Exercise
-            </DialogTitle>
-            <DialogContent>
-            <DialogContentText>
-                Please fill out the form below.
-            </DialogContentText>
-            <form>
-                <TextField
-                    label="Title"
-                    value={title}
-                    onChange={this.handleChange('title')}
-                    margin="normal"
-                    style={{width:500}}
-                />
-                <br/>
-                <FormControl >
-                    <InputLabel htmlFor="muscles">Muscles</InputLabel>
-                    <Select
-                        style={{width:500}}
-                        value={muscles}
-                        onChange={this.handleChange("muscles")}
-                        >
-                        {categoires.map(category =>
-                            <MenuItem key={category} value={category}>{category}</MenuItem>
-                        )}
+            <Dialog
+                open={open}
+                onClose={this.handleToggle}
+            >
+                <DialogTitle id="form-dialog-title">
+                    Create a New Exercise
+                </DialogTitle>
+                <DialogContent>
+                    <DialogContentText>
+                        Please fill out the form below.
+                    </DialogContentText>
+                    <form>
+                        <TextField
+                            label="Title"
+                            value={title}
+                            onChange={this.handleChange('title')}
+                            margin="normal"
+                            style={{width:500}}
+                        />
+                        <br/>
+                        <FormControl >
+                            <InputLabel htmlFor="muscles">Muscles</InputLabel>
+                            <Select
+                                style={{width:500}}
+                                value={muscles}
+                                onChange={this.handleChange("muscles")}
+                            >
+                                {categoires.map(category =>
+                                    <MenuItem key={category} value={category}>{category}</MenuItem>
+                                )}
 
-                    </Select>
-                </FormControl>
-                <br/>
-                <TextField
-                    style={{width:500}}
-                    multiline
-                    rows="6"
-                    label="Description"
-                    value={description}
-                    onChange={this.handleChange('description')}
-                    margin="normal"
-                />
-            </form>
+                            </Select>
+                        </FormControl>
+                        <br/>
+                        <TextField
+                            style={{width:500}}
+                            multiline
+                            rows="6"
+                            label="Description"
+                            value={description}
+                            onChange={this.handleChange('description')}
+                            margin="normal"
+                        />
+                    </form>
 
-            </DialogContent>
-            <DialogActions>
-        <Button
-            color="primary"
-            variant="raised"
-            onClick={this.handleSubmit}
-        >
-        Create
-        </Button>
-    </DialogActions>
-    </Dialog>
-    </Fragment>
+                </DialogContent>
+                <DialogActions>
+                    <Button
+                        color="primary"
+                        variant="raised"
+                        onClick={this.handleSubmit}
+                    >
+                        Create
+                    </Button>
+                </DialogActions>
+            </Dialog>
+        </Fragment>
     }
 }
