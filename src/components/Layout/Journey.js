@@ -1,8 +1,25 @@
-import React from "react";
+import React, {Component} from 'react';
+import Button from '@material-ui/core/Button';
 
-export default function AboutButton() {
+export class Journey extends Component {
+    back = e => {
+        e.preventDefault();
+        this.props.prevStep();
+    }
+
+    render(){
 
     return (
+        <div>
         <h1>Hello from journey</h1>
-    );
+
+            <Button
+            label="Back"
+            primary={true}
+            onClick={this.back}
+            />
+        </div>
+    )
 }
+}
+export default Journey;

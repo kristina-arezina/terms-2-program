@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react';
 import {Header, Footer} from "./Layout"
 import Exercises from "./Exercises"
 import {muscles, exercises} from "../store";
-import Journey from "././Layout/Journey.js"
+import Journey from "./Layout/Journey.js"
 
 
 export default class extends Component {
@@ -25,11 +25,20 @@ export default class extends Component {
         }, {})
         )
     }
+
     //Proceed to next step method
     nextStep = () => {
         const { step } = this.state;
         this.setState({
             step: step +1
+        });
+    }
+
+    //Go to prev step method
+    prevStep = () => {
+        const { step } = this.state;
+        this.setState({
+            step: step - 1
         });
     }
 
@@ -90,7 +99,9 @@ export default class extends Component {
                 )
             case 2:
                 return (
-                    <Journey/>
+                    <Journey
+                        prevStep={this.prevStep}
+                    />
                 )
         }
     }

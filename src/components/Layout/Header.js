@@ -5,14 +5,14 @@ import Typography from '@material-ui/core/Typography';
 import CreateDialog from "../Exercises/Dialogs/Create"
 import Button from '@material-ui/core/Button';
 import Journey from "../App";
-
 export class Header extends Component {
-
 
     continue = e => {
         e.preventDefault();
         this.props.nextStep();
     }
+
+
 
     render(){
     const{muscles,onExerciseCreate, newPage}=this.props;
