@@ -1,6 +1,6 @@
 //Muscle groups
 export const muscles = [
-    "web basics", "web development basics", "languages", "frameworks", "libraries", "programing journeys"
+    "web basics", "web development basics", "languages", "frameworks", "libraries"
 ]
 
 export const exercises = [
@@ -80,13 +80,13 @@ export const exercises = [
         id: 'syntax',
         title: 'Syntax',
         description: 'Legs exercise...',
-        muscles: 'programing journeys'
+        muscles: 'web basics'
     },
     {
         id: 'repositories',
         title: 'Repositories',
         description: 'Legs exercise...',
-        muscles: 'programing journeys'
+        muscles: 'web basics'
     },
 
 ]

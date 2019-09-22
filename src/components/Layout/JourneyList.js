@@ -39,6 +39,48 @@ export default function JourneyList() {
                         </FixedSizeList>
                     </ExpansionPanelDetails>
                 </ExpansionPanel>
+                <ExpansionPanel>
+                    <ExpansionPanelSummary
+                        expandIcon={<ExpandMoreIcon/>}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography>React</Typography>
+                    </ExpansionPanelSummary>
+                    <ExpansionPanelDetails>
+                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={200}>
+                            {Row}
+                        </FixedSizeList>
+                    </ExpansionPanelDetails>
+                </ExpansionPanel>
+                <ExpansionPanel>
+                    <ExpansionPanelSummary
+                        expandIcon={<ExpandMoreIcon/>}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography>C++</Typography>
+                    </ExpansionPanelSummary>
+                    <ExpansionPanelDetails>
+                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={200}>
+                            {Row}
+                        </FixedSizeList>
+                    </ExpansionPanelDetails>
+                </ExpansionPanel>
+                <ExpansionPanel>
+                    <ExpansionPanelSummary
+                        expandIcon={<ExpandMoreIcon/>}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography>JavaScript</Typography>
+                    </ExpansionPanelSummary>
+                    <ExpansionPanelDetails>
+                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={200}>
+                            {Row}
+                        </FixedSizeList>
+                    </ExpansionPanelDetails>
+                </ExpansionPanel>
             </div>
         );
     }
