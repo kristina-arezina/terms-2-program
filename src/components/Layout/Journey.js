@@ -43,9 +43,6 @@ export class Journey extends Component {
         <PageJourney/>
             <JourneyList/>
         </div>
-
-    )
-    }
-    }
+    )}}
 
 export default Journey;
