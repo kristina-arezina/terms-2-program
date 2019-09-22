@@ -34,7 +34,7 @@ export default function JourneyList() {
                         <Typography>Complete Beginner</Typography>
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
-                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={200}>
+                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={10}>
                             {Row}
                         </FixedSizeList>
                     </ExpansionPanelDetails>
@@ -48,7 +48,7 @@ export default function JourneyList() {
                         <Typography>React</Typography>
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
-                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={200}>
+                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={10}>
                             {Row}
                         </FixedSizeList>
                     </ExpansionPanelDetails>
@@ -62,7 +62,7 @@ export default function JourneyList() {
                         <Typography>C++</Typography>
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
-                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={200}>
+                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={10}>
                             {Row}
                         </FixedSizeList>
                     </ExpansionPanelDetails>
