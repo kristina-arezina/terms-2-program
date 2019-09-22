@@ -23,6 +23,8 @@ export default function JourneyList() {
     }
 
 
+
+
         return (
             <div>
                 <ExpansionPanel>
@@ -42,8 +44,6 @@ export default function JourneyList() {
                 <ExpansionPanel>
                     <ExpansionPanelSummary
                         expandIcon={<ExpandMoreIcon/>}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
                     >
                         <Typography>React</Typography>
                     </ExpansionPanelSummary>
@@ -56,8 +56,6 @@ export default function JourneyList() {
                 <ExpansionPanel>
                     <ExpansionPanelSummary
                         expandIcon={<ExpandMoreIcon/>}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
                     >
                         <Typography>C++</Typography>
                     </ExpansionPanelSummary>
@@ -70,8 +68,6 @@ export default function JourneyList() {
                 <ExpansionPanel>
                     <ExpansionPanelSummary
                         expandIcon={<ExpandMoreIcon/>}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
                     >
                         <Typography>JavaScript</Typography>
                     </ExpansionPanelSummary>

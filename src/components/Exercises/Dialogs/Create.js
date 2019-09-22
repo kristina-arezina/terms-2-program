@@ -16,7 +16,7 @@ export default class extends Component {
     state = {
         open: false,
         exercise:{
-            title:"",
+            name:"",
             description:"",
             muscles:"",
         }
@@ -43,19 +43,20 @@ export default class extends Component {
 
         this.props.onCreate({
             ...exercise,
-            id:exercise.title.toLowerCase().replace(/ /g, "-")
+            id:exercise.name.toLowerCase().replace(/ /g, "-")
         })
 
         this.setState({
             exercise:"",
             open:false,
             description:"",
-            muscles:""
+            muscles:"",
+            name:"",
         })
     }
 
     render(){
-        const {open, exercise:{title,description,muscles }} = this.state,
+        const {open, exercise:{name,description,muscles }} = this.state,
             {classes, muscles: categoires } = this.props
         return <Fragment>
             <Fab onClick={this.handleToggle} size="medium" >
@@ -75,9 +76,9 @@ export default class extends Component {
                     </DialogContentText>
                     <form>
                         <TextField
-                            label="Title"
-                            value={title}
-                            onChange={this.handleChange('title')}
+                            label="Name"
+                            value={name}
+                            onChange={this.handleChange('name')}
                             margin="normal"
                             style={{width:500}}
                         />

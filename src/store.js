@@ -59,34 +59,53 @@ export const exercises = [
         muscles: 'libraries'
     },
     {
-        id: 'html',
-        title: 'HTML',
-        description: 'Legs exercise...',
-        muscles: 'languages'
-    },
-    {
         id: 'microsoft',
         title: 'Microsoft',
         description: 'Legs exercise...',
         muscles: 'web basics'
     },
+    ]
+export const journey = [
     {
-        id: 'windows',
-        title: 'Windows',
+        id: 'repositories',
+        name: 'Repositories',
         description: 'Legs exercise...',
-        muscles: 'web basics'
-    },
-    {
-        id: 'syntax',
-        title: 'Syntax',
-        description: 'Legs exercise...',
-        muscles: 'web basics'
+        muscles: 'journey'
     },
     {
         id: 'repositories',
-        title: 'Repositories',
+        name: 'Repositories',
         description: 'Legs exercise...',
-        muscles: 'web basics'
+        muscles: 'journey'
     },
-
+    {
+        id: 'repositories',
+        name: 'Repositories',
+        description: 'Legs exercise...',
+        muscles: 'journey'
+    },
+    {
+        id: 'repositories',
+        name: 'Repositories',
+        description: 'Legs exercise...',
+        muscles: 'journey'
+    },
+    {
+        id: 'repositories',
+        name: 'Repositories',
+        description: 'Legs exercise...',
+        muscles: 'journey'
+    },
+    {
+        id: 'repositories',
+        name: 'Repositories',
+        description: 'Legs exercise...',
+        muscles: 'journey'
+    },
+    {
+        id: 'repositories',
+        name: 'Repositories',
+        description: 'Legs exercise...',
+        muscles: 'journey'
+    },
 ]

@@ -1,9 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import {Header, Footer} from "./Layout"
 import Exercises from "./Exercises"
-import {muscles, exercises} from "../store";
+import {muscles, exercises, journey} from "../store";
 import Journey from "./Layout/Journey.js"
-
 
 export default class extends Component {
     state = {
@@ -102,6 +101,7 @@ export default class extends Component {
                         prevStep={this.prevStep}
                         muscles={muscles}
                         onExerciseCreate={this.handleExerciseCreate}
+                        journey={journey}
                     />
                 )
         }
