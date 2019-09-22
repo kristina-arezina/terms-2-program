@@ -34,7 +34,7 @@ export default function JourneyList() {
                         <Typography>Complete Beginner</Typography>
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
-                        <FixedSizeList height={400} width={360} itemSize={46} itemCount={200}>
+                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={200}>
                             {Row}
                         </FixedSizeList>
                     </ExpansionPanelDetails>
