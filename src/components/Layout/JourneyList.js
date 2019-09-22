@@ -5,28 +5,42 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import { FixedSizeList } from 'react-window';
+
 
 
 export default function JourneyList() {
+    function Row(props) {
+        const { index, style } = props;
 
-    return (
-        <div>
-            <ExpansionPanel>
-                <ExpansionPanelSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                >
-                    <Typography>Complete Beginner</Typography>
-                </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
-                    </Typography>
-                </ExpansionPanelDetails>
-            </ExpansionPanel>
-        </div>
-            );
-            }
+        return (
+            <ListItem button style={style} key={index}>
+                <ListItemText primary={`Item ${index + 1}`} />
+            </ListItem>
+        );
+    }
+
+
+        return (
+            <div>
+                <ExpansionPanel>
+                    <ExpansionPanelSummary
+                        expandIcon={<ExpandMoreIcon/>}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography>Complete Beginner</Typography>
+                    </ExpansionPanelSummary>
+                    <ExpansionPanelDetails>
+                        <FixedSizeList height={400} width={360} itemSize={46} itemCount={200}>
+                            {Row}
+                        </FixedSizeList>
+                    </ExpansionPanelDetails>
+                </ExpansionPanel>
+            </div>
+        );
+    }
+
 
