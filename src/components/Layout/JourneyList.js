@@ -1,33 +1,42 @@
-import React, {Component} from "react";
-import PropTypes from 'prop-types';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import { FixedSizeList } from 'react-window';
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-
-function Row(props) {
-    const { index, style } = props;
-
-    return (
-        <ListItem button style={style} key={index}>
-            <ListItemText primary={`Item ${index + 1}`} />
-        </ListItem>
-    );
-}
-
-Row.propTypes = {
-    index: PropTypes.number.isRequired,
-    style: PropTypes.object.isRequired,
-};
+const useStyles = makeStyles(theme => ({
+    root: {
+        width: '100%',
+    },
+    heading: {
+        fontSize: theme.typography.pxToRem(15),
+        fontWeight: theme.typography.fontWeightRegular,
+    },
+}));
 
 export default function JourneyList() {
+    const classes = useStyles();
 
     return (
-        <div>
-            <FixedSizeList height={700} width={1000} itemSize={46} itemCount={200}>
-                {Row}
-            </FixedSizeList>
+        <div className={classes.root}>
+            <ExpansionPanel>
+                <ExpansionPanelSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                >
+                    <Typography className={classes.heading}>Expansion Panel 1</Typography>
+                </ExpansionPanelSummary>
+                <ExpansionPanelDetails>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                        sit amet blandit leo lobortis eget.
+                    </Typography>
+                </ExpansionPanelDetails>
+            </ExpansionPanel>
         </div>
-    );
-}
+            );
+            }
+
