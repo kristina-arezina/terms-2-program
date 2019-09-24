@@ -1,3 +1,5 @@
+import react from 'react';
+
 //Muscle groups
 export const muscles = [
     "web basics", "web development basics", "languages", "frameworks", "libraries"
@@ -19,7 +21,7 @@ export const exercises = [
     {
         id: 'dynamic v.s static',
         title: 'Dynamic v.s Static',
-        description: 'Legs exercise...',
+        description: 'https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7',
         muscles: 'web development basics'
     },
     {
