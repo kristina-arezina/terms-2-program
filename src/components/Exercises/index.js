@@ -30,7 +30,8 @@ export default ({
      exercise: {
         id,
         title = "Welcome!",
-        description ="Please select an exerise from the list on the left."
+        description ="Please select an exerise from the list on the left.",
+         link
      },
     onDelete
 }) =>
@@ -74,8 +75,10 @@ export default ({
                 {title}
             </Typography>
             <Typography variant={"h4"} style={{marginTop:20}}>
-                    <Link href={description}>
-                        {description}
+                {description}
+                    <Link href={link}>
+
+                        {link}
                     </Link>
 
             </Typography>
