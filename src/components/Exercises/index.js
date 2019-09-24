@@ -75,7 +75,7 @@ export default ({
             </Typography>
             <Typography variant={"h4"} style={{marginTop:20}}>
                     <Link href={description}>
-                        Link
+                        {description}
                     </Link>
 
             </Typography>
