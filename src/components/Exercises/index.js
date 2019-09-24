@@ -74,11 +74,10 @@ export default ({
                 {title}
             </Typography>
             <Typography variant={"h4"} style={{marginTop:20}}>
-                {description}
-                <Link
-                    href={"https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7"}>
-                    Link
-                </Link>
+                    <Link href={description}>
+                        Link
+                    </Link>
+
             </Typography>
 
         </Paper>
