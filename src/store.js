@@ -19,9 +19,11 @@ export const exercises = [
         video:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
     },
     {
-        id: 'statically-typed-language',
-        title: 'Statically-Typed Language',
-        description: 'Legs exercise...',
+        id: 'software development',
+        title: 'Software development',
+        description: 'This is the process in which someone makes the programs that make a computer do something of ' +
+            'interest. Software is the set of instructions, programs or data used to operate computers and ' +
+            'execute specific tasks. ',
         muscles: 'software development basics'
     },
     {
