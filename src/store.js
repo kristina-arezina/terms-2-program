@@ -15,7 +15,8 @@ export const exercises = [
             ' of the web. Without them it would be very hard to make ' +
             'sense of anything on your screen.',
         link: 'https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7',
-        muscles: 'web basics'
+        muscles: 'web basics',
+        video:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
     },
     {
         id: 'statically-typed-language',
