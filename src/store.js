@@ -7,9 +7,13 @@ export const muscles = [
 
 export const exercises = [
     {
-        id: 'cloud',
-        title: 'Cloud',
-        description: 'Legs exercise...',
+        id: 'browsers',
+        title: 'Browsers',
+        description: 'Browsers “ask” for information and then show us ' +
+            'that information on our screens in a way that we ' +
+            'can understand it. They can be thought of as interpreters' +
+            ' of the web. Without them it would be very hard to make ' +
+            'sense of anything on your screen.',
         muscles: 'web basics'
     },
     {
