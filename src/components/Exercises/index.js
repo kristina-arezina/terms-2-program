@@ -83,7 +83,7 @@ export default ({
                         {link}
                     </Link>
                 <br/>
-                <Link variant="body1" href={video}>
+                <Link rel="noopener" variant="body1" href={video}>
                     {video}
                 </Link>
 
