@@ -80,13 +80,13 @@ export default class extends Component {
                             value={name}
                             onChange={this.handleChange('name')}
                             margin="normal"
-                            style={{width:500}}
+                            style={{width:250}}
                         />
                         <br/>
                         <FormControl >
                             <InputLabel htmlFor="muscles">Muscles</InputLabel>
                             <Select
-                                style={{width:500}}
+                                style={{width:250}}
                                 value={muscles}
                                 onChange={this.handleChange("muscles")}
                             >
@@ -98,7 +98,7 @@ export default class extends Component {
                         </FormControl>
                         <br/>
                         <TextField
-                            style={{width:500}}
+                            style={{width:250}}
                             multiline
                             rows="6"
                             label="Description"

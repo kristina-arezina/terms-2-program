@@ -18,6 +18,8 @@ return <Paper >
                 indicatorColor="primary"
                 textColor="primary"
                 centered
+                variant="scrollable"
+                scrollButtons="auto"
             >
                 <Tab label="All" />
                 {muscles.map(group =>
