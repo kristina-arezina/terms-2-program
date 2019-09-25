@@ -21,9 +21,8 @@ export const exercises = [
     {
         id: 'dynamic v.s static',
         title: 'Dynamic v.s Static',
-        description: 'Here are some resources:',
-        link: ['https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7',
-            "https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7"],
+        description: 'There are two types of web development. Here are some resources',
+        link: 'https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7',
         muscles: 'web development basics'
     },
     {

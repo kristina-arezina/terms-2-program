@@ -74,10 +74,10 @@ export default ({
             <Typography variant="h3">
                 {title}
             </Typography>
-            <Typography variant={"h4"} style={{marginTop:20}}>
+            <Typography variant={"body1"} style={{marginTop:20}}>
                 {description}
                 <br/>
-                    <Link variant="h6" href={link}>
+                    <Link variant="body1" href={link}>
                         {link}
                     </Link>
 
