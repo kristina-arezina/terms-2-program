@@ -14,7 +14,7 @@ export const exercises = [
             'can understand it. They can be thought of as interpreters' +
             ' of the web. Without them it would be very hard to make ' +
             'sense of anything on your screen.',
-        link: 'https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7',
+        link: 'https://www.lifewire.com/what-is-a-browser-446234',
         muscles: 'web basics',
         video:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
     },
@@ -68,9 +68,12 @@ export const exercises = [
         muscles: 'libraries'
     },
     {
-        id: 'microsoft',
-        title: 'Microsoft',
-        description: 'Legs exercise...',
+        id: 'operating system',
+        title: 'Operating System',
+        description: 'Every computer requires an operating system. It can be thought of as a huge powerful program ' +
+            'that controls how the computer works. The most popular operating systems for desktops and laptops ' +
+            'are versions of Microsoft Windows, Apple’s OS X, Linux distributions, and mobile operating systems ' +
+            'for smartphones. ',
         muscles: 'web basics'
     },
     ]
