@@ -76,8 +76,9 @@ export default class extends Component {
 
         switch (step) {
             case 1:
-                return (<Fragment>
+                return (<Fragment >
                         <Header
+
                             nextStep={this.nextStep}
 
                         />

@@ -36,7 +36,7 @@ export default ({
     onDelete
 }) =>
     <Grid container>
-        <Grid item sm>
+        <Grid item xs={12} sm={6}>
             <Paper style={styles.Paper}>
                 {exercises.map(([group, exercises]) =>
                     !category || category === group
@@ -69,7 +69,7 @@ export default ({
             </Paper>
 
         </Grid>
-    <Grid item sm>
+    <Grid item xs={12} sm={6}>
         <Paper style={styles.Paper}>
             <Typography variant="h3">
                 {title}
@@ -78,7 +78,6 @@ export default ({
                 {description}
                 <br/>
                     <Link variant="h6" href={link}>
-
                         {link}
                     </Link>
 

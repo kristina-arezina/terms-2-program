@@ -11,7 +11,10 @@ import { FixedSizeList } from 'react-window';
 
 
 
+
 export default function JourneyList() {
+
+
     function Row(props) {
         const { index, style } = props;
 
@@ -22,11 +25,8 @@ export default function JourneyList() {
         );
     }
 
-
-
-
         return (
-            <div>
+            <div className="App">
                 <ExpansionPanel>
                     <ExpansionPanelSummary
                         expandIcon={<ExpandMoreIcon/>}
@@ -79,6 +79,7 @@ export default function JourneyList() {
                 </ExpansionPanel>
             </div>
         );
+
     }
 
 
