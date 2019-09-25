@@ -20,10 +20,12 @@ export const exercises = [
     },
     {
         id: 'software development',
-        title: 'Software development',
+        title: 'Software Development',
         description: 'This is the process in which someone makes the programs that make a computer do something of ' +
             'interest. Software is the set of instructions, programs or data used to operate computers and ' +
             'execute specific tasks. ',
+        video:"https://www.youtube.com/watch?v=pquPUX1EihM",
+        link: 'https://searchapparchitecture.techtarget.com/definition/software',
         muscles: 'software development basics'
     },
     {
