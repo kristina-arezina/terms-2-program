@@ -14,6 +14,7 @@ export const exercises = [
             'can understand it. They can be thought of as interpreters' +
             ' of the web. Without them it would be very hard to make ' +
             'sense of anything on your screen.',
+        link: 'https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7',
         muscles: 'web basics'
     },
     {

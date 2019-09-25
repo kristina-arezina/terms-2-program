@@ -77,6 +77,7 @@ export default ({
             <Typography variant={"body1"} style={{marginTop:20}}>
                 {description}
                 <br/>
+                <p>Here are some resources that can help you learn about this topic:</p>
                     <Link variant="body1" href={link}>
                         {link}
                     </Link>
