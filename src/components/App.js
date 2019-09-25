@@ -3,6 +3,9 @@ import {Header, Footer} from "./Layout"
 import Exercises from "./Exercises"
 import {muscles, exercises, journey} from "../store";
 import Journey from "./Layout/Journey.js"
+import CssBaseline from '@material-ui/core/CssBaseline';
+
+
 
 export default class extends Component {
     state = {
@@ -76,7 +79,8 @@ export default class extends Component {
 
         switch (step) {
             case 1:
-                return (<Fragment >
+                return ( <Fragment >
+                        <CssBaseline/>
                         <Header
 
                             nextStep={this.nextStep}
@@ -94,16 +98,20 @@ export default class extends Component {
                             onSelect={this.handleExerciseSelect}
                             onDelete={this.handleExerciseDelete}
                         />
-                        </Fragment>
+                    </Fragment>
+
                 )
             case 2:
                 return (
-                    <Journey
+                    <Fragment>
+                        <CssBaseline/>
+                        <Journey
                         prevStep={this.prevStep}
                         muscles={muscles}
                         onExerciseCreate={this.handleExerciseCreate}
-                        journey={journey}
-                    />
+                        journey={journey} />
+                    </Fragment>
+
                 )
         }
     }
