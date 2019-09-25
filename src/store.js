@@ -2,7 +2,7 @@ import react from 'react';
 
 //Muscle groups
 export const muscles = [
-    "web basics", "software development basics", "languages", "frameworks", "libraries"
+    "web basics", "software development terms", "languages", "frameworks", "libraries"
 ]
 
 export const exercises = [
@@ -26,14 +26,16 @@ export const exercises = [
             'execute specific tasks. ',
         video:"https://www.youtube.com/watch?v=pquPUX1EihM",
         link: 'https://searchapparchitecture.techtarget.com/definition/software',
-        muscles: 'software development basics'
+        muscles: 'software development terms'
     },
     {
-        id: 'dynamic v.s static',
-        title: 'Dynamic v.s Static',
-        description: 'There are two types of web development. Here are some resources',
-        link: 'https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7',
-        muscles: 'software development basics'
+        id: 'terminal',
+        title: 'Terminal',
+        description: 'Many of the tools that you need to use in order to develop software are run in the terminal. ' +
+            'It is a very important concept to understand as you can use it always and everywhere. Please note that ' +
+            'a terminal appears to be very intimidating to beginners so do not be scared.',
+        link: 'https://medium.com/@webprolific/introducing-the-terminal-for-developers-1f86dfbcd623#targetText=A%20terminal%20is%20text%2Dbased,the%20default%20shell%20is%20Bash.',
+        muscles: 'software development terms'
     },
     {
         id: 'python',
