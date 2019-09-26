@@ -44,7 +44,6 @@ export const exercises = [
             'understand and use to perform specific tasks. These instructions can be written in many different ' +
             'ways and can use a different styles. There are hundreds of programming languages that exits however ' +
             'there are a handful of very popular ones.',
-        link: 'https://medium.com/@webprolific/introducing-the-terminal-for-developers-1f86dfbcd623#targetText=A%20terminal%20is%20text%2Dbased,the%20default%20shell%20is%20Bash.',
         muscles: 'software development terms'
     },
     {
