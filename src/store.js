@@ -44,7 +44,9 @@ export const exercises = [
             'understand and use to perform specific tasks. These instructions can be written in many different ' +
             'ways and can use a different styles. There are hundreds of programming languages that exits however ' +
             'there are a handful of very popular ones.',
-        muscles: 'software development terms'
+        muscles: 'software development terms',
+        resourse:"This website is a GREAT resource to help you learn about the different types of programing languages!"
+
     },
     {
         id: 'python',

@@ -32,7 +32,8 @@ export default ({
         title = "Welcome!",
         description ="Please select an exerise from the list on the left.",
          link,
-         video
+         video,
+         resourse
      },
     onDelete
 }) =>
@@ -79,6 +80,7 @@ export default ({
                 {description}
                 <br/>
                 <p>Here are some resources that can help you learn about this topic:</p>
+                {resourse}
                     <Link rel="noopener" variant="body1" href={link}>
                         {link}
                     </Link>
