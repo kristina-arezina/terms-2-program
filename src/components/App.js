@@ -6,7 +6,6 @@ import Journey from "./Layout/Journey.js"
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 
-
 export default class extends Component {
     state = {
         step:1,

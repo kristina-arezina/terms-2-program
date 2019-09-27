@@ -2,6 +2,11 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import purple from '@material-ui/core/colors/purple';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+
 
 export default ({muscles, category, onSelect}) =>{
     const index = category
@@ -11,14 +16,28 @@ export default ({muscles, category, onSelect}) =>{
 const onIndexSelect = (e, index) =>
     onSelect(index === 0 ? "" : muscles[index-1]);
 
-return<Paper style={{paddingTop:66,  marginTop: 8, marginBottom:5}}>
+    const theme = createMuiTheme({
+        palette: {
+            primary: { main: '#11cb5f' }, // Purple and green play nicely together.
+        },
+    });
+
+return(
+    <ThemeProvider theme={theme}>
+    <Paper
+    style={
+        {
+            paddingTop:66,
+            marginTop: 8,
+            marginBottom:5
+        }}>
             <Tabs
                 value={index}
+                indicatorColor="primary"
                 onChange={onIndexSelect}
-                centered
                 variant="scrollable"
                 scrollButtons="auto"
-                style={{color:"#00867d", indicatorColor:"#00867d"}}
+                style={{color:"#00867d", }}
             >
                 <Tab label="All" />
                 {muscles.map(group =>
@@ -27,4 +46,6 @@ return<Paper style={{paddingTop:66,  marginTop: 8, marginBottom:5}}>
 
             </Tabs>
         </Paper>
+    </ThemeProvider>
+        )
 }
