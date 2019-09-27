@@ -51,6 +51,7 @@ export const exercises = [
             'a terminal appears to be very intimidating to beginners so do not be scared.',
         link: 'https://medium.com/@webprolific/introducing-the-terminal-for-developers-1f86dfbcd623#targetText=A%20terminal%20is%20text%2Dbased,the%20default%20shell%20is%20Bash.',
         muscles: 'software development terms',
+        video:"https://www.youtube.com/watch?v=5XgBd6rjuDQ",
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
