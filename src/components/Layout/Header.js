@@ -5,9 +5,15 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 export class Header extends Component {
+
     continue = e => {
         e.preventDefault();
         this.props.nextStep();
+    }
+
+    back = e => {
+        e.preventDefault();
+        this.props.prevStep();
     }
 
     render(){
@@ -35,6 +41,18 @@ export class Header extends Component {
                         }}
                         onClick={this.continue}>
                     Programing Journeys
+                </Button>
+                <Button color="inherit" variant="text"
+                        style={{
+                            color:"#f4f4f4",
+                            backgroundColor: "#00867d",
+                            textTransform: "uppercase",
+                            borderRadius: "1px",
+                            margin:"5px",
+                            height: 48,
+                        }}
+                        onClick={this.back}>
+                    Home
                 </Button>
             </Toolbar>
         </AppBar>

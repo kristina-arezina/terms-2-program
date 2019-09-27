@@ -6,7 +6,7 @@ export class PageJourney extends Component {
     render(){
 return (
     <Paper >
-        <Typography variant="h5" component="h3" style={{padding:10, textAlign:"center", textTransform: 'uppercase'}}>
+        <Typography variant="h5" component="h3" style={{padding:10, paddingTop:70, textAlign:"center", textTransform: 'uppercase'}}>
         Programing Journeys
         </Typography>
 

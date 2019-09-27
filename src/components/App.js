@@ -82,6 +82,7 @@ export default class extends Component {
                         <CssBaseline/>
                         <Header
                             nextStep={this.nextStep}
+                            prevStep={this.prevStep}
                         />
                         <Footer
                             style={{marginTop: 20}}
@@ -103,8 +104,9 @@ export default class extends Component {
                     <Fragment>
                         <CssBaseline/>
                         <Journey
-                        prevStep={this.prevStep}
-                        muscles={muscles}
+                            nextStep={this.nextStep}
+                            prevStep={this.prevStep}
+                            muscles={muscles}
                         onExerciseCreate={this.handleExerciseCreate}
                         journey={journey} />
                     </Fragment>

@@ -18,7 +18,7 @@ const onIndexSelect = (e, index) =>
 
     const theme = createMuiTheme({
         palette: {
-            primary: { main: "#00867d" }, // Purple and green play nicely together.
+            primary: { main: "#111" }, // Purple and green play nicely together.
         },
     });
 
@@ -29,7 +29,8 @@ return(
         {
             paddingTop:66,
             marginTop: 8,
-            marginBottom:5
+            marginBottom:5,
+            backgroundColor:"#e0f2f1"
         }}>
             <Tabs
                 value={index}
@@ -37,7 +38,7 @@ return(
                 onChange={onIndexSelect}
                 variant="scrollable"
                 scrollButtons="auto"
-                style={{color:"#00867d", }}
+                style={{color:"#111" }}
             >
                 <Tab label="All" />
                 {muscles.map(group =>

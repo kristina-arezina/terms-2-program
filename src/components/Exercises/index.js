@@ -47,7 +47,7 @@ export default ({
                     !category || category === group
                     ? <Fragment key={group}>
                             <Typography variant={"h6"}
-                                        style={{textTransform: 'uppercase', fontWeight: "bold"
+                                        style={{textTransform: 'uppercase', color:"#00867d"
                                         }}
                             >
                                 {group}
