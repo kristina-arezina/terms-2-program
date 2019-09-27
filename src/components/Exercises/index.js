@@ -11,8 +11,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Card from '@material-ui/core/Card';
 
 
-
-
 const styles = {
     Paper: {
         padding:20,
@@ -50,7 +48,7 @@ export default ({
                     !category || category === group
                     ? <Fragment key={group}>
                             <Typography variant={"h6"}
-                                        style={{textTransform: 'uppercase'}}
+                                        style={{textTransform: 'uppercase', backgroundColor:"#e0f2f1", padding:10}}
                             >
                                 {group}
                             </Typography>

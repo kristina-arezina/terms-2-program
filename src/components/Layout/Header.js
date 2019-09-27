@@ -15,9 +15,9 @@ export class Header extends Component {
     const{newPage}=this.props;
 
     return(
-        <AppBar position="static">
+        <AppBar position="static" style={{ backgroundColor:"#00867d" }}>
             <Toolbar>
-                <Typography variant="headline" color="inherit" style={{flex: 1}}>
+                <Typography variant="headline"  style={{ flex: 1 }}>
                     Learn2Program
                 </Typography>
                 <Button onClick={this.continue}>
