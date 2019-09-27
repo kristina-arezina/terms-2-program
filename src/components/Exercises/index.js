@@ -83,8 +83,6 @@ export default ({
                 <br/>
                 <br/>
                 {description2}
-                <br/>
-                <br/>
                 {resourse}
                 <br/>
                     <ul>

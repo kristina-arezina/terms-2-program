@@ -84,8 +84,6 @@ export const exercises = [
             "present in more than 50% of U.S. households, uses Python for the bases for their recommendation " +
             "algorithms and analytics engine.",
         muscles: 'languages',
-        resourse:"Here are some resources that can help you learn about this topic:"
-
     },
     {
         id: 'java-script',
