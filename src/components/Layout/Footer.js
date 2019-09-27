@@ -6,12 +6,12 @@ import Tab from '@material-ui/core/Tab';
 export default ({muscles, category, onSelect}) =>{
     const index = category
 ? muscles.findIndex(group => group === category) +1
-        : 0
+        : 0;
 
 const onIndexSelect = (e, index) =>
-    onSelect(index === 0 ? "" : muscles[index-1])
+    onSelect(index === 0 ? "" : muscles[index-1]);
 
-return <Paper >
+return<Paper style={{paddingTop:65}}>
             <Tabs
                 value={index}
                 onChange={onIndexSelect}
