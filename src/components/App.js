@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import {Header, Footer} from "./Layout"
+import {Header, Footer} from "./Layout/HeaderFooter"
 import Exercises from "./Exercises"
 import {muscles, exercises, journey} from "../store";
 import Journey from "./Layout/Journey.js"
