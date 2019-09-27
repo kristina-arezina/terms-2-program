@@ -84,6 +84,7 @@ export const exercises = [
             "present in more than 50% of U.S. households, uses Python for the bases for their recommendation " +
             "algorithms and analytics engine.",
         muscles: 'languages',
+        image: "/Users/milanarezina/code-realm/src/img/Netflix_Logo_PMS.png"
     },
     {
         id: 'java-script',
