@@ -14,18 +14,14 @@ export class Header extends Component {
     const{newPage}=this.props;
 
     return(
-
-        <AppBar position="static"
-                style={{
-                    borderRadius: "1px",
-                    padding: '0 30px',
-                    margin:"5px",
-                    color: "#f4f4f4",
-                    backgroundColor:"#f4f4f4",
-                }}>
-
+        <div style={{
+            borderRadius: "1px",
+            padding: '0 30px',
+            margin:"5px",
+        }}>
+        <AppBar color="#f4f4f4">
             <Toolbar>
-                <Typography variant="headline"  style={{ flex: 1}}>
+                <Typography variant="h6" style={{flexGrow: 1}}>
                     Learn2Program
                 </Typography>
                 <Button color="inherit" variant="text"
@@ -42,6 +38,7 @@ export class Header extends Component {
                 </Button>
             </Toolbar>
         </AppBar>
+        </div>
 )
     }
     }
