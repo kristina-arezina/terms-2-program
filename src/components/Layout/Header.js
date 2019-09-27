@@ -5,7 +5,6 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 export class Header extends Component {
-
     continue = e => {
         e.preventDefault();
         this.props.nextStep();
@@ -15,12 +14,30 @@ export class Header extends Component {
     const{newPage}=this.props;
 
     return(
-        <AppBar position="static" style={{ backgroundColor:"#00867d" }}>
+
+        <AppBar position="static"
+                style={{
+                    borderRadius: "1px",
+                    padding: '0 30px',
+                    margin:"5px",
+                    color: "#f4f4f4",
+                    backgroundColor:"#f4f4f4",
+                }}>
+
             <Toolbar>
-                <Typography variant="headline"  style={{ flex: 1 }}>
+                <Typography variant="headline"  style={{ flex: 1}}>
                     Learn2Program
                 </Typography>
-                <Button onClick={this.continue}>
+                <Button color="inherit" variant="text"
+                        style={{
+                            color:"#f4f4f4",
+                            backgroundColor: "#00867d",
+                            textTransform: "uppercase",
+                            borderRadius: "1px",
+                            margin:"5px",
+                            height: 48,
+                        }}
+                        onClick={this.continue}>
                     Programing Journeys
                 </Button>
             </Toolbar>
