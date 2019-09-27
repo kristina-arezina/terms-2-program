@@ -9,11 +9,9 @@ export const exercises = [
     {
         id: 'browsers',
         title: 'Browsers',
-        description: 'Browsers “ask” for information and then show us ' +
-            'that information on our screens in a way that we ' +
-            'can understand it. They can be thought of as interpreters' +
-            ' of the web. Without them it would be very hard to make ' +
-            'sense of anything on your screen.',
+        description: 'Browsers “ask” for information and then show the information they get on your screen in a ' +
+            'way that you can understand it. They can be thought of as interpreters of the web. Without them, it ' +
+            'would be very hard to make sense of anything on your screen.',
         link: 'https://www.lifewire.com/what-is-a-browser-446234',
         muscles: 'web basics',
         video:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
