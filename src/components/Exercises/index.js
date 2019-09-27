@@ -34,7 +34,8 @@ export default ({
         description ="Please select an exerise from the list on the left.",
          link,
          video,
-         resourse = ""
+         resourse,
+         description2
      },
     onDelete
 }) =>
@@ -79,6 +80,9 @@ export default ({
             </Typography>
             <Typography variant={"body1"} style={{marginTop:20}}>
                 {description}
+                <br/>
+                <br/>
+                {description2}
                 <br/>
                 <br/>
                 {resourse}

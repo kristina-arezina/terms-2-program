@@ -74,7 +74,15 @@ export const exercises = [
     {
         id: 'python',
         title: 'Python',
-        description: 'Chest exercise...',
+        description: 'Python is one of the most popular programming languages in the world. It is considered to be a ' +
+            'relatively easy programing language to learn as its syntax (the way it is written) is simple. ' +
+            'The notion of simplicity is emphasized with one of the main motos Python uses, ‘simple is better ' +
+            'than complex.',
+        description2:"Although python is simple it is extremely powerful and versatile. These characteristics " +
+            "make many tech giants use Python to develop their products. For example, Dropbox, which had 11.5 " +
+            "million paying users in 2018, used python to create many components of their product. Netflix, that is " +
+            "present in more than 50% of U.S. households, uses Python for the bases for their recommendation " +
+            "algorithms and analytics engine.",
         muscles: 'languages',
         resourse:"Here are some resources that can help you learn about this topic:"
 
