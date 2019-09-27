@@ -16,6 +16,7 @@ const styles = {
         margin:10,
         height:500,
         overflowY:"auto"
+
     }
 }
 
@@ -39,7 +40,7 @@ export default ({
 }) =>
     <Grid container>
         <Grid item xs={12} sm={6}>
-            <Paper style={styles.Paper}>
+            <Paper style={styles.Paper} >
                 {exercises.map(([group, exercises]) =>
                     !category || category === group
                     ? <Fragment key={group}>

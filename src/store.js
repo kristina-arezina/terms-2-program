@@ -33,9 +33,9 @@ export const exercises = [
     {
         id: 'software development',
         title: 'Software Development',
-        description: 'This is the process in which someone makes the programs that make a computer do something of ' +
-            'interest. Software is the set of instructions, programs or data used to operate computers and ' +
-            'execute specific tasks. ',
+        description: 'The process in which someone makes the programs that make a computer do something of ' +
+            'interest is called software development. People create software which is the set of instructions, ' +
+            'programs or data used to operate computers and execute specific tasks.',
         video:"https://www.youtube.com/watch?v=pquPUX1EihM",
         link: 'https://searchapparchitecture.techtarget.com/definition/software',
         muscles: 'software development terms',
@@ -44,10 +44,12 @@ export const exercises = [
     {
         id: 'terminal',
         title: 'Terminal',
-        description: 'Many of the tools that you need to use in order to develop software are run in the terminal. ' +
-            'It is a very important concept to understand as you can use it always and everywhere. Please note that ' +
-            'a terminal appears to be very intimidating to beginners so do not be scared.',
-        link: 'https://medium.com/@webprolific/introducing-the-terminal-for-developers-1f86dfbcd623#targetText=A%20terminal%20is%20text%2Dbased,the%20default%20shell%20is%20Bash.',
+        description: 'Many of the tools that you need to use to develop software are run in the terminal. ' +
+            'It is a very important concept to understand as you can use it always and everywhere. Please note ' +
+            'that a terminal appears to be very intimidating to beginners. Just remember what Marie Curie said, ' +
+            '"Nothing in life is to be feared, it is only to be understood". ',
+        link: 'https://medium.com/@webprolific/introducing-the-terminal-for-developers-1f86dfbcd623#targetText=' +
+            'A%20terminal%20is%20text%2Dbased,the%20default%20shell%20is%20Bash.',
         muscles: 'software development terms',
         video:"https://www.youtube.com/watch?v=5XgBd6rjuDQ",
         resourse:"Here are some resources that can help you learn about this topic:"
@@ -63,6 +65,10 @@ export const exercises = [
         muscles: 'software development terms',
         resourse:"This website is a GREAT resource to help you learn about the different types of programming languages! " +
             "To get an overview of the types of programming languages that exist you can view these resources:",
+        link: 'https://codinginfinite.com/top-programming-languages-2020-stats-surveys/',
+        video:"https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/" +
+            "programming-intro",
+
 
     },
     {
