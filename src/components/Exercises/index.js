@@ -82,19 +82,18 @@ export default ({
                 <br/>
                 {resourse}
                 <br/>
-                <ul>
-                    <li><Link rel="noopener" variant="body1" href={link}>
-                        {link}
-                    </Link></li>
-
-                <br/>
-                    <li>
-                <Link rel="noopener" variant="body1" href={video}>
-                    {video}
-                </Link>
-                    </li>
-                </ul>
-
+                    <ul>
+                        <li>
+                            <Link rel="noopener" variant="body1" href={link} target="_blank">
+                            {link}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link rel="noopener" variant="body1" href={video} target="_blank">
+                                {video}
+                            </Link>
+                        </li>
+                    </ul>
             </Typography>
 
         </Paper>
