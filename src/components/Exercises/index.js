@@ -16,8 +16,7 @@ const styles = {
         padding:20,
         margin:10,
         height:500,
-        overflowY:"auto"
-
+        overflowY:"auto",
     }
 }
 
@@ -48,7 +47,8 @@ export default ({
                     !category || category === group
                     ? <Fragment key={group}>
                             <Typography variant={"h6"}
-                                        style={{textTransform: 'uppercase'}}
+                                        style={{textTransform: 'uppercase', fontWeight: "bold"
+                                        }}
                             >
                                 {group}
                             </Typography>

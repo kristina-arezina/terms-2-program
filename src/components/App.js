@@ -81,9 +81,7 @@ export default class extends Component {
                 return ( <Fragment >
                         <CssBaseline/>
                         <Header
-
                             nextStep={this.nextStep}
-
                         />
                         <Footer
                             style={{marginTop: 20}}

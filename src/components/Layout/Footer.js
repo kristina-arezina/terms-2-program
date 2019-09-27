@@ -18,7 +18,7 @@ const onIndexSelect = (e, index) =>
 
     const theme = createMuiTheme({
         palette: {
-            primary: { main: '#11cb5f' }, // Purple and green play nicely together.
+            primary: { main: "#00867d" }, // Purple and green play nicely together.
         },
     });
 
