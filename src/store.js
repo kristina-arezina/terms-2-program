@@ -57,37 +57,49 @@ export const exercises = [
         id: 'python',
         title: 'Python',
         description: 'Chest exercise...',
-        muscles: 'languages'
+        muscles: 'languages',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
     },
     {
         id: 'angular',
         title: 'Angular',
         description: 'Delts exercise...',
-        muscles: 'frameworks'
+        muscles: 'frameworks',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
     },
     {
         id: 'vue',
         title: 'Vue',
         description: 'Triceps exercise...',
-        muscles: 'frameworks'
+        muscles: 'frameworks',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
     },
     {
         id: 'java-script',
         title: 'JavaScript',
         description: 'Biceps exercise...',
-        muscles: 'languages'
+        muscles: 'languages',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
     },
     {
         id: 'java',
         title: 'Java',
         description: 'Back and biceps exercise...',
-        muscles: 'languages'
+        muscles: 'languages',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
     },
     {
         id: 'react',
         title: 'React',
         description: 'Back and leg exercise...',
-        muscles: 'libraries'
+        muscles: 'libraries',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
     },
     {
         id: 'operating system',
@@ -98,7 +110,9 @@ export const exercises = [
             'for smartphones. ',
         video:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
         link: 'https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/',
-        muscles: 'web basics'
+        muscles: 'web basics',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
     },
     ]
 export const journey = [
