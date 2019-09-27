@@ -20,10 +20,10 @@ export const exercises = [
     {
         id: 'operating system',
         title: 'Operating System',
-        description: 'Every computer requires an operating system. It can be thought of as a huge powerful program ' +
-            'that controls how the computer works. The most popular operating systems for desktops and laptops ' +
-            'are versions of Microsoft Windows, Apple’s OS X, Linux distributions, and mobile operating systems ' +
-            'for smartphones. ',
+        description: 'Every computer needs an operating system. It can be thought of as an extremely powerful ' +
+            'program that controls how the computer works. The most popular operating systems for desktops and ' +
+            'laptops are versions of Microsoft Windows, Apple’s OS X, Linux distributions, and mobile operating ' +
+            'systems for smartphones.',
         video:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
         link: 'https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/',
         muscles: 'web basics',
