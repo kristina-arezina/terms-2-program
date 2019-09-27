@@ -11,15 +11,14 @@ export default ({muscles, category, onSelect}) =>{
 const onIndexSelect = (e, index) =>
     onSelect(index === 0 ? "" : muscles[index-1]);
 
-return<Paper style={{paddingTop:65}}>
+return<Paper style={{paddingTop:66,  marginTop: 8, marginBottom:5}}>
             <Tabs
                 value={index}
                 onChange={onIndexSelect}
-                indicatorColor="primary"
-                textColor="primary"
                 centered
                 variant="scrollable"
                 scrollButtons="auto"
+                style={{color:"#00867d", indicatorColor:"#00867d"}}
             >
                 <Tab label="All" />
                 {muscles.map(group =>
