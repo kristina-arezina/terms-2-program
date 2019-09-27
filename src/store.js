@@ -20,6 +20,19 @@ export const exercises = [
         resourse:"Here are some resources that can help you learn about this topic:"
     },
     {
+        id: 'operating system',
+        title: 'Operating System',
+        description: 'Every computer requires an operating system. It can be thought of as a huge powerful program ' +
+            'that controls how the computer works. The most popular operating systems for desktops and laptops ' +
+            'are versions of Microsoft Windows, Apple’s OS X, Linux distributions, and mobile operating systems ' +
+            'for smartphones. ',
+        video:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
+        link: 'https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/',
+        muscles: 'web basics',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
+    },
+    {
         id: 'software development',
         title: 'Software Development',
         description: 'This is the process in which someone makes the programs that make a computer do something of ' +
@@ -29,7 +42,6 @@ export const exercises = [
         link: 'https://searchapparchitecture.techtarget.com/definition/software',
         muscles: 'software development terms',
         resourse:"Here are some resources that can help you learn about this topic:"
-
     },
     {
         id: 'terminal',
@@ -62,22 +74,6 @@ export const exercises = [
 
     },
     {
-        id: 'angular',
-        title: 'Angular',
-        description: 'Delts exercise...',
-        muscles: 'frameworks',
-        resourse:"Here are some resources that can help you learn about this topic:"
-
-    },
-    {
-        id: 'vue',
-        title: 'Vue',
-        description: 'Triceps exercise...',
-        muscles: 'frameworks',
-        resourse:"Here are some resources that can help you learn about this topic:"
-
-    },
-    {
         id: 'java-script',
         title: 'JavaScript',
         description: 'Biceps exercise...',
@@ -94,23 +90,28 @@ export const exercises = [
 
     },
     {
-        id: 'react',
-        title: 'React',
-        description: 'Back and leg exercise...',
-        muscles: 'libraries',
+        id: 'angular',
+        title: 'Angular',
+        description: 'Delts exercise...',
+        muscles: 'frameworks',
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
     {
-        id: 'operating system',
-        title: 'Operating System',
-        description: 'Every computer requires an operating system. It can be thought of as a huge powerful program ' +
-            'that controls how the computer works. The most popular operating systems for desktops and laptops ' +
-            'are versions of Microsoft Windows, Apple’s OS X, Linux distributions, and mobile operating systems ' +
-            'for smartphones. ',
-        video:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
-        link: 'https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/',
-        muscles: 'web basics',
+        id: 'vue',
+        title: 'Vue',
+        description: 'Triceps exercise...',
+        muscles: 'frameworks',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
+    },
+
+
+    {
+        id: 'react',
+        title: 'React',
+        description: 'Back and leg exercise...',
+        muscles: 'libraries',
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
