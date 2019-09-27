@@ -58,12 +58,13 @@ export const exercises = [
     {
         id: 'programing languages',
         title: 'Programing Languages',
-        description: 'The way software is developed is through writing a set of instructions that a computer can ' +
-            'understand and use to perform specific tasks. These instructions can be written in many different ' +
-            'ways and can use a different styles. There are hundreds of programming languages that exits however ' +
-            'there are a handful of very popular ones.',
+        description: 'Software is developed is through writing a set of instructions that a computer can understand ' +
+            'and use to perform specific tasks. These instructions can be written in many different ways and can use ' +
+            'different styles. There are hundreds of programming languages that exits however there are a handful of ' +
+            'very popular ones.',
         muscles: 'software development terms',
-        resourse:"This website is a GREAT resource to help you learn about the different types of programing languages!"
+        resourse:"This website is a GREAT resource to help you learn about the different types of programming languages! " +
+            "To get an overview of the types of programming languages that exist you can view these resources:",
 
     },
     {
