@@ -17,6 +17,7 @@ export const exercises = [
         link: 'https://www.lifewire.com/what-is-a-browser-446234',
         muscles: 'web basics',
         video:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
+        resourse:"Here are some resources that can help you learn about this topic:"
     },
     {
         id: 'software development',
@@ -26,7 +27,9 @@ export const exercises = [
             'execute specific tasks. ',
         video:"https://www.youtube.com/watch?v=pquPUX1EihM",
         link: 'https://searchapparchitecture.techtarget.com/definition/software',
-        muscles: 'software development terms'
+        muscles: 'software development terms',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
     },
     {
         id: 'terminal',
@@ -35,7 +38,9 @@ export const exercises = [
             'It is a very important concept to understand as you can use it always and everywhere. Please note that ' +
             'a terminal appears to be very intimidating to beginners so do not be scared.',
         link: 'https://medium.com/@webprolific/introducing-the-terminal-for-developers-1f86dfbcd623#targetText=A%20terminal%20is%20text%2Dbased,the%20default%20shell%20is%20Bash.',
-        muscles: 'software development terms'
+        muscles: 'software development terms',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
     },
     {
         id: 'programing languages',

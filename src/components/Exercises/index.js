@@ -33,7 +33,7 @@ export default ({
         description ="Please select an exerise from the list on the left.",
          link,
          video,
-         resourse
+         resourse = ""
      },
     onDelete
 }) =>
@@ -79,8 +79,9 @@ export default ({
             <Typography variant={"body1"} style={{marginTop:20}}>
                 {description}
                 <br/>
-                <p>Here are some resources that can help you learn about this topic:</p>
+                <br/>
                 {resourse}
+                <br/>
                     <Link rel="noopener" variant="body1" href={link}>
                         {link}
                     </Link>
