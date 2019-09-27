@@ -8,12 +8,12 @@ export class Header extends Component {
 
     continue = e => {
         e.preventDefault();
-        this.props.nextStep();
+        this.props.home();
     }
 
     back = e => {
         e.preventDefault();
-        this.props.prevStep();
+        this.props.journey();
     }
 
     render(){
@@ -40,7 +40,7 @@ export class Header extends Component {
                             height: 48,
                         }}
                         onClick={this.continue}>
-                    Programing Journeys
+                    Home
                 </Button>
                 <Button color="inherit" variant="text"
                         style={{
@@ -52,7 +52,7 @@ export class Header extends Component {
                             height: 48,
                         }}
                         onClick={this.back}>
-                    Home
+                    Programing Journeys
                 </Button>
             </Toolbar>
         </AppBar>

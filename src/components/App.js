@@ -27,19 +27,19 @@ export default class extends Component {
         )
     }
 
-    //Proceed to next step method
-    nextStep = () => {
+    //Proceed to home page
+    home = () => {
         const { step } = this.state;
         this.setState({
-            step: step +1
+            step: 1
         });
     }
 
-    //Go to prev step method
-    prevStep = () => {
+    //Go to journey page
+    journey = () => {
         const { step } = this.state;
         this.setState({
-            step: step - 1
+            step: 2
         });
     }
 
@@ -81,8 +81,8 @@ export default class extends Component {
                 return ( <Fragment >
                         <CssBaseline/>
                         <Header
-                            nextStep={this.nextStep}
-                            prevStep={this.prevStep}
+                            home={this.home}
+                            journey={this.journey}
                         />
                         <Footer
                             style={{marginTop: 20}}
@@ -103,12 +103,14 @@ export default class extends Component {
                 return (
                     <Fragment>
                         <CssBaseline/>
+                        <Header
+                            home={this.home}
+                            journey={this.journey}
+                        />
                         <Journey
-                            nextStep={this.nextStep}
-                            prevStep={this.prevStep}
                             muscles={muscles}
                         onExerciseCreate={this.handleExerciseCreate}
-                        journey={journey} />
+                        />
                     </Fragment>
 
                 )

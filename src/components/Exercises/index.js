@@ -10,7 +10,6 @@ import Link from '@material-ui/core/Link';
 import CardMedia from '@material-ui/core/CardMedia';
 import Card from '@material-ui/core/Card';
 
-
 const styles = {
     Paper: {
         padding:20,
@@ -18,10 +17,6 @@ const styles = {
         height:500,
         overflowY:"auto",
     }
-}
-
-function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
 }
 
 export default ({

@@ -7,11 +7,11 @@ import JourneyList from "./JourneyList";
 export class Journey extends Component {
 
     render(){
+        const{newPage}=this.props;
         const{muscles,onExerciseCreate}=this.props;
 
     return (
         <div>
-    <Header/>
             <CreateDialog
             muscles={muscles}
             onCreate={onExerciseCreate}
