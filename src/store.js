@@ -82,7 +82,10 @@ export const exercises = [
             "make many tech giants use Python to develop their products. For example, Dropbox, which had 11.5 " +
             "million paying users in 2018, used python to create many components of their product. Netflix, that is " +
             "present in more than 50% of U.S. households, uses Python for the bases for their recommendation " +
-            "algorithms and analytics engine.",
+            "algorithms and analytics engine. ",
+        resourse:"To find out more about what Python can do check out these resources:",
+        link: 'https://www.youtube.com/watch?v=Y8Tko2YC5hA',
+        video:"https://hackernoon.com/what-is-python-used-for-an-exclusive-answer-1z2xo3xtf",
         muscles: 'languages',
         image: "/Users/milanarezina/code-realm/src/img/Netflix_Logo_PMS.png"
     },
