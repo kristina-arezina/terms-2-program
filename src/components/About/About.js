@@ -56,7 +56,12 @@ function About(){
                                 fontFamily:"courier new",
                                 fontWeight: "normal"
                             }}>Get Started Today</h1>
-                            <p className="aboutText"> elementum libero curae in neque ultrices aptent consectetur,
+                            <p style={{
+                                paddingTop:10,
+                                backgroundColor:"white"
+                            }}
+                            >
+                                elementum libero curae in neque ultrices aptent consectetur,
                                 facilisis taciti sollicitudin tempor fames
                                 tempor aliquam neque lacinia habitant, interdum sem libero aenean vitae ipsum vivamus
                                 auctor proin
