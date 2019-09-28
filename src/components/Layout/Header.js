@@ -6,12 +6,12 @@ import Button from '@material-ui/core/Button';
 
 export class Header extends Component {
 
-    continue = e => {
+    homePage = e => {
         e.preventDefault();
         this.props.home();
     }
 
-    back = e => {
+    journeyPage = e => {
         e.preventDefault();
         this.props.journey();
     }
@@ -39,7 +39,7 @@ export class Header extends Component {
                             margin:"5px",
                             height: 48,
                         }}
-                        onClick={this.continue}>
+                        onClick={this.homePage}>
                     Home
                 </Button>
                 <Button color="inherit" variant="text"
@@ -51,8 +51,20 @@ export class Header extends Component {
                             margin:"5px",
                             height: 48,
                         }}
-                        onClick={this.back}>
+                        onClick={this.journeyPage}>
                     Programing Journeys
+                </Button>
+                <Button color="inherit" variant="text"
+                        style={{
+                            color:"#f4f4f4",
+                            backgroundColor: "#00867d",
+                            textTransform: "uppercase",
+                            borderRadius: "1px",
+                            margin:"5px",
+                            height: 48,
+                        }}
+                        onClick={this.journeyPage}>
+                    About
                 </Button>
             </Toolbar>
         </AppBar>
