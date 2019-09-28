@@ -16,6 +16,11 @@ export class Header extends Component {
         this.props.journey();
     }
 
+    aboutPage = e => {
+        e.preventDefault();
+        this.props.about();
+    }
+
     render(){
     const{newPage}=this.props;
 
@@ -63,7 +68,7 @@ export class Header extends Component {
                             margin:"5px",
                             height: 48,
                         }}
-                        onClick={this.journeyPage}>
+                        onClick={this.aboutPage}>
                     About
                 </Button>
             </Toolbar>

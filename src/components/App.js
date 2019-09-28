@@ -4,6 +4,7 @@ import Exercises from "./Exercises"
 import {muscles, exercises, journey} from "../store";
 import Journey from "./Layout/Journey.js"
 import CssBaseline from '@material-ui/core/CssBaseline';
+import About from "./About/About.js";
 
 
 export default class extends Component {
@@ -40,6 +41,14 @@ export default class extends Component {
         const { step } = this.state;
         this.setState({
             step: 2
+        });
+    }
+
+    //Proceed to about page
+    about = () => {
+        const { step } = this.state;
+        this.setState({
+            step: 3
         });
     }
 
@@ -83,6 +92,8 @@ export default class extends Component {
                         <Header
                             home={this.home}
                             journey={this.journey}
+                            about={this.about}
+
                         />
                         <Footer
                             style={{marginTop: 20}}
@@ -106,11 +117,28 @@ export default class extends Component {
                         <Header
                             home={this.home}
                             journey={this.journey}
+                            about={this.about}
+
                         />
                         <Journey
                             muscles={muscles}
-                        onExerciseCreate={this.handleExerciseCreate}
+                            onExerciseCreate={this.handleExerciseCreate}
+                            about={this.about}
+                            home={this.home}
+
                         />
+                    </Fragment>
+
+                )
+            case 3:
+                return (
+                    <Fragment>
+                    <About/>
+                    <Header
+                        home={this.home}
+                        journey={this.journey}
+                        about={this.about}
+                    />
                     </Fragment>
 
                 )
