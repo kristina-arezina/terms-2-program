@@ -7,8 +7,6 @@ import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 import Link from '@material-ui/core/Link';
-import CardMedia from '@material-ui/core/CardMedia';
-import Card from '@material-ui/core/Card';
 
 const styles = {
     Paper: {
@@ -85,12 +83,6 @@ export default ({
                 {description2}
                 {resourse}
                 <br/>
-                <Card >
-                        <CardMedia
-                            image="/Users/milanarezina/code-realm/src/img/Netflix_Logo_PMS.png"
-                            title="Contemplative Reptile"
-                        />
-                </Card>
                     <ul>
                         <li>
                             <Link rel="noopener" variant="body1" href={link} target="_blank">
