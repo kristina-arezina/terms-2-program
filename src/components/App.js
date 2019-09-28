@@ -133,6 +133,7 @@ export default class extends Component {
             case 3:
                 return (
                     <Fragment>
+                        <CssBaseline/>
                     <About/>
                     <Header
                         home={this.home}
