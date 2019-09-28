@@ -42,7 +42,10 @@ export default ({
                     !category || category === group
                     ? <Fragment key={group}>
                             <Typography variant={"h6"}
-                                        style={{textTransform: 'uppercase', color:"#00867d"
+                                        style={{
+                                            textTransform: 'uppercase',
+                                            color:"#00867d",
+                                            fontFamily:"courier new",
                                         }}
                             >
                                 {group}
@@ -75,7 +78,7 @@ export default ({
             <Typography variant="h3">
                 {title}
             </Typography>
-            <Typography variant={"body1"} style={{marginTop:20}}>
+            <Typography variant={"body1"} style={{marginTop:20, fontFamily:"century gothic",}}>
                 {description}
                 <br/>
                 <br/>
