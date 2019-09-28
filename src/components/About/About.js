@@ -13,14 +13,14 @@ function About(){
                     <Grid item sm >
                         <Paper
                             style={{
-                            padding: 20,
-                            textAlign: 'left',
-                            margin:20
+                                padding: 20,
+                                textAlign: 'left',
+                                backgroundColor:"white",
+                                color:"#000000",
+                                margin:20
                             }}
                         >
                             <h1 style={{
-                                backgroundColor:"white",
-                                color:"#000000",
                                 paddingTop: 10,
                                 paddingBottom: 5,
                                 border:1,
@@ -28,7 +28,11 @@ function About(){
                                 fontWeight: "normal"
                             }}
                             >Our Mission</h1>
-                            <p className="aboutText">Lorem ipsum elementum ultricies elementum lobortis torquent
+                            <p style={{
+                                fontFamily:"courier new",
+                            }}
+                            >
+                                Lorem ipsum elementum ultricies elementum lobortis torquent
                                 suscipit ligula,
                                 dolor eros suscipit
                                 himenaeos sem ut pulvinar, vulputate at pharetra sem nisi faucibus vivamus luctus
@@ -44,12 +48,13 @@ function About(){
                         <Paper style={{
                             padding: 20,
                             textAlign: 'left',
+                            backgroundColor:"white",
+                            color:"#000000",
                             margin:20
                         }}
                         >
                             <h1 style={{
-                                backgroundColor:"white",
-                                color:"#000000",
+
                                 paddingTop: 10,
                                 paddingBottom: 5,
                                 border:1,
@@ -57,8 +62,8 @@ function About(){
                                 fontWeight: "normal"
                             }}>Get Started Today</h1>
                             <p style={{
-                                paddingTop:10,
-                                backgroundColor:"white"
+                                fontFamily:"courier new",
+
                             }}
                             >
                                 elementum libero curae in neque ultrices aptent consectetur,

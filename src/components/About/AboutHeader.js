@@ -4,9 +4,7 @@ function AboutHeader(){
     return (
 
         <header >
-            <div style={{margin:0}}>
                 <h1 style={headerStyle}>About Us</h1>
-            </div>
         </header>
     )
 }
@@ -21,7 +19,7 @@ const headerStyle = {
     fontSize:"60pt",
     fontFamily:"century gothic",
     fontWeight: "normal",
-    margin:0,
+    margin:"0px",
     display:"Block",
 };
 
