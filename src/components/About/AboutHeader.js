@@ -4,7 +4,7 @@ function AboutHeader(){
     return (
 
         <header >
-            <div className="aboutHeader">
+            <div style={{margin:0}}>
                 <h1 style={headerStyle}>About Us</h1>
             </div>
         </header>

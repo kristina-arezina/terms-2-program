@@ -3,9 +3,7 @@ import AboutHeader from "./AboutHeader.js";
 import Grid from "@material-ui/core/Grid";
 import Paper from '@material-ui/core/Paper';
 
-
 function About(){
-
     return(
         <div >
             <AboutHeader/>
@@ -13,13 +11,23 @@ function About(){
             <div className="parent">
                 <Grid container spacing={1}>
                     <Grid item sm >
-                        <Paper style={{
+                        <Paper
+                            style={{
                             padding: 20,
                             textAlign: 'left',
                             margin:20
-                        }}
+                            }}
                         >
-                            <h1 className="subtitle">Our Mission</h1>
+                            <h1 style={{
+                                backgroundColor:"white",
+                                color:"#000000",
+                                paddingTop: 10,
+                                paddingBottom: 5,
+                                border:1,
+                                fontFamily:"courier new",
+                                fontWeight: "normal"
+                            }}
+                            >Our Mission</h1>
                             <p className="aboutText">Lorem ipsum elementum ultricies elementum lobortis torquent
                                 suscipit ligula,
                                 dolor eros suscipit
@@ -39,7 +47,15 @@ function About(){
                             margin:20
                         }}
                         >
-                            <h1 className="subtitle">Get Started Today</h1>
+                            <h1 style={{
+                                backgroundColor:"white",
+                                color:"#000000",
+                                paddingTop: 10,
+                                paddingBottom: 5,
+                                border:1,
+                                fontFamily:"courier new",
+                                fontWeight: "normal"
+                            }}>Get Started Today</h1>
                             <p className="aboutText"> elementum libero curae in neque ultrices aptent consectetur,
                                 facilisis taciti sollicitudin tempor fames
                                 tempor aliquam neque lacinia habitant, interdum sem libero aenean vitae ipsum vivamus
