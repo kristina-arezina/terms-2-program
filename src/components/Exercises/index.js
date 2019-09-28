@@ -57,7 +57,8 @@ export default ({
                                         button
                                         onClick={() => onSelect(id)}
                                     >
-                                        <ListItemText primary={title}/>
+                                        <ListItemText
+                                         primary={title}/>
                                         <ListItemSecondaryAction>
                                             <IconButton onClick={() => onDelete(id)}>
                                                 <DeleteIcon/>
@@ -69,7 +70,6 @@ export default ({
                         </Fragment>
                         : null
                 )}
-
             </Paper>
 
         </Grid>
