@@ -10,7 +10,8 @@ return (
             padding:20,
             paddingTop:40,
             textAlign:"center",
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            backgroundColor:"#ffd0b0"
         }}>
         Programing Journeys
         </Typography>
