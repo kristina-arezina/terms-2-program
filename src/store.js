@@ -1,5 +1,3 @@
-import react from 'react';
-
 //Muscle groups
 export const muscles = [
     "web basics", "software development terms", "languages", "frameworks", "libraries"
