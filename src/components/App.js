@@ -1,10 +1,11 @@
 import React, {Component, Fragment} from 'react';
 import {Header, Footer} from "./Layout/HeaderFooter"
 import Exercises from "./Exercises"
-import {muscles, exercises, journey} from "../store";
+import {muscles, exercises} from "../store";
 import Journey from "./Layout/Journey.js"
 import CssBaseline from '@material-ui/core/CssBaseline';
 import About from "./About/About.js";
+import {journeyCB} from "../journeyStore";
 
 
 export default class extends Component {
@@ -12,6 +13,7 @@ export default class extends Component {
         step:1,
         exercises,
         exercise: {},
+        journeyCB,
     }
 
     getExercisesByMuscles(){
@@ -93,7 +95,6 @@ export default class extends Component {
                             home={this.home}
                             journey={this.journey}
                             about={this.about}
-
                         />
                         <Footer
                             style={{marginTop: 20}}
@@ -118,14 +119,10 @@ export default class extends Component {
                             home={this.home}
                             journey={this.journey}
                             about={this.about}
-
                         />
                         <Journey
                             muscles={muscles}
-                            onExerciseCreate={this.handleExerciseCreate}
-                            about={this.about}
-                            home={this.home}
-
+                            journeyCB={journeyCB}
                         />
                     </Fragment>
 
