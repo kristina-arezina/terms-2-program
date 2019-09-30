@@ -110,6 +110,7 @@ export default class extends Component {
                     </Fragment>
 
                 )
+            //Journey Page
             case 2:
                 return (
                     <Fragment>
@@ -130,6 +131,7 @@ export default class extends Component {
                     </Fragment>
 
                 )
+            //About Page
             case 3:
                 return (
                     <Fragment>
