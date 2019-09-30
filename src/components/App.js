@@ -88,6 +88,7 @@ export default class extends Component {
             {catergory, exercise, step} = this.state
 
         switch (step) {
+            //Home page
             case 1:
                 return ( <Fragment >
                         <CssBaseline/>
@@ -109,8 +110,8 @@ export default class extends Component {
                             onDelete={this.handleExerciseDelete}
                         />
                     </Fragment>
-
                 )
+            //
             case 2:
                 return (
                     <Fragment>
