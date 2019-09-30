@@ -1,5 +1,3 @@
-import react from 'react';
-
 //Muscle groups
 export const muscles = [
     "web basics", "software development terms", "languages", "frameworks", "libraries"
@@ -132,47 +130,3 @@ export const exercises = [
 
     },
     ]
-export const journey = [
-    {
-        id: 'repositories',
-        name: 'Repositories',
-        description: 'Legs exercise...',
-        muscles: 'journey'
-    },
-    {
-        id: 'repositories',
-        name: 'Repositories',
-        description: 'Legs exercise...',
-        muscles: 'journey'
-    },
-    {
-        id: 'repositories',
-        name: 'Repositories',
-        description: 'Legs exercise...',
-        muscles: 'journey'
-    },
-    {
-        id: 'repositories',
-        name: 'Repositories',
-        description: 'Legs exercise...',
-        muscles: 'journey'
-    },
-    {
-        id: 'repositories',
-        name: 'Repositories',
-        description: 'Legs exercise...',
-        muscles: 'journey'
-    },
-    {
-        id: 'repositories',
-        name: 'Repositories',
-        description: 'Legs exercise...',
-        muscles: 'journey'
-    },
-    {
-        id: 'repositories',
-        name: 'Repositories',
-        description: 'Legs exercise...',
-        muscles: 'journey'
-    },
-]
