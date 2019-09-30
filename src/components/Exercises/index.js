@@ -24,7 +24,7 @@ export default ({
      exercise: {
         id,
         title = "Welcome!",
-        description ="Please select an exerise from the list on the left.",
+        description ="Please select a term from the list on the left inorder to learn more about it.",
          link,
          video,
          resourse,
