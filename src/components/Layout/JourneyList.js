@@ -10,6 +10,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Link from '@material-ui/core/Link';
 
+
 export default ({journeys}) =>
     <Paper>
         {journeys.map(([group,journeys])  =>
@@ -29,7 +30,7 @@ export default ({journeys}) =>
 
                     <List >{journeys.map(({ title, description, link }) =>
                         <ListItem alignItems="flex-start"  >
-
+                            <Paper>
 
                             <ListItemText
                                 style={{backgroundColor: "#f4f4f4", paddingTop: 20, paddingBottom: 20, paddingLeft: 20, paddingRight: 20, marginLeft:40, marginRight:40, fontFamily:"century gothic"}}
@@ -49,7 +50,7 @@ export default ({journeys}) =>
                                     </React.Fragment>
 
                                 }
-                            />
+                            /></Paper>
 
 
                         </ListItem>
