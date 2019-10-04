@@ -37,7 +37,7 @@ export class Header extends Component {
         <AppBar color="#f4f4f4">
             <Toolbar>
                 <IconButton edge="start" color="inherit" aria-label="menu">
-                    <MenuIcon onClick={toggleDrawer('left', true)}>Open Left/>
+                    <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" style={{flexGrow: 1}}>
                     Learn2Program
