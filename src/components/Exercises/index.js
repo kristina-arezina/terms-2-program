@@ -56,7 +56,10 @@ export default ({
                                         onClick={() => onSelect(id)}
                                     >
                                         <ListItemText
-                                         primary={title}/>
+                                         primary={title}
+                                         style={{
+                                             fontFamily:"century gothic",
+                                         }}/>
                                         <ListItemSecondaryAction>
                                             <IconButton onClick={() => onDelete(id)}>
                                                 <DeleteIcon/>
@@ -77,7 +80,7 @@ export default ({
 
 
 
-            <Typography variant="h3">
+            <Typography variant="h3"style={{ fontFamily:"century gothic",}}>
                 {title}
             </Typography>
             <Typography variant={"body1"} style={{marginTop:20, fontFamily:"century gothic",}}>
