@@ -19,7 +19,7 @@ export default ({journeys}) =>
                 >
                     <Typography
                         variant="h6"
-                        style={{textTransform: "uppercase"}}
+                        style={{textTransform: "uppercase", fontFamily:"courier new"}}
                     >
                         {group}
                     </Typography>
@@ -32,7 +32,7 @@ export default ({journeys}) =>
 
 
                             <ListItemText
-                                style={{backgroundColor: "#f4f4f4", paddingTop: 20, paddingBottom: 20, paddingLeft: 20, paddingRight: 20, marginLeft:40, marginRight:40}}
+                                style={{backgroundColor: "#f4f4f4", paddingTop: 20, paddingBottom: 20, paddingLeft: 20, paddingRight: 20, marginLeft:40, marginRight:40, fontFamily:"century gothic"}}
                                 primary={title}
                                 secondary={
                                     <React.Fragment>
