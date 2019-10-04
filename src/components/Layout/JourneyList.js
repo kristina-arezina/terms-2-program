@@ -1,82 +1,65 @@
-import React from 'react';
+import React, {Fragment} from "react";
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import { FixedSizeList } from 'react-window';
+import Link from '@material-ui/core/Link';
 
-
-
-
-export default function JourneyList() {
-
-
-    function Row(props) {
-        const { index, style } = props;
-
-        return (
-            <ListItem button style={style} key={index}>
-                <ListItemText primary={`Item ${index + 1}`} />
-            </ListItem>
-        );
-    }
-
-        return (
-            <div className="App">
-                <ExpansionPanel>
-                    <ExpansionPanelSummary
-                        expandIcon={<ExpandMoreIcon/>}
+export default ({journeys}) =>
+    <Paper>
+        {journeys.map(([group,journeys])  =>
+            <ExpansionPanel>
+                <ExpansionPanelSummary
+                    expandIcon={<ExpandMoreIcon/>}
+                >
+                    <Typography
+                        variant="h6"
+                        style={{textTransform: "uppercase"}}
                     >
-                        <Typography>Complete Beginner</Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={10}>
-                            {Row}
-                        </FixedSizeList>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
-                <ExpansionPanel>
-                    <ExpansionPanelSummary
-                        expandIcon={<ExpandMoreIcon/>}
-                    >
-                        <Typography>React</Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={10}>
-                            {Row}
-                        </FixedSizeList>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
-                <ExpansionPanel>
-                    <ExpansionPanelSummary
-                        expandIcon={<ExpandMoreIcon/>}
-                    >
-                        <Typography>C++</Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={10}>
-                            {Row}
-                        </FixedSizeList>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
-                <ExpansionPanel>
-                    <ExpansionPanelSummary
-                        expandIcon={<ExpandMoreIcon/>}
-                    >
-                        <Typography>JavaScript</Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                        <FixedSizeList height={400} width={2000} itemSize={46} itemCount={200}>
-                            {Row}
-                        </FixedSizeList>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
-            </div>
-        );
+                        {group}
+                    </Typography>
+                </ExpansionPanelSummary>
 
-    }
+                <ExpansionPanelDetails>
+
+                    <List >{journeys.map(({ title, description, link }) =>
+                        <ListItem alignItems="flex-start"  >
 
 
+                            <ListItemText
+                                style={{backgroundColor: "#f4f4f4", paddingTop: 20, paddingBottom: 20, paddingLeft: 20, paddingRight: 20, marginLeft:40, marginRight:40}}
+                                primary={title}
+                                secondary={
+                                    <React.Fragment>
+                                        <Typography
+                                            variant="body2"
+                                        >
+                                            {description}
+                                            <br/>
+                                            <br/>
+                                            <Link rel="noopener" variant="body1" href={link} target="_blank">
+                                                {link}
+                                            </Link>
+                                        </Typography>
+                                    </React.Fragment>
+
+                                }
+                            />
+
+
+                        </ListItem>
+
+
+                    )}
+
+                    </List>
+                </ExpansionPanelDetails>
+
+            </ExpansionPanel>
+        )}
+    </Paper>

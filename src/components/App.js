@@ -5,7 +5,6 @@ import {muscles, exercises} from "../store";
 import Journey from "./Layout/Journey.js"
 import CssBaseline from '@material-ui/core/CssBaseline';
 import About from "./About/About.js";
-import {journeyCB} from "../journeyStore";
 
 
 export default class extends Component {
@@ -13,7 +12,6 @@ export default class extends Component {
         step:1,
         exercises,
         exercise: {},
-        journeyCB,
     }
 
     getExercisesByMuscles(){
@@ -123,8 +121,6 @@ export default class extends Component {
                             about={this.about}
                         />
                         <Journey
-                            muscles={muscles}
-                            journeyCB={journeyCB}
                         />
                     </Fragment>
 
