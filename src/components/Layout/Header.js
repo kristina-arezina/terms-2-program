@@ -35,7 +35,10 @@ export class Header extends Component {
         }}>
         <AppBar color="#f4f4f4">
             <Toolbar>
-                <TemporaryDrawer/>
+                <TemporaryDrawer
+
+
+                />
                 <Typography variant="h6" style={{flexGrow: 1}}>
                     Learn2Program
                 </Typography>
