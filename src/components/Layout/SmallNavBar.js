@@ -35,6 +35,8 @@ export default function TemporaryDrawer() {
         setState({ ...state, [side]: open });
     };
 
+
+
     const sideList = side => (
         <div
             className={classes.list}
@@ -43,7 +45,8 @@ export default function TemporaryDrawer() {
             onKeyDown={toggleDrawer(side, false)}
         >
             <List>
-                <ListItem button>
+                <ListItem button
+                >
                     <ListItemIcon> <MailIcon /></ListItemIcon>
                     <ListItemText primary={"Home"} />
                 </ListItem>
