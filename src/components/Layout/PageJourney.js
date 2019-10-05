@@ -11,7 +11,7 @@ return (
             paddingBottom:80,
             textAlign:"center",
             textTransform: 'uppercase',
-            backgroundColor:"#fef9ce",
+            backgroundColor:"#f4f4f4",
             fontFamily:"courier new",
         }}>
         Programing Journeys
