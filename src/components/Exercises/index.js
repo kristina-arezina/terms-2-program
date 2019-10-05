@@ -14,8 +14,10 @@ const styles = {
         margin:10,
         height:500,
         overflowY:"auto",
-    }
-}
+        overflowWrap:" break-word",
+    wordWrap: "break-word",
+    hyphens: "auto"
+}}
 
 export default ({
      exercises,
@@ -89,7 +91,7 @@ export default ({
                 <br/>
                     <ul>
                         <li>
-                            <Link rel="noopener" variant="body1" href={link} target="_blank">
+                           <Link rel="noopener" variant="body1" href={link} target="_blank">
                             {link}
                             </Link>
                         </li>
