@@ -30,7 +30,7 @@ export default ({journeys}) =>
 
                     <List >{journeys.map(({ title, description, link }) =>
                         <ListItem alignItems="flex-start"  >
-                            <Paper style={{backgroundColor:"#f4f4f4", padding:10}}
+                            <Paper style={{backgroundColor:"#e0f2f1", padding:10}}
                             >
 
                             <ListItemText
