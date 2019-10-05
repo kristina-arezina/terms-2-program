@@ -44,7 +44,15 @@ export default function TemporaryDrawer() {
         >
             <List>
                 <ListItem button>
-                    <ListItemIcon> <MailIcon />}</ListItemIcon>
+                    <ListItemIcon> <MailIcon /></ListItemIcon>
+                    <ListItemText primary={"Home"} />
+                </ListItem>
+                <ListItem button>
+                    <ListItemIcon> <MailIcon /></ListItemIcon>
+                    <ListItemText primary={"Home"} />
+                </ListItem>
+                <ListItem button>
+                    <ListItemIcon> <MailIcon /></ListItemIcon>
                     <ListItemText primary={"Home"} />
                 </ListItem>
             </List>
