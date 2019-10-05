@@ -60,22 +60,7 @@ export default function TemporaryDrawer() {
         </div>
     );
 
-    const fullList = side => (
-        <div
-            className={classes.fullList}
-            role="presentation"
-            onClick={toggleDrawer(side, false)}
-            onKeyDown={toggleDrawer(side, false)}
-        >
-            <List>
-                    <ListItem button>
-                        <ListItemIcon> <MailIcon />}</ListItemIcon>
-                        <ListItemText primary={"Home"} />
-                    </ListItem>
-            </List>
-            <Divider />
-        </div>
-    );
+
 
     return (
         <div>
