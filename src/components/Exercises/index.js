@@ -40,46 +40,6 @@ export default ({
         {matches =>
             matches ? (<Grid container>
                 <Grid item xs={12} >
-                    <Paper style={styles.Paper} >
-                        {exercises.map(([group, exercises]) =>
-                            !category || category === group
-                                ? <Fragment key={group}>
-                                    <Typography variant={"h6"}
-                                                style={{
-                                                    textTransform: 'uppercase',
-                                                    color:"#00867d",
-                                                    fontFamily:"courier new",
-                                                }}
-                                    >
-                                        {group}
-                                    </Typography>
-                                    <List component="ul" >
-                                        {exercises.map(({id, title}) =>
-                                            <ListItem
-                                                key={id}
-                                                button
-                                                onClick={() => onSelect(id)}
-                                            >
-                                                <ListItemText
-                                                    primary={title}
-                                                    style={{
-                                                        fontFamily:"century gothic",
-                                                    }}/>
-                                                <ListItemSecondaryAction>
-                                                    <IconButton onClick={() => onDelete(id)}>
-                                                        <DeleteIcon/>
-                                                    </IconButton>
-                                                </ListItemSecondaryAction>
-                                            </ListItem>
-                                        )}
-                                    </List>
-                                </Fragment>
-                                : null
-                        )}
-                    </Paper>
-
-                </Grid>
-                <Grid item xs={12} >
                     <Paper style={styles.Paper}>
 
                         <Typography variant="h3"style={{ fontFamily:"century gothic",}}>
@@ -109,9 +69,7 @@ export default ({
                     </Paper>
 
                 </Grid>
-            </Grid>): (
-                <Grid container>
-                <Grid item sm={6}>
+                <Grid item xs={12} >
                     <Paper style={styles.Paper} >
                         {exercises.map(([group, exercises]) =>
                             !category || category === group
@@ -151,6 +109,48 @@ export default ({
                     </Paper>
 
                 </Grid>
+
+            </Grid>): (
+                <Grid container>
+                    <Grid item sm={6}>
+                        <Paper style={styles.Paper} >
+                            {exercises.map(([group, exercises]) =>
+                                !category || category === group
+                                    ? <Fragment key={group}>
+                                        <Typography variant={"h6"}
+                                                    style={{
+                                                        textTransform: 'uppercase',
+                                                        color:"#00867d",
+                                                        fontFamily:"courier new",
+                                                    }}
+                                        >
+                                            {group}
+                                        </Typography>
+                                        <List component="ul" >
+                                            {exercises.map(({id, title}) =>
+                                                <ListItem
+                                                    key={id}
+                                                    button
+                                                    onClick={() => onSelect(id)}
+                                                >
+                                                    <ListItemText
+                                                        primary={title}
+                                                        style={{
+                                                            fontFamily:"century gothic",
+                                                        }}/>
+                                                    <ListItemSecondaryAction>
+                                                        <IconButton onClick={() => onDelete(id)}>
+                                                            <DeleteIcon/>
+                                                        </IconButton>
+                                                    </ListItemSecondaryAction>
+                                                </ListItem>
+                                            )}
+                                        </List>
+                                    </Fragment>
+                                    : null
+                            )}
+                        </Paper>
+                    </Grid>
                 <Grid item sm={6}>
                     <Paper style={styles.Paper}>
 
