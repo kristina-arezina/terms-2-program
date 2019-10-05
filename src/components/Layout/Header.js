@@ -30,65 +30,81 @@ export class Header extends Component {
     const{newPage}=this.props;
 
     return(
-        <div style={{
-            borderRadius: "1px",
-            padding: '0 30px',
-            margin:"5px",
-        }}>
-        <AppBar color="#f4f4f4">
-            <Typography variant="h6" style={{flexGrow: 1}}>
-            Learn2Program
-        </Typography>
-            <Toolbar>
+
                 <MediaQuery query="(max-width: 599px)">
                 {matches =>
                     matches ? (
-                        <div>
-                        <Button color="inherit" variant="text"
-                                style={{
-                                    color:"#f4f4f4",
-                                    backgroundColor: "#00867d",
-                                    textTransform: "uppercase",
-                                    borderRadius: "1px",
-                                    margin:"5px",
-                                    height: 48,
-                                }}
-                                onClick={this.homePage}>
-                            Home
-                        </Button>
-                        <Button color="inherit" variant="text"
-                    style={{
-                    color:"#f4f4f4",
-                    backgroundColor: "#00867d",
-                    textTransform: "uppercase",
-                    borderRadius: "1px",
-                    margin:"5px",
-                    height: 48,
-                }}
-                    onClick={this.journeyPage}>
-                    Programing Journeys
-                    </Button>
-                    <Button color="inherit" variant="text"
-                    style={{
-                    color:"#f4f4f4",
-                    backgroundColor: "#00867d",
-                    textTransform: "uppercase",
-                    borderRadius: "1px",
-                    margin:"5px",
-                    height: 48,
-                }}
-                    onClick={this.aboutPage}>
-                    About
-                    </Button></div>
+                        <div style={{
+                            borderRadius: "1px",
+                            padding: '0 30px',
+                            margin:"5px",
+                        }}>
+                            <AppBar color="#f4f4f4">
+                                <Typography variant="h6" style={{flexGrow: 1}}>
+                                    Learn2Program
+                                </Typography>
+                                <Toolbar>
+                        <TemporaryDrawer/>
+                                </Toolbar>
+                            </AppBar>
+                        </div>
+
                     ) : (
-                    <TemporaryDrawer/>
+                        <div style={{
+                            borderRadius: "1px",
+                            padding: '0 30px',
+                            margin:"5px",
+                        }}>
+                            <AppBar color="#f4f4f4">
+                                <Typography variant="h6" style={{flexGrow: 1}}>
+                                    Learn2Program
+                                </Typography>
+                                <Toolbar>
+                                    <Button color="inherit" variant="text"
+                                            style={{
+                                                color:"#f4f4f4",
+                                                backgroundColor: "#00867d",
+                                                textTransform: "uppercase",
+                                                borderRadius: "1px",
+                                                margin:"5px",
+                                                height: 48,
+                                            }}
+                                            onClick={this.homePage}>
+                                        Home
+                                    </Button>
+                                    <Button color="inherit" variant="text"
+                                            style={{
+                                                color:"#f4f4f4",
+                                                backgroundColor: "#00867d",
+                                                textTransform: "uppercase",
+                                                borderRadius: "1px",
+                                                margin:"5px",
+                                                height: 48,
+                                            }}
+                                            onClick={this.journeyPage}>
+                                        Programing Journeys
+                                    </Button>
+                                    <Button color="inherit" variant="text"
+                                            style={{
+                                                color:"#f4f4f4",
+                                                backgroundColor: "#00867d",
+                                                textTransform: "uppercase",
+                                                borderRadius: "1px",
+                                                margin:"5px",
+                                                height: 48,
+                                            }}
+                                            onClick={this.aboutPage}>
+                                        About
+                                    </Button>
+                                </Toolbar>
+                            </AppBar>
+                        </div>
+
                     )
                 }
             </MediaQuery>
 
-            </Toolbar>
-        </AppBar>
-        </div>
+
 )
     }
     }
