@@ -2,15 +2,17 @@ import React from 'react';
 import AboutHeader from "./AboutHeader.js";
 import Grid from "@material-ui/core/Grid";
 import Paper from '@material-ui/core/Paper';
+import MediaQuery from 'react-responsive';
+
 
 function About(){
     return(
         <div >
             <AboutHeader/>
-
+            <MediaQuery query="(max-width: 763px)">
             <div className="parent">
-                <Grid container spacing={1}>
-                    <Grid item sm >
+                <Grid container spacing={1}  >
+                    <Grid  item xs={12}>
                         <Paper
                             style={{
                                 padding: 20,
@@ -43,7 +45,7 @@ function About(){
                     </Grid>
 
 
-                    <Grid item sm >
+                    <Grid item xs={12}>
                         <Paper style={{
                             padding: 20,
                             textAlign: 'left',
@@ -77,6 +79,7 @@ function About(){
                     </Grid>
                 </Grid>
             </div>
+                        </MediaQuery>
         </div>
     )
 }
