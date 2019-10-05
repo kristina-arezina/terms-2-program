@@ -49,11 +49,11 @@ export default function TemporaryDrawer() {
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon> <MailIcon /></ListItemIcon>
-                    <ListItemText primary={"Home"} />
+                    <ListItemText primary={"Programing Journeys"} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon> <MailIcon /></ListItemIcon>
-                    <ListItemText primary={"Home"} />
+                    <ListItemText primary={"About"} />
                 </ListItem>
             </List>
             <Divider />
