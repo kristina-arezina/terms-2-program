@@ -30,36 +30,32 @@ export class Header extends Component {
     const{newPage}=this.props;
 
     return(
-
+        <div style={{
+            borderRadius: "1px",
+            padding: '0 30px',
+            margin:"5px",
+        }}>
                 <MediaQuery query="(max-width: 599px)">
                 {matches =>
                     matches ? (
-                        <div style={{
-                            borderRadius: "1px",
-                            padding: '0 30px',
-                            margin:"5px",
-                        }}>
+
                             <AppBar color="#f4f4f4">
-                                <Typography variant="h6" style={{flexGrow: 1}}>
+
+                                <Toolbar><Typography variant="h6" style={{flexGrow: 1}}>
                                     Learn2Program
                                 </Typography>
-                                <Toolbar>
                         <TemporaryDrawer/>
                                 </Toolbar>
                             </AppBar>
-                        </div>
+
 
                     ) : (
-                        <div style={{
-                            borderRadius: "1px",
-                            padding: '0 30px',
-                            margin:"5px",
-                        }}>
                             <AppBar color="#f4f4f4">
-                                <Typography variant="h6" style={{flexGrow: 1}}>
+
+                                <Toolbar>
+                                    <Typography variant="h6" style={{flexGrow: 1}}>
                                     Learn2Program
                                 </Typography>
-                                <Toolbar>
                                     <Button color="inherit" variant="text"
                                             style={{
                                                 color:"#f4f4f4",
@@ -98,14 +94,13 @@ export class Header extends Component {
                                     </Button>
                                 </Toolbar>
                             </AppBar>
-                        </div>
 
                     )
                 }
             </MediaQuery>
-
-
+                </div>
 )
+
     }
     }
 
