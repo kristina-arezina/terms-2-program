@@ -77,9 +77,6 @@ export default ({
     <Grid item xs={12} sm={6}>
         <Paper style={styles.Paper}>
 
-
-
-
             <Typography variant="h3"style={{ fontFamily:"century gothic",}}>
                 {title}
             </Typography>
