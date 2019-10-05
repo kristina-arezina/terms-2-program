@@ -6,9 +6,6 @@ import Button from '@material-ui/core/Button';
 import TemporaryDrawer from "./SmallNavBar"
 import MediaQuery from 'react-responsive';
 
-
-
-
 export class Header extends Component {
 
     homePage = e => {
