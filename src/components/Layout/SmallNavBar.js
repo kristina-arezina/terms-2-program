@@ -12,6 +12,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import HomeIcon from '@material-ui/icons/Home';
 import SubjectIcon from '@material-ui/icons/Subject';
 import HelpIcon from '@material-ui/icons/Help';
+import Header from "./Header"
 
 
 const useStyles = makeStyles({
@@ -28,6 +29,7 @@ export default function TemporaryDrawer() {
     const [state, setState] = React.useState({
         left: false,
     });
+
 
     const toggleDrawer = (side, open) => event => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -52,7 +54,7 @@ export default function TemporaryDrawer() {
                     <ListItemText primary={"Home"} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemIcon> <SubjectIcon /></ListItemIcon>
+                    <ListItemIcon> <SubjectIcon/></ListItemIcon>
                     <ListItemText primary={"Programing Journeys"} />
                 </ListItem>
                 <ListItem button>
