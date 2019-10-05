@@ -12,7 +12,6 @@ import MailIcon from '@material-ui/icons/Mail';
 import HomeIcon from '@material-ui/icons/Home';
 import SubjectIcon from '@material-ui/icons/Subject';
 import HelpIcon from '@material-ui/icons/Help';
-import Header from "./Header"
 
 
 const useStyles = makeStyles({
