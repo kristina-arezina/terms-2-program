@@ -25,20 +25,6 @@ const useStyles = makeStyles({
 });
 
 export default function TemporaryDrawer() {
-    const homePage = e => {
-        e.preventDefault();
-        this.props.home();
-    }
-
-    const journeyPage = e => {
-        e.preventDefault();
-        this.props.journey();
-    }
-
-    const aboutPage = e => {
-        e.preventDefault();
-        this.props.about();
-    }
 
     const classes = useStyles();
     const [state, setState] = React.useState({
@@ -65,15 +51,15 @@ export default function TemporaryDrawer() {
             <List>
                 <ListItem button
                 >
-                    <ListItemIcon> <HomeIcon onClick={this.homePage}/></ListItemIcon>
+                    <ListItemIcon> <HomeIcon /></ListItemIcon>
                     <ListItemText primary={"Home"} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemIcon> <SubjectIcon onClick={this.journeyPage}/></ListItemIcon>
+                    <ListItemIcon> <SubjectIcon /></ListItemIcon>
                     <ListItemText primary={"Programing Journeys"} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemIcon> <HelpIcon onClick={this.aboutPage}/></ListItemIcon>
+                    <ListItemIcon> <HelpIcon /></ListItemIcon>
                     <ListItemText primary={"About"} />
                 </ListItem>
             </List>
