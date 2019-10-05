@@ -10,6 +10,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MailIcon from '@material-ui/icons/Mail';
 import HomeIcon from '@material-ui/icons/Home';
+import SubjectIcon from '@material-ui/icons/Subject';
+import HelpIcon from '@material-ui/icons/Help';
 
 
 const useStyles = makeStyles({
@@ -50,11 +52,11 @@ export default function TemporaryDrawer() {
                     <ListItemText primary={"Home"} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemIcon> <MailIcon /></ListItemIcon>
+                    <ListItemIcon> <SubjectIcon /></ListItemIcon>
                     <ListItemText primary={"Programing Journeys"} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemIcon> <MailIcon /></ListItemIcon>
+                    <ListItemIcon> <HelpIcon /></ListItemIcon>
                     <ListItemText primary={"About"} />
                 </ListItem>
             </List>
