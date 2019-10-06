@@ -10,15 +10,24 @@ import Link from '@material-ui/core/Link';
 import MediaQuery from 'react-responsive';
 
 const styles = {
-    Paper: {
+    Paper1: {
         padding:20,
         margin:10,
-        height:500,
+        height:"auto",
         overflowY:"auto",
         overflowWrap:" break-word",
     wordWrap: "break-word",
     hyphens: "auto"
-}}
+},
+    Paper2: {
+        padding:20,
+        margin:10,
+        maxHeight:500,
+        overflowY:"auto",
+        overflowWrap:" break-word",
+        wordWrap: "break-word",
+        hyphens: "auto"
+    }}
 
 export default ({
      exercises,
@@ -40,7 +49,7 @@ export default ({
         {matches =>
             matches ? (<Grid container>
                 <Grid item xs={12} >
-                    <Paper style={styles.Paper}>
+                    <Paper style={styles.Paper1}>
 
                         <Typography variant="h3"style={{ fontFamily:"century gothic",}}>
                             {title}
@@ -70,7 +79,7 @@ export default ({
 
                 </Grid>
                 <Grid item xs={12} >
-                    <Paper style={styles.Paper} >
+                    <Paper style={styles.Paper2} >
                         {exercises.map(([group, exercises]) =>
                             !category || category === group
                                 ? <Fragment key={group}>
@@ -113,7 +122,7 @@ export default ({
             </Grid>): (
                 <Grid container>
                     <Grid item sm={6}>
-                        <Paper style={styles.Paper} >
+                        <Paper style={styles.Paper2} >
                             {exercises.map(([group, exercises]) =>
                                 !category || category === group
                                     ? <Fragment key={group}>
@@ -152,7 +161,7 @@ export default ({
                         </Paper>
                     </Grid>
                 <Grid item sm={6}>
-                    <Paper style={styles.Paper}>
+                    <Paper style={styles.Paper1} >
 
                         <Typography variant="h3"style={{ fontFamily:"century gothic",}}>
                             {title}
