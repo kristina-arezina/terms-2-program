@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react';
 import {Header, Footer} from "./Layout/HeaderFooter"
 import Exercises from "./Exercises"
 import {muscles, exercises} from "../store";
-import Journey from "./Layout/Journey.js"
+import Journey from "./Journey/Journey.js"
 import CssBaseline from '@material-ui/core/CssBaseline';
 import About from "./About/About.js";
 
