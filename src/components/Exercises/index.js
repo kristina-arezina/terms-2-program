@@ -135,7 +135,7 @@ export default ({
                                                     <ListItemText
                                                         primary={title}
                                                         style={{
-                                                            fontFamily:"century gothic",
+                                                            fontFamily:"century gothic"
                                                         }}/>
                                                 </ListItem>
                                             )}
@@ -158,18 +158,18 @@ export default ({
                             {description2}
                             {resourse}
                             <br/>
-                            <ul>
-                                <li>
-                                    <Link rel="noopener" variant="body1" href={link} target="_blank">
-                                        {link}
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link rel="noopener" variant="body1" href={video} target="_blank">
-                                        {video}
-                                    </Link>
-                                </li>
-                            </ul>
+                                <ul>
+                                    <li>
+                                        <Link rel="noopener" variant="body1" href={link} target="_blank">
+                                            {link}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link rel="noopener" variant="body1" href={video} target="_blank">
+                                            {video}
+                                        </Link>
+                                    </li>
+                                </ul>
                         </Typography>
 
                     </Paper>
