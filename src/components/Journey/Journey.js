@@ -3,6 +3,8 @@ import PageJourney from "./PageJourney";
 import JourneyList from "./JourneyList";
 import {muscles} from "../../store";
 import {level, link, journeys} from "../../journeyStore";
+import {Header} from "../Layout/HeaderFooter.js"
+
 
 export class Journey extends Component {
 state={
@@ -28,6 +30,7 @@ state={
 
     return (
         <div>
+            <Header/>
         <PageJourney/>
             <JourneyList
                 muscles={muscles}
