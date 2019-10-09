@@ -41,7 +41,7 @@ export class Header extends Component {
                                 <Toolbar><Typography variant="h6" style={{flexGrow: 1}}>
                                     Learn2Program
                                 </Typography>
-                        <TemporaryDrawer/>
+                        <TemporaryDrawer home={this.state.homePage}/>
                                 </Toolbar>
                             </AppBar>
 

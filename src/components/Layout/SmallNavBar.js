@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
@@ -23,8 +23,6 @@ const useStyles = makeStyles({
 });
 
 export default function TemporaryDrawer() {
-
-    const classes = useStyles();
     const [state, setState] = React.useState({
         left: false,
     });
@@ -41,7 +39,6 @@ export default function TemporaryDrawer() {
 
     const sideList = side => (
         <div
-            className={classes.list}
             role="presentation"
             onClick={toggleDrawer(side, false)}
             onKeyDown={toggleDrawer(side, false)}
@@ -49,7 +46,7 @@ export default function TemporaryDrawer() {
             <List>
                 <ListItem button
                 >
-                    <ListItemIcon> <HomeIcon /></ListItemIcon>
+                    <ListItemIcon> <HomeIcon onClick={this.props.home}/></ListItemIcon>
                     <ListItemText primary={"Home"} />
                 </ListItem>
                 <ListItem button>
