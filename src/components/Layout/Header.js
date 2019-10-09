@@ -8,21 +8,6 @@ import MediaQuery from 'react-responsive';
 
 export class Header extends Component {
 
-    homePage = e => {
-        e.preventDefault();
-        this.props.home();
-    }
-
-    journeyPage = e => {
-        e.preventDefault();
-        this.props.journey();
-    }
-
-    aboutPage = e => {
-        e.preventDefault();
-        this.props.about();
-    }
-
     render(){
     const{newPage}=this.props;
 
@@ -53,7 +38,7 @@ export class Header extends Component {
                                     <Typography variant="h6" style={{flexGrow: 1}}>
                                     Learn2Program
                                 </Typography>
-                                    <Button color="inherit" variant="text"
+                                    <Button href="/" color="inherit" variant="text"
                                             style={{
                                                 color:"#f4f4f4",
                                                 backgroundColor: "#00867d",
@@ -62,10 +47,10 @@ export class Header extends Component {
                                                 margin:"5px",
                                                 height: 48,
                                             }}
-                                            onClick={this.homePage}>
+                                            >
                                         Home
                                     </Button>
-                                    <Button color="inherit" variant="text"
+                                    <Button href="/journey" color="inherit" variant="text"
                                             style={{
                                                 color:"#f4f4f4",
                                                 backgroundColor: "#00867d",
@@ -74,10 +59,10 @@ export class Header extends Component {
                                                 margin:"5px",
                                                 height: 48,
                                             }}
-                                            onClick={this.journeyPage}>
+                                            >
                                         Programing Journeys
                                     </Button>
-                                    <Button color="inherit" variant="text"
+                                    <Button href="/about" color="inherit" variant="text"
                                             style={{
                                                 color:"#f4f4f4",
                                                 backgroundColor: "#00867d",
@@ -86,7 +71,7 @@ export class Header extends Component {
                                                 margin:"5px",
                                                 height: 48,
                                             }}
-                                            onClick={this.aboutPage}>
+                                            >
                                         About
                                     </Button>
                                 </Toolbar>

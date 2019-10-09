@@ -3,11 +3,14 @@ import AboutHeader from "./AboutHeader.js";
 import Grid from "@material-ui/core/Grid";
 import Paper from '@material-ui/core/Paper';
 import MediaQuery from 'react-responsive';
+import {Header} from "../Layout/HeaderFooter.js"
+
 
 
 function About(){
     return(
-        <div >
+        <div>
+            <Header/>
             <AboutHeader/>
             <MediaQuery query="(max-width: 841px)">
                 {matches =>

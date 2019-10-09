@@ -1,10 +1,10 @@
 import React, {Component, Fragment} from 'react';
-import {Header, Footer} from "./Layout/HeaderFooter"
-import Exercises from "./Exercises"
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import {muscles, exercises} from "../store";
 import Journey from "./Journey/Journey.js"
 import CssBaseline from '@material-ui/core/CssBaseline';
 import About from "./About/About.js";
+import Home from "./Layout/Home.js";
 
 
 export default class extends Component {
@@ -60,65 +60,15 @@ export default class extends Component {
                                 <About />
                             </React.Fragment>
                         )}/>
-                        <Route path="/findProjects" render={props => (
+                        <Route path="/journey" render={props => (
                             <React.Fragment>
-                                <FindProjects />
+                                <Journey />
                             </React.Fragment>
                         )}/>
                     </Fragment>
                 </Router>
 
         );
-                return ( <Fragment >
-                        <CssBaseline/>
-                        <Header
-                            home={this.home}
-                            journey={this.journey}
-                            about={this.about}
-                        />
-                        <Footer
-                            style={{marginTop: 20}}
-                            category={catergory}
-                            muscles={muscles}
-                            onSelect={this.handleCategorySelect}/>
-                        <Exercises
-                            exercise={exercise}
-                            category={catergory}
-                            exercises={exercises}
-                            onSelect={this.handleExerciseSelect}
-                        />
-                    </Fragment>
-                )
 
-// Jorney
-            case 2:
-                return (
-                    <Fragment>
-                        <CssBaseline/>
-                        <Header
-                            home={this.home}
-                            journey={this.journey}
-                            about={this.about}
-                        />
-                        <Journey
-                        />
-                    </Fragment>
-
-                )
-            //About Page
-            case 3:
-                return (
-                    <Fragment>
-                        <CssBaseline/>
-                    <About/>
-                    <Header
-                        home={this.home}
-                        journey={this.journey}
-                        about={this.about}
-                    />
-                    </Fragment>
-
-                )
-        }
     }
 }
