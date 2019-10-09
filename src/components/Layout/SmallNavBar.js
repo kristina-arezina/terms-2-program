@@ -44,18 +44,18 @@ export default function TemporaryDrawer() {
             onKeyDown={toggleDrawer(side, false)}
         >
             <List>
-                <ListItem button
+                <ListItem button href="/"
                 >
-                    <ListItemIcon> <HomeIcon onClick={this.props.home}/></ListItemIcon>
-                    <ListItemText primary={"Home"} />
+                    <ListItemIcon > <HomeIcon/></ListItemIcon>
+                    <ListItemText  primary={"Home"} />
                 </ListItem>
-                <ListItem button>
-                    <ListItemIcon> <SubjectIcon /></ListItemIcon>
-                    <ListItemText primary={"Programing Journeys"} />
+                <ListItem button href="/journey">
+                    <ListItemIcon > <SubjectIcon /></ListItemIcon>
+                    <ListItemText  primary={"Programing Journeys"} />
                 </ListItem>
-                <ListItem button>
+                <ListItem  button href="/about">
                     <ListItemIcon> <HelpIcon /></ListItemIcon>
-                    <ListItemText primary={"About"} />
+                    <ListItemText  primary={"About"} />
                 </ListItem>
             </List>
             <Divider />
