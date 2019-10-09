@@ -9,7 +9,6 @@ import About from "./About/About.js";
 
 export default class extends Component {
     state = {
-        step:1,
         exercises,
         exercise: {},
     }
@@ -28,30 +27,6 @@ export default class extends Component {
         )
     }
 
-    //Proceed to home page
-    home = () => {
-        const { step } = this.state;
-        this.setState({
-            step: 1
-        });
-    }
-
-    //Go to journey page
-    journey = () => {
-        const { step } = this.state;
-        this.setState({
-            step: 2
-        });
-    }
-
-    //Proceed to about page
-    about = () => {
-        const { step } = this.state;
-        this.setState({
-            step: 3
-        });
-    }
-
     handleCategorySelect = catergory => {
         this.setState({
             catergory
@@ -68,11 +43,32 @@ export default class extends Component {
 
     render() {
         const exercises = this.getExercisesByMuscles(),
-            {catergory, exercise, step} = this.state
+            {catergory, exercise} = this.state
 
-        switch (step) {
-            //Home page
-            case 1:
+        return (
+                <Router>
+
+                    <Fragment>
+                        <CssBaseline />
+                        <Route exact path="/" render={props => (
+                            <React.Fragment >
+                                <Home />
+                            </React.Fragment>
+                        )}/>
+                        <Route path="/about" render={props => (
+                            <React.Fragment>
+                                <About />
+                            </React.Fragment>
+                        )}/>
+                        <Route path="/findProjects" render={props => (
+                            <React.Fragment>
+                                <FindProjects />
+                            </React.Fragment>
+                        )}/>
+                    </Fragment>
+                </Router>
+
+        );
                 return ( <Fragment >
                         <CssBaseline/>
                         <Header
