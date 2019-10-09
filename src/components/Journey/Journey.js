@@ -25,7 +25,6 @@ state={
 
     render(){
         const journeys = this.getJourneyByLevel()
-        const{newPage}=this.props;
         const{muscles,onExerciseCreate}=this.props;
 
     return (
