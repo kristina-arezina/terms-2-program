@@ -22,6 +22,10 @@ const useStyles = makeStyles({
     },
 });
 
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
+
 export default function TemporaryDrawer() {
     const [state, setState] = React.useState({
         left: false,
@@ -43,16 +47,16 @@ export default function TemporaryDrawer() {
             onClick={toggleDrawer(side, false)}
             onKeyDown={toggleDrawer(side, false)}
         >
-            <List>
-                <ListItem button href="/"
-                >
-                    <ListItemIcon > <HomeIcon/></ListItemIcon>
-                    <ListItemText  primary={"Home"} />
-                </ListItem>
-                <ListItem button href="/journey">
+            <List component="nav">
+                <ListItem button >
                     <ListItemIcon > <SubjectIcon /></ListItemIcon>
                     <ListItemText  primary={"Programing Journeys"} />
                 </ListItem>
+                    <ListItemLink href="/">
+                    <ListItemIcon > <HomeIcon/></ListItemIcon>
+                    <ListItemText  primary={"Home"} />
+                </ListItemLink>
+
                 <ListItem  button href="/about">
                     <ListItemIcon> <HelpIcon /></ListItemIcon>
                     <ListItemText  primary={"About"} />
