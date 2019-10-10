@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import PageJourney from "./PageJourney";
 import JourneyList from "./JourneyList";
-import {muscles} from "../../store";
 import {level, journeys} from "../../journeyStore";
 import {Header} from "../Layout/HeaderFooter.js"
-
 
 export class Journey extends Component {
 state={
@@ -27,16 +25,18 @@ state={
         const journeys = this.getJourneyByLevel()
         const{muscles,onExerciseCreate}=this.props;
 
-    return (
-        <div>
-            <Header/>
-        <PageJourney/>
-            <JourneyList
-                muscles={muscles}
-                level={level}
-                journeys={journeys}
-            />
-        </div>
-    )}}
+        return (
+            <div>
+                <Header/>
+                <PageJourney/>
+                <JourneyList
+                    muscles={muscles}
+                    level={level}
+                    journeys={journeys}
+                />
+            </div>
+        )
+    }
+}
 
 export default Journey;
