@@ -35,10 +35,9 @@ export class Home extends Component {
     handleExerciseSelect = id => {
         this.setState(({exercises}) => ({
             exercise: exercises. find(ex => ex.id ===id) }))
-            this.setState(({links}) => ({
-                link: links.find(ex => ex.id ===id)
-            }
-            )
+        this.setState(({links}) => ({
+            link: links.find(ex => ex.id ===id)
+            })
         )
     }
 
@@ -50,8 +49,7 @@ export class Home extends Component {
                     links[titles] = links[titles]
                     ? [...links[titles], link]
                         : [link]
-
-                    return links
+        return links
                 },{})
         )
     }
@@ -81,9 +79,7 @@ export class Home extends Component {
                 />
             </nav>
 
-        )
-    }
-
+        )}
 }
 
 export default Home;
