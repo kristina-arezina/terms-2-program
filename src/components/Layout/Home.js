@@ -2,11 +2,15 @@ import React, {Component, Fragment} from 'react';
 import {Header, Footer} from "./HeaderFooter"
 import Exercises from "../Exercises"
 import {exercises, muscles} from "../../store";
+import {titles, links} from "../../storeLink";
+
 
 export class Home extends Component {
     state = {
         exercises,
         exercise: {},
+        links,
+        link: {},
     }
 
     getExercisesByMuscles(){
@@ -52,6 +56,7 @@ export class Home extends Component {
                     category={catergory}
                     exercises={exercises}
                     onSelect={this.handleExerciseSelect}
+                    titles={titles}
                 />
             </nav>
 

@@ -5,7 +5,7 @@ export const titles = [
 export const links = [
     {
         title: 'browsers',
-        link1:'https://www.lifewire.com/what-is-a-browser-446234'
+        link1:'https://www.lifewire.com/what-is-a-browser-446234',
         link2:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
         link3:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
         link4:"https://www.youtube.com/watch?v=BrXPcaRlBqo",

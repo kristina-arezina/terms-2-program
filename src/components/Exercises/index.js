@@ -5,6 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Link from '@material-ui/core/Link';
 import MediaQuery from 'react-responsive';
+import {titles} from "../../storeLink";
 
 const styles = {
     Paper1: {
@@ -27,6 +28,7 @@ const styles = {
     }}
 
 export default ({
+     titles,
      exercises,
      category,
      onSelect,
@@ -55,7 +57,10 @@ export default ({
                             <br/>
                             {description2}
                             {resourse}
-                            <p>Hello From Listitem text</p>
+
+                            {titles.map(group =>
+                            <ul><li>{group}</li></ul>
+                            )}
 
                             <br/>
                             <ul>
