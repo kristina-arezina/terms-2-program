@@ -10,7 +10,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Link from '@material-ui/core/Link';
 
-
 export default ({journeys}) =>
     <Paper>
         {journeys.map(([group,journeys])  =>
@@ -35,7 +34,13 @@ export default ({journeys}) =>
 
                             <ListItemText
                                 style={{fontFamily:"century gothic"}}
-                                primary={title}
+                                primary={
+                                    <Typography
+                                    style={{marginBottom:5}}
+                                    >
+                                        {title}
+                                    </Typography>
+                                }
                                 secondary={
                                     <React.Fragment>
                                         <Typography

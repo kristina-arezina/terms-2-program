@@ -66,7 +66,7 @@ export default ({
                 <Grid item xs={12} >
                     <Paper style={styles.Paper1}>
 
-                        <Typography variant="h3"style={{ fontFamily:"century gothic",}}>
+                        <Typography variant="h3" style={{ fontFamily:"century gothic",}}>
                             {title}
                         </Typography>
                         <Typography variant={"body1"} style={{marginTop:20, fontFamily:"century gothic",}}>
