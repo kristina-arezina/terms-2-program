@@ -24,6 +24,17 @@ export const links = [
         video2:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
         video3:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
         video4:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
+    },
+    {
+        id: 'software development',
+        link1:'https://searchapparchitecture.techtarget.com/definition/software',
+        link2:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",
+        link3:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",
+        link4:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",
+        video1:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
+        video2:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
+        video3:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
+        video4:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
     }
 
 ]
