@@ -4,7 +4,6 @@ import Exercises from "../Exercises"
 import {exercises, muscles} from "../../store";
 import {titles, links} from "../../storeLink";
 
-
 export class Home extends Component {
     state = {
         exercises,
@@ -43,7 +42,6 @@ export class Home extends Component {
         )
     }
 
-
     getLinksByTitles(){
         return Object.entries(
             this.state.links.reduce((links, link) => {
@@ -57,7 +55,6 @@ export class Home extends Component {
                 },{})
         )
     }
-
 
     render(){
         const exercises = this.getExercisesByMuscles(),
@@ -88,6 +85,5 @@ export class Home extends Component {
     }
 
 }
-
 
 export default Home;
