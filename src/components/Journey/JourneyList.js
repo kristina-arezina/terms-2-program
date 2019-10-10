@@ -36,7 +36,7 @@ export default ({journeys}) =>
                                 style={{fontFamily:"century gothic"}}
                                 primary={
                                     <Typography
-                                    style={{marginBottom:5}}
+                                    style={{marginBottom:"1.5%"}}
                                     >
                                         {title}
                                     </Typography>
