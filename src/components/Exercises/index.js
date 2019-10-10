@@ -13,8 +13,8 @@ const styles = {
         height:"auto",
         overflowY:"auto",
         overflowWrap:" break-word",
-    wordWrap: "break-word",
-    hyphens: "auto"
+        wordWrap: "break-word",
+        hyphens: "auto"
 },
     Paper2: {
         padding:20,
@@ -31,12 +31,11 @@ const styles = {
     p:{
         marginLeft:"5%"
     }
-
 }
 
 export default ({
      links,
-    link: {
+     link: {
         link1=undefined,
         link2=undefined,
         link3=undefined,
@@ -47,14 +46,14 @@ export default ({
         video4=undefined,
         articles,
         videos
-    },
+     },
      exercises,
      category,
      onSelect,
      exercise: {
-        id,
-        title = "Welcome!",
-        description ="Please select a term from the list on the left inorder to learn more about it.",
+         id,
+         title = "Welcome!",
+         description ="Please select a term from the list on the left inorder to learn more about it.",
          resourse,
          description2,
      },
@@ -63,192 +62,191 @@ export default ({
         {matches =>
             matches ? (
                 <Grid container>
-                <Grid item xs={12} >
-                    <Paper style={styles.Paper1}>
-
-                        <Typography variant="h3" style={{ fontFamily:"century gothic",}}>
-                            {title}
-                        </Typography>
-                        <Typography variant={"body1"} style={{marginTop:20, fontFamily:"century gothic",}}>
-                            {description}
+                    <Grid item xs={12} >
+                        <Paper style={styles.Paper1}>
+                            <Typography variant="h3" style={{fontFamily:"century gothic"}}>
+                                {title}
+                            </Typography>
+                            <Typography variant={"body1"} style={{marginTop:20, fontFamily:"century gothic"}}>
+                                {description}
                             <br/>
                             <br/>
-                            {description2}
-                            {resourse}
+                                {description2}
+                                {resourse}
                             <br/>
-                            {description2}
-                            {resourse}
-                            <br/>
-                            <br/>
-                            <p style={styles.p}>
-                            {articles}
+                                {description2}
+                                {resourse}
                             <br/>
                             <br/>
-                            <Link  rel="noopener" variant="body1" href={link1} target="_blank">
-                                {link1}
-                            </Link>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={link2} target="_blank">
-                                {link2}
-                            </Link>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={link3} target="_blank">
-                                {link3}
-                            </Link>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={link4} target="_blank">
-                                {link4}
-                            </Link>
-                            <br/>
-                            <br/>
-                            {videos}
-                            <br/>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={video1} target="_blank">
-                                {video1}
-                            </Link>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={video2} target="_blank">
-                                {video2}
-                            </Link>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={video3} target="_blank">
-                                {video3}
-                            </Link>
-                            </p>
-                        </Typography>
-
-                    </Paper>
-
-                </Grid>
-                <Grid item xs={12} >
-                    <Paper style={styles.Paper2} >
-                        {exercises.map(([group, exercises]) =>
-                            !category || category === group
-                                ? <Fragment key={group}>
-                                    <Typography variant={"h6"}
-                                                style={{
-                                                    textTransform: 'uppercase',
-                                                    color:"#00867d",
-                                                    fontFamily:"courier new",
-                                                }}
-                                    >
-                                        {group}
-                                    </Typography>
-                                    <List component="ul" >
-                                        {exercises.map(({id, title}) =>
-                                            <ListItem
-                                                key={id}
-                                                button
-                                                onClick={() => onSelect(id)}
+                                <p style={styles.p}>
+                                    {articles}
+                                        <br/>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={link1} target="_blank">
+                                                {link1}
+                                            </Link>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={link2} target="_blank">
+                                                {link2}
+                                            </Link>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={link3} target="_blank">
+                                                {link3}
+                                            </Link>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={link4} target="_blank">
+                                                {link4}
+                                            </Link>
+                                        <br/>
+                                        <br/>
+                                    {videos}
+                                        <br/>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={video1} target="_blank">
+                                                {video1}
+                                            </Link>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={video2} target="_blank">
+                                                {video2}
+                                            </Link>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={video3} target="_blank">
+                                                {video3}
+                                            </Link>
+                                </p>
+                            </Typography>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Paper style={styles.Paper2} >
+                            {exercises.map(([group, exercises]) =>
+                                !category || category === group
+                                    ?   <Fragment key={group}>
+                                            <Typography variant={"h6"}
+                                               style={{
+                                                   textTransform: 'uppercase',
+                                                   color:"#00867d",
+                                                   fontFamily:"courier new",
+                                               }}
                                             >
-                                                <ListItemText
-                                                    primary={title}
-                                                    style={{
-                                                        fontFamily:"century gothic",
-                                                    }}/>
-                                            </ListItem>
-                                        )}
-                                    </List>
-                                </Fragment>
-                                : null
-                        )}
-                    </Paper>
-
+                                                {group}
+                                            </Typography>
+                                            <List component="ul" >
+                                                {exercises.map(({id, title}) =>
+                                                    <ListItem
+                                                        key={id}
+                                                        button
+                                                        onClick={() => onSelect(id)}
+                                                    >
+                                                        <ListItemText
+                                                            primary={title}
+                                                            style={{
+                                                                fontFamily:"century gothic",
+                                                            }}/>
+                                                    </ListItem>
+                                                )}
+                                            </List>
+                                        </Fragment>
+                                    : null
+                                )
+                            }
+                        </Paper>
+                    </Grid>
                 </Grid>
-
-            </Grid>): (
+            ):(
                 <Grid container>
                     <Grid item sm={6}>
                         <Paper style={styles.Paper2} >
                             {exercises.map(([group, exercises]) =>
                                 !category || category === group
-                                    ? <Fragment key={group}>
-                                        <Typography variant={"h6"}
-                                                    style={{
-                                                        textTransform: 'uppercase',
-                                                        color:"#00867d",
-                                                        fontFamily:"courier new",
-                                                    }}
-                                        >
-                                            {group}
-                                        </Typography>
-                                        <List component="ul" >
-                                            {exercises.map(({id, title}) =>
-                                                <ListItem
-                                                    key={id}
-                                                    button
-                                                    onClick={() => onSelect(id)}
-                                                >
-                                                    <ListItemText
-
-                                                        primary={title}
-                                                        style={{
-                                                            fontFamily:"century gothic"
-                                                        }}/>
-                                                </ListItem>
-                                            )}
-                                        </List>
-                                    </Fragment>
-                                    : null
+                                    ?
+                                        <Fragment key={group}>
+                                            <Typography variant={"h6"}
+                                                 style={{
+                                                 textTransform: 'uppercase',
+                                                 color:"#00867d",
+                                                 fontFamily:"courier new",
+                                                 }}
+                                            >
+                                                {group}
+                                            </Typography>
+                                            <List component="ul" >
+                                                {exercises.map(({id, title}) =>
+                                                    <ListItem
+                                                        key={id}
+                                                        button
+                                                        onClick={() => onSelect(id)}
+                                                    >
+                                                        <ListItemText
+                                                            primary={title}
+                                                            style={{
+                                                                fontFamily:"century gothic"
+                                                            }}
+                                                        />
+                                                    </ListItem>
+                                                )}
+                                            </List>
+                                        </Fragment>
+                                : null
                             )}
                         </Paper>
                     </Grid>
-                <Grid item sm={6}>
-                    <Paper style={styles.Paper1} >
+                    <Grid item sm={6}>
+                        <Paper style={styles.Paper1} >
 
-                        <Typography variant="h3"style={{ fontFamily:"century gothic",}}>
+                            <Typography variant="h3"style={{ fontFamily:"century gothic",}}>
                             {title}
-                        </Typography>
-                        <Typography variant={"body1"} style={{marginTop:20, fontFamily:"century gothic",}}>
+                            </Typography>
+
+                            <Typography variant={"body1"} style={{marginTop:20, fontFamily:"century gothic",}}>
                             {description}
-                            <br/>
-                            <br/>
-                            {description2}
-                            {resourse}
-                            <br/>
-                            <br/>
-                            <p style={styles.p}>
-                            {articles}
-                            <br/>
-                            <br/>
-
-                            <Link  rel="noopener" variant="body1" href={link1} target="_blank">
-                                {link1}
-                            </Link>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={link2} target="_blank">
-                                {link2}
-                            </Link>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={link3} target="_blank">
-                                {link3}
-                            </Link>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={link4} target="_blank">
-                                {link4}
-                            </Link>
-                            <br/>
-                            <br/>
-                            {videos}
-                            <br/>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={video1} target="_blank">
-                                {video1}
-                            </Link>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={video2} target="_blank">
-                                {video2}
-                            </Link>
-                            <br/>
-                            <Link  rel="noopener" variant="body1" href={video3} target="_blank">
-                                {video3}
-                            </Link>
-                            </p>
-                        </Typography>
-
-                    </Paper>
-
-                </Grid>
-            </Grid>) }</MediaQuery>
+                                <br/>
+                                <br/>
+                                    {description2}
+                                    {resourse}
+                                <br/>
+                                <br/>
+                                    <p style={styles.p}>
+                                        {articles}
+                                        <br/>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={link1} target="_blank">
+                                            {link1}
+                                            </Link>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={link2} target="_blank">
+                                                {link2}
+                                            </Link>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={link3} target="_blank">
+                                                {link3}
+                                            </Link>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={link4} target="_blank">
+                                                {link4}
+                                            </Link>
+                                        <br/>
+                                        <br/>
+                                            {videos}
+                                        <br/>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={video1} target="_blank">
+                                                {video1}
+                                            </Link>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={video2} target="_blank">
+                                                {video2}
+                                            </Link>
+                                        <br/>
+                                            <Link  rel="noopener" variant="body1" href={video3} target="_blank">
+                                                {video3}
+                                            </Link>
+                                    </p>
+                            </Typography>
+                        </Paper>
+                    </Grid>
+            </Grid>
+            )
+        }
+    </MediaQuery>
 
