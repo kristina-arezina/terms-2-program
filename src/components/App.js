@@ -1,11 +1,10 @@
 import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import {muscles, exercises} from "../store";
+import { exercises} from "../store";
 import Journey from "./Journey/Journey.js"
 import CssBaseline from '@material-ui/core/CssBaseline';
 import About from "./About/About.js";
 import Home from "./Layout/Home.js";
-
 
 export default class extends Component {
     state = {
