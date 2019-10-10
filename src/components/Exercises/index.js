@@ -29,14 +29,14 @@ const styles = {
 export default ({
      links,
     link: {
-        link1,
-        link2,
-        link3,
-        link4,
-        video1,
-        video2,
-        video3,
-        video4,
+        link1="",
+        link2="",
+        link3="",
+        link4="",
+        video1="",
+        video2="",
+        video3="",
+        video4="",
     },
      exercises,
      category,
@@ -65,8 +65,6 @@ export default ({
                             <br/>
                             {description2}
                             {resourse}
-
-
                                             <ul>
                                             <li>
                                                 <Link rel="noopener" variant="body1" href={link1} target="_blank">
@@ -94,9 +92,6 @@ export default ({
                                                 {video3}
                                             </Link></li>
                                         </ul>
-
-
-
                         </Typography>
 
                     </Paper>
@@ -187,43 +182,33 @@ export default ({
                             <br/>
                             {description2}
                             {resourse}
-                            {links.map(([group,links ]) =>
-                                <ul>
-                                    <li>
-                                        {group}
-
-                                        {links.map(({link1, link2, link3, link4, video1, video2, video3}) =>
-                                            <ul>
-                                                <li>
-                                                    <Link rel="noopener" variant="body1" href={link1} target="_blank">
-                                                        {link1}
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link rel="noopener" variant="body1" href={link2} target="_blank">
-                                                        {link2}
-                                                    </Link>
-                                                </li>
-                                                <li><Link rel="noopener" variant="body1" href={link3} target="_blank">
-                                                    {link3}
-                                                </Link></li>
-                                                <li><Link rel="noopener" variant="body1" href={link4} target="_blank">
-                                                    {link4}
-                                                </Link></li>
-                                                <li><Link rel="noopener" variant="body1" href={video1} target="_blank">
-                                                    {video1}
-                                                </Link></li>
-                                                <li><Link rel="noopener" variant="body1" href={video2} target="_blank">
-                                                    {video2}
-                                                </Link></li>
-                                                <li><Link rel="noopener" variant="body1" href={video3} target="_blank">
-                                                    {video3}
-                                                </Link></li>
-                                            </ul>
-                                        )}
-                                    </li>
-                                </ul>
-                            )}
+                            <ul>
+                                <li>
+                                    <Link rel="noopener" variant="body1" href={link1} target="_blank">
+                                        {link1}
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link rel="noopener" variant="body1" href={link2} target="_blank">
+                                        {link2}
+                                    </Link>
+                                </li>
+                                <li><Link rel="noopener" variant="body1" href={link3} target="_blank">
+                                    {link3}
+                                </Link></li>
+                                <li><Link rel="noopener" variant="body1" href={link4} target="_blank">
+                                    {link4}
+                                </Link></li>
+                                <li><Link rel="noopener" variant="body1" href={video1} target="_blank">
+                                    {video1}
+                                </Link></li>
+                                <li><Link rel="noopener" variant="body1" href={video2} target="_blank">
+                                    {video2}
+                                </Link></li>
+                                <li><Link rel="noopener" variant="body1" href={video3} target="_blank">
+                                    {video3}
+                                </Link></li>
+                            </ul>
 
                         </Typography>
 
