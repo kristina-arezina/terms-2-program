@@ -4,7 +4,7 @@ export const titles = [
 
 export const links = [
     {
-        titles: 'browsers',
+        id: 'browsers',
         link1:'https://www.lifewire.com/what-is-a-browser-446234',
         link2:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
         link3:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
@@ -15,7 +15,7 @@ export const links = [
         video4:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
     },
     {
-        titles: 'operating system',
+        id: 'operating system',
         link1:'https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/',
         link2:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",
         link3:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",

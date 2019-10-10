@@ -11,6 +11,7 @@ export default class extends Component {
     state = {
         exercises,
         exercise: {},
+        link:{},
     }
 
 

@@ -28,6 +28,16 @@ const styles = {
 
 export default ({
      links,
+    link: {
+        link1,
+        link2,
+        link3,
+        link4,
+        video1,
+        video2,
+        video3,
+        video4,
+    },
      exercises,
      category,
      onSelect,
@@ -35,15 +45,14 @@ export default ({
         id,
         title = "Welcome!",
         description ="Please select a term from the list on the left inorder to learn more about it.",
-         link,
-         video,
          resourse,
          description2,
      },
 }) =>
     <MediaQuery query="(max-width: 758px)">
         {matches =>
-            matches ? (<Grid container>
+            matches ? (
+                <Grid container>
                 <Grid item xs={12} >
                     <Paper style={styles.Paper1}>
 
@@ -57,12 +66,7 @@ export default ({
                             {description2}
                             {resourse}
 
-                            {links.map(([group,links ]) =>
-                                <ul>
-                                    <li>
-                                        {group}
 
-                                        {links.map(({link1, link2, link3, link4, video1, video2, video3}) =>
                                             <ul>
                                             <li>
                                                 <Link rel="noopener" variant="body1" href={link1} target="_blank">
@@ -90,10 +94,8 @@ export default ({
                                                 {video3}
                                             </Link></li>
                                         </ul>
-                                        )}
-                                    </li>
-                                </ul>
-                            )}
+
+
 
                         </Typography>
 

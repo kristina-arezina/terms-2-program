@@ -37,13 +37,12 @@ export class Home extends Component {
         this.setState(({exercises}) => ({
             exercise: exercises. find(ex => ex.id ===id) }))
             this.setState(({links}) => ({
-                link: links.find(ex => ex.titles ===titles)
+                link: links.find(ex => ex.id ===id)
             }
             )
         )
-
-
     }
+
 
     getLinksByTitles(){
         return Object.entries(
@@ -62,7 +61,7 @@ export class Home extends Component {
 
     render(){
         const exercises = this.getExercisesByMuscles(),
-            {catergory, exercise} = this.state
+            {catergory, exercise, link} = this.state
         const links = this.getLinksByTitles()
 
         return(
@@ -75,13 +74,13 @@ export class Home extends Component {
                     onSelect={this.handleCategorySelect}
                 />
                 <Exercises
-
                     exercise={exercise}
                     category={catergory}
                     exercises={exercises}
                     onSelect={this.handleExerciseSelect}
                     titles={titles}
                     links={links}
+                    link={link}
                 />
             </nav>
 
