@@ -72,35 +72,45 @@ export default ({
                             <br/>
                             {description2}
                             {resourse}
-                                            <br/>
                             <br/>
-                                <Link style={styles.link} rel="noopener" variant="body1" href={link1} target="_blank">
-                                    {link1}
-                                </Link>
+                            {description2}
+                            {resourse}
                             <br/>
-                                <Link style={styles.link} rel="noopener" variant="body1" href={link2} target="_blank">
-                                    {link2}
-                                </Link>
                             <br/>
-                                <Link style={styles.link} rel="noopener" variant="body1" href={link3} target="_blank">
-                                    {link3}
-                                </Link>
+                            {articles}
                             <br/>
-                                <Link style={styles.link} rel="noopener" variant="body1" href={link4} target="_blank">
-                                    {link4}
-                                </Link>
                             <br/>
-                                <Link style={styles.link} rel="noopener" variant="body1" href={video1} target="_blank">
-                                    {video1}
-                                </Link>
+                            <Link style= {styles.link} rel="noopener" variant="body1" href={link1} target="_blank">
+                                {link1}
+                            </Link>
                             <br/>
-                                <Link style={styles.link} rel="noopener" variant="body1" href={video2} target="_blank">
-                                    {video2}
-                                </Link>
+                            <Link style= {styles.link} rel="noopener" variant="body1" href={link2} target="_blank">
+                                {link2}
+                            </Link>
                             <br/>
-                                <Link style={styles.link} rel="noopener" variant="body1" href={video3} target="_blank">
-                                    {video3}
-                                </Link>
+                            <Link style= {styles.link} rel="noopener" variant="body1" href={link3} target="_blank">
+                                {link3}
+                            </Link>
+                            <br/>
+                            <Link style= {styles.link} rel="noopener" variant="body1" href={link4} target="_blank">
+                                {link4}
+                            </Link>
+                            <br/>
+                            <br/>
+                            {videos}
+                            <br/>
+                            <br/>
+                            <Link style= {styles.link} rel="noopener" variant="body1" href={video1} target="_blank">
+                                {video1}
+                            </Link>
+                            <br/>
+                            <Link style= {styles.link} rel="noopener" variant="body1" href={video2} target="_blank">
+                                {video2}
+                            </Link>
+                            <br/>
+                            <Link style= {styles.link} rel="noopener" variant="body1" href={video3} target="_blank">
+                                {video3}
+                            </Link>
                         </Typography>
 
                     </Paper>
