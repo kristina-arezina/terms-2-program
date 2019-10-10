@@ -35,8 +35,7 @@ export default ({journeys}) =>
                             <ListItemText
                                 primary={
                                     <Typography
-                                    style={{marginBottom:"1.5%",fontFamily:"century gothic" }}
-                                    variant="h6"
+                                    style={{marginBottom:"1.5%",fontFamily:"century gothic", color:"#000000" }}
                                     >
                                         {title}
                                     </Typography>
@@ -44,8 +43,7 @@ export default ({journeys}) =>
                                 secondary={
                                     <React.Fragment>
                                         <Typography
-                                            style={{fontFamily:"century gothic", color:"#000000",fontWeight: "lighter", margin:20}}
-                                            variant="body1"
+                                            style={{fontFamily:"century gothic", color:"#000000",fontWeight: 50, margin:20}}
                                         >
                                             {description}
                                             <br/>
