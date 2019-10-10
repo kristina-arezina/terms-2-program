@@ -9,33 +9,30 @@ import MediaQuery from 'react-responsive';
 export class Header extends Component {
 
     render(){
-    const{newPage}=this.props;
 
-    return(
-        <div style={{
+        return(
+
+            <div style={{
             borderRadius: "1px",
             padding: '0 30px',
             margin:"5px",
-        }}>
+            }}>
                 <MediaQuery query="(max-width: 599px)">
                 {matches =>
                     matches ? (
-
-                            <AppBar color="#f4f4f4">
-
-                                <Toolbar><Typography variant="h6" style={{flexGrow: 1}}>
+                        <AppBar color="#f4f4f4">
+                            <Toolbar>
+                                <Typography variant="h6" style={{flexGrow: 1}}>
                                     Learn2Program
                                 </Typography>
-                        <TemporaryDrawer />
-                                </Toolbar>
-                            </AppBar>
-
+                                    <TemporaryDrawer />
+                            </Toolbar>
+                        </AppBar>
 
                     ) : (
-                            <AppBar color="#f4f4f4">
-
-                                <Toolbar>
-                                    <Typography variant="h6" style={{flexGrow: 1}}>
+                        <AppBar color="#f4f4f4">
+                            <Toolbar>
+                                <Typography variant="h6" style={{flexGrow: 1}}>
                                     Learn2Program
                                 </Typography>
                                     <Button href="/" color="inherit" variant="text"
@@ -74,17 +71,16 @@ export class Header extends Component {
                                             >
                                         About
                                     </Button>
-                                </Toolbar>
-                            </AppBar>
+                            </Toolbar>
+                        </AppBar>
 
-                    )
-                }
-            </MediaQuery>
-                </div>
-)
+                    )}
+                </MediaQuery>
+            </div>
+        )
 
     }
-    }
+}
 
 
 export default Header;
