@@ -2,10 +2,6 @@ export const level = [
     "complete beginner", "react", "C++", "JavaScript"
 ]
 
-export const link = [
-    "https://medium.com/mindorks/a-self-taught-programmers-journey-6899cff1aef0"
-]
-
 export const journeys = [
     {
         id: 'CB1',

@@ -7,13 +7,6 @@ import About from "./About/About.js";
 import Home from "./Layout/Home.js";
 
 export default class extends Component {
-    state = {
-        exercises,
-        exercise: {},
-        link:{},
-    }
-
-
 
     render() {
 

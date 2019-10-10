@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PageJourney from "./PageJourney";
 import JourneyList from "./JourneyList";
 import {muscles} from "../../store";
-import {level, link, journeys} from "../../journeyStore";
+import {level, journeys} from "../../journeyStore";
 import {Header} from "../Layout/HeaderFooter.js"
 
 
@@ -35,7 +35,6 @@ state={
                 muscles={muscles}
                 level={level}
                 journeys={journeys}
-                link={link}
             />
         </div>
     )}}
