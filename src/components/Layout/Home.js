@@ -35,9 +35,14 @@ export class Home extends Component {
 
     handleExerciseSelect = id => {
         this.setState(({exercises}) => ({
-            exercise: exercises. find(ex => ex.id ===id),
+            exercise: exercises. find(ex => ex.id ===id) }))
+            this.setState(({links}) => ({
+                link: links.find(ex => ex.titles ===titles)
+            }
+            )
+        )
 
-        }))
+
     }
 
     getLinksByTitles(){
@@ -46,7 +51,7 @@ export class Home extends Component {
                 const {titles} = link
 
                     links[titles] = links[titles]
-                    ? [...links[muscles], link]
+                    ? [...links[titles], link]
                         : [link]
 
                     return links
