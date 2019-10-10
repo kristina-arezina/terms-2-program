@@ -5,15 +5,14 @@ import Tab from '@material-ui/core/Tab';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 
-
-
-export default ({muscles, category, onSelect}) =>{
+export default ({muscles, category, onSelect}) => {
     const index = category
-? muscles.findIndex(group => group === category) +1
-        : 0;
+    ?
+        muscles.findIndex(group => group === category) +1
+    : 0
 
 const onIndexSelect = (e, index) =>
-    onSelect(index === 0 ? "" : muscles[index-1]);
+    onSelect (index === 0 ? "" : muscles[index-1]);
 
     const theme = createMuiTheme({
         palette: {
@@ -21,31 +20,31 @@ const onIndexSelect = (e, index) =>
         },
     });
 
-return(
-    <ThemeProvider theme={theme}>
-    <Paper
-    style={
-        {
-            paddingTop:66,
-            marginTop: 8,
-            marginBottom:5,
-            backgroundColor:"#e0f2f1"
-        }}>
-            <Tabs
-                value={index}
-                indicatorColor="primary"
-                onChange={onIndexSelect}
-                variant="scrollable"
-                scrollButtons="auto"
-                style={{color:"#111" }}
-            >
+    return(
+        <ThemeProvider theme={theme}>
+            <Paper
+                style={{
+                paddingTop:66,
+                marginTop: 8,
+                marginBottom:5,
+                backgroundColor:"#e0f2f1"
+            }}>
+                <Tabs
+                    value={index}
+                    indicatorColor="primary"
+                    onChange={onIndexSelect}
+                    variant="scrollable"
+                    scrollButtons="auto"
+                    style={{color:"#111" }}
+                >
                 <Tab label="All" />
+
                 {muscles.map(group =>
                     <Tab key={group} label={group} />
                 )}
 
-            </Tabs>
-        </Paper>
-    </ThemeProvider>
-        )
+                </Tabs>
+            </Paper>
+        </ThemeProvider>
+    )
 }
