@@ -2,7 +2,6 @@ import React from 'react';
 
 function AboutHeader(){
     return (
-
         <header >
                 <h1 style={headerStyle}>About Us</h1>
         </header>
