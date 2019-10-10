@@ -35,7 +35,7 @@ export class Home extends Component {
 
     handleExerciseSelect = id => {
         this.setState(({exercises}) => ({
-            exercise: exercises. find(ex => ex.id ===id)
+            exercise: exercises. find(ex => ex.id ===id),
 
         }))
     }
