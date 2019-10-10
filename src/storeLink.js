@@ -5,6 +5,8 @@ export const titles = [
 export const links = [
     {
         id: 'browsers',
+        articles: "Articles",
+        videos:"Videos",
         link1:'https://www.lifewire.com/what-is-a-browser-446234',
         link2:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
         link3:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
@@ -16,6 +18,8 @@ export const links = [
     },
     {
         id: 'operating system',
+        articles: "Articles",
+        videos:"Videos",
         link1:'https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/',
         link2:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",
         link3:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",
@@ -27,6 +31,8 @@ export const links = [
     },
     {
         id: 'software development',
+        articles: "Articles",
+        videos:"Videos",
         link1:'https://searchapparchitecture.techtarget.com/definition/software',
         link2:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",
         link3:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",

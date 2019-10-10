@@ -42,6 +42,8 @@ export default ({
         video2=undefined,
         video3=undefined,
         video4=undefined,
+        articles,
+        videos
     },
      exercises,
      category,
@@ -191,6 +193,9 @@ export default ({
                             {resourse}
                             <br/>
                             <br/>
+                            {articles}
+                            <br/>
+                            <br/>
                             <Link style= {styles.link} rel="noopener" variant="body1" href={link1} target="_blank">
                                 {link1}
                             </Link>
@@ -206,6 +211,10 @@ export default ({
                             <Link style= {styles.link} rel="noopener" variant="body1" href={link4} target="_blank">
                                 {link4}
                             </Link>
+                            <br/>
+                            <br/>
+                            {videos}
+                            <br/>
                             <br/>
                             <Link style= {styles.link} rel="noopener" variant="body1" href={video1} target="_blank">
                                 {video1}
