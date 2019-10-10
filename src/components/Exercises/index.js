@@ -61,6 +61,17 @@ export default ({
                                 <ul>
                                     <li>
                                         {group}
+                                        {links.map(({link1, link2, link3, link4, video1, video2, video3}) =>
+                                            <ul>
+                                            <li>{link1}</li>
+                                            <li>{link2}</li>
+                                            <li>{link3}</li>
+                                            <li>{link4}</li>
+                                            <li>{video1}</li>
+                                            <li>{video2}</li>
+                                            <li>{video3}</li>
+                                        </ul>
+                                        )}
                                     </li>
                                 </ul>
                             )}
