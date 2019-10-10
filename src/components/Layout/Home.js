@@ -39,9 +39,26 @@ export class Home extends Component {
         }))
     }
 
+    getLinksByTitles(){
+        return Object.entries(
+            this.state.links.reduce((links, link) => {
+                const {titles} = link
+
+                    links[titles] = links[titles]
+                    ? [...links[muscles], link]
+                        : [link]
+
+                    return links
+                },{})
+        )
+    }
+
+
     render(){
         const exercises = this.getExercisesByMuscles(),
             {catergory, exercise} = this.state
+        const links = this.getLinksByTitles()
+
         return(
             <nav>
                 <Header/>
@@ -52,11 +69,13 @@ export class Home extends Component {
                     onSelect={this.handleCategorySelect}
                 />
                 <Exercises
+
                     exercise={exercise}
                     category={catergory}
                     exercises={exercises}
                     onSelect={this.handleExerciseSelect}
                     titles={titles}
+                    links={links}
                 />
             </nav>
 
