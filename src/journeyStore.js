@@ -26,18 +26,6 @@ export const journeys = [
     },
     {
         id: 'CB3',
-        title: 'Teach Yourself Programming in Ten Years',
-        description: 'This website looks a bit sketchy but if you ignore that it provides invaluable ' +
-            'information about why you should learn to program correctly. The claim made is that you can learn the ' +
-            'basics of programming quickly however, researchers have shown it takes about ten years to develop ' +
-            'expertise in a particular area. Believes you must challenge yourself with a task that is just beyond your ' +
-            'current ability, trying it, analyzing your performance while and after doing it, and correcting any ' +
-            'mistakes. Make programming fun. Learn by doing.',
-        link: 'https://www.norvig.com/21-days.html',
-        level:"complete beginner"
-    },
-    {
-        id: 'CB4',
         title: 'Landing Your Dream Job 5 tips on becoming a self-taught programmer',
         description: "This man took a 360 in his career by switching from doing an undergraduate in marketing followed " +
             "by a master's in International Business in college. In the article, he gives 5 tips on how to start " +
@@ -48,8 +36,8 @@ export const journeys = [
         level:"complete beginner"
     },
     {
-        id: 'CB5',
-        title: 'Landing Your Dream Job 5 tips on becoming a self-taught programmer',
+        id: 'CB4',
+        title: 'Mornings, Nights, and Weekends: How I Changed Careers and Became a Programmer',
         description: "Daniel K. Hunter learned to program while working at a 9-5 job. This is a great source of " +
             "inspiration for anyone who is in school or has other commitments that make them believe they do not have " +
             "the time to learn to program. Daniel explains that it took him 10 months and ~1400 hours of self-teaching " +
