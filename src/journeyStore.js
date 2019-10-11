@@ -56,7 +56,7 @@ export const journeys = [
             'though the “Learn and Implement” pattern. Believes in consistency. You can learn most of the awesome ' +
             'things about programming by reading others code. You should read other’s open-source code.',
         link: 'https://medium.com/mindorks/a-self-taught-programmers-journey-6899cff1aef0',
-        level:"react"
+        level:"JavaScript"
     },
     {
         id: 'React2',
@@ -66,7 +66,7 @@ export const journeys = [
             'Learned HTML and CSS first. Liked freecodecamp. Recommends to start a programming project ' +
             'when you feel comfortable with the syntax of  language.',
         link: 'https://www.freecodecamp.org/news/what-ive-learned-from-a-year-of-coding-bf39c5823e9b/',
-        level:"react"
+        level:"JavaScript"
     },
     {
         id: 'React3',
@@ -78,7 +78,7 @@ export const journeys = [
             'current ability, trying it, analyzing your performance while and after doing it, and correcting any ' +
             'mistakes. Make programming fun. Learn by doing.',
         link: 'https://www.norvig.com/21-days.html',
-        level:"react"
+        level:"JavaScript"
     },
     {
         id: 'C++1',
