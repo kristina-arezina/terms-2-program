@@ -50,16 +50,19 @@ export const journeys = [
         level:"complete beginner"
     },
     {
-        id: 'React1',
-        title: 'Hello',
-        description: 'Civil engineer turned programmer that loves to problem solve. Believes you learn to program ' +
-            'though the “Learn and Implement” pattern. Believes in consistency. You can learn most of the awesome ' +
-            'things about programming by reading others code. You should read other’s open-source code.',
-        link: 'https://medium.com/mindorks/a-self-taught-programmers-journey-6899cff1aef0',
+        id: 'JavaScript1',
+        title: 'Zero to One: How I mastered JavaScript and how you can too',
+        description: "Kleo Petrov covers many important topics in this article such as learning to learn (a very " +
+            "important skill for any programmer), and how and where to learn the fundamentals of javascript. As well as " +
+            "what to do once you’ve got the basics of javascript and much more! Please note if you are a beginner you " +
+            "may feel intimidated by some of the terms he uses (such as ECMA, ECMA-262, ECMAScript, GitHub,  Stack " +
+            "Overflow, ect). However, none of these topics are complicated and can be understood with a quick google search.",
+        link: 'https://hashnode.com/post/zero-to-one-how-i-mastered-javascript-and-how-you-can-too-ciuwmrw9j00r50q539clhhdj7',
+
         level:"JavaScript"
     },
     {
-        id: 'React2',
+        id: 'JavaScript2',
         title: 'What I’ve Learned from a year of coding',
         description: 'In high school learned about graphic design. Was programing for one year. ' +
             'Preaches of starting small “nobody can expect to understand coding overnight”. ' +
@@ -69,7 +72,7 @@ export const journeys = [
         level:"JavaScript"
     },
     {
-        id: 'React3',
+        id: 'JavaScript3',
         title: 'Teach Yourself Programming in Ten Years',
         description: 'This website looks a bit sketchy but if you ignore that it provides invaluable ' +
             'information about why you should learn to program correctly. The claim made is that you can learn the ' +
