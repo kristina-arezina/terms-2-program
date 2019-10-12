@@ -1,8 +1,11 @@
 export const titles = [
-    'browsers', 'operating system', 'software development','terminal', 'programing languages', "web server / web host / server"
+    'browsers', 'operating system', 'software development','terminal', 'programing languages', "web server / web host / server", "why learn web basics?"
 ]
 
 export const links = [
+    {
+        id: 'why learn web basics?',
+    },
     {
         id: 'web server / web host / server',
         articles: "Articles",

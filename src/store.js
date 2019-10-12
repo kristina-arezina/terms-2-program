@@ -5,6 +5,17 @@ export const muscles = [
 
 export const exercises = [
     {
+        id: 'why learn web basics?',
+        title: 'Why Learn Web Basics?',
+        description: "If you wish to get into programming probably no one will come up to you  and quiz you on these " +
+            "terms. However, while talking to programers and while reading / watching coding tutorials these terms will " +
+            "be used freely. Thus, it is a good idea to get a general understanding of what these terms and concepts" +
+            " mean. By no means do you need to memorize every nook and cranny of theses terms, all you need is a " +
+            "working understanding in order to be able to follow one's train of thought without getting lost in a sea of " +
+            "unknown terms." ,
+        muscles: 'web basics',
+    },
+    {
         id: 'web server / web host / server',
         title: 'Web Server / Web Host / Server',
         description: "Web server, web host and server are terms used interchangeably to describe the same concept. " +
