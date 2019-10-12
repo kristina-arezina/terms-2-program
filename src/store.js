@@ -5,6 +5,17 @@ export const muscles = [
 
 export const exercises = [
     {
+        id: 'web server / web host / server',
+        title: 'Web Server / Web Host / Server',
+        description: "Web server, web host and server are terms used interchangeably to describe the same concept. " +
+            "Every website that is viewed through one's computer is located on a separate computer called a web server. " +
+            "This computer (the server) is always running and connected to the internet. When someone wants to access a " +
+            "webpage through their digital device a copy of the webpage is downloaded from the server onto the user's " +
+            "machine to be displayed to the person.",
+        muscles: 'web basics',
+        resourse:"Here are some resources that can help you learn about this topic:"
+    },
+    {
         id: 'browsers',
         title: 'Browsers',
         description: 'Browsers “ask” for information and then show the information they get on your screen in a ' +
