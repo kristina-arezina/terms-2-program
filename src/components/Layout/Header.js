@@ -21,7 +21,10 @@ export class Header extends Component {
                         <AppBar color="#f4f4f4">
                             <Toolbar>
                                 <Typography variant="h6" style={{flexGrow: 1}}>
-                                    Learn2Program
+                                    <Button href="/" color="inherit" variant="text"
+                                            >
+                                        Learn2Program
+                                    </Button>
                                 </Typography>
                                     <TemporaryDrawer />
                             </Toolbar>
@@ -30,21 +33,22 @@ export class Header extends Component {
                     ) : (
                         <AppBar color="#f4f4f4">
                             <Toolbar>
+                                <Button href="/" color="inherit" variant="text"
+                                             style={{
+                                                 color:"#f4f4f4",
+                                                 backgroundColor: "#00867d",
+                                                 textTransform: "uppercase",
+                                                 borderRadius: "1px",
+                                                 margin:"5px",
+                                                 height: 48,
+                                             }}
+                            >
+                                Home
+                            </Button>
                                 <Typography variant="h6" style={{flexGrow: 1}}>
                                     Learn2Program
                                 </Typography>
-                                    <Button href="/" color="inherit" variant="text"
-                                            style={{
-                                                color:"#f4f4f4",
-                                                backgroundColor: "#00867d",
-                                                textTransform: "uppercase",
-                                                borderRadius: "1px",
-                                                margin:"5px",
-                                                height: 48,
-                                            }}
-                                            >
-                                        Home
-                                    </Button>
+
                                     <Button href="/journey" color="inherit" variant="text"
                                             style={{
                                                 color:"#f4f4f4",

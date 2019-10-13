@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Next Steps
+
+- [ ] Home button on Navbar
+- [ ] Fancy font for logo
+- [ ] Put 3 stores in data.js
+
 ## Available Scripts
 
 In the project directory, you can run:
