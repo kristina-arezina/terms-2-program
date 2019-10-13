@@ -33,20 +33,10 @@ export class Header extends Component {
                     ) : (
                         <AppBar color="#f4f4f4">
                             <Toolbar>
-                                <Button href="/" color="inherit" variant="text"
-                                             style={{
-                                                 color:"#f4f4f4",
-                                                 backgroundColor: "#00867d",
-                                                 textTransform: "uppercase",
-                                                 borderRadius: "1px",
-                                                 margin:"5px",
-                                                 height: 48,
-                                             }}
-                            >
-                                Home
-                            </Button>
                                 <Typography variant="h6" style={{flexGrow: 1}}>
+                                    <Button href="/" color="inherit" variant="text">
                                     Learn2Program
+                                    </Button>
                                 </Typography>
 
                                     <Button href="/journey" color="inherit" variant="text"
