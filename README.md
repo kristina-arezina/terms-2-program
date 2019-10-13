@@ -3,6 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Next Steps
 
 - [ ] Put 3 stores in data.js
+- [ ] Fix link logic
 
 ## Available Scripts
 
