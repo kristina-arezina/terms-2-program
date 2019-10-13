@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {IconButton, Drawer, List, Divider, ListItem, ListItemIcon, ListItemText} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import HomeIcon from '@material-ui/icons/Home';
 import SubjectIcon from '@material-ui/icons/Subject';
 import HelpIcon from '@material-ui/icons/Help';
 
@@ -31,10 +30,6 @@ export default function TemporaryDrawer() {
             onKeyDown={toggleDrawer(side, false)}
         >
                 <List component="nav">
-                     <ListItemLink href="/">
-                        <ListItemIcon > <HomeIcon/></ListItemIcon>
-                        <ListItemText  primary={"Home"} />
-                    </ListItemLink>
                     <ListItemLink href="/journey">
                         <ListItemIcon > <SubjectIcon /></ListItemIcon>
                         <ListItemText  primary={"Programing Journeys"} />
