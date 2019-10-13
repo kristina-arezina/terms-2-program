@@ -5,10 +5,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Link from '@material-ui/core/Link';
+import {Button, Link, ListItemText, ListItem, List  } from "@material-ui/core";
 
 export default ({journeys}) =>
     <Paper>
@@ -56,10 +53,11 @@ export default ({journeys}) =>
                                                 >
                                                     {description}
                                                         <br/>
-                                                        <br/>
-                                                    <Link rel="noopener" variant="body1" href={link} target="_blank">
-                                                        {link}
-                                                    </Link>
+                                                        <Button>
+                                                            <Link rel="noopener" variant="body1" href={link} target="_blank">
+                                                                Read Full
+                                                            </Link>
+                                                        </Button>
                                                 </Typography>
                                             </React.Fragment>
                                         }
