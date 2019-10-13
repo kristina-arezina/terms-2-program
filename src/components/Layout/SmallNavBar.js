@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
-import IconButton from '@material-ui/core/IconButton';
+import {IconButton, Drawer, List, Divider, ListItem, ListItemIcon, ListItemText} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import SubjectIcon from '@material-ui/icons/Subject';
 import HelpIcon from '@material-ui/icons/Help';

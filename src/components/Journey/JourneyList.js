@@ -1,11 +1,6 @@
 import React, {Fragment} from "react";
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import {Button, Link, ListItemText, ListItem, List  } from "@material-ui/core";
+import {Button, Link, ListItemText, ListItem, List, ExpansionPanelDetails, Paper, Typography, ExpansionPanelSummary, ExpansionPanel} from "@material-ui/core";
 
 export default ({journeys}) =>
     <Paper>
