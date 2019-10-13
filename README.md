@@ -2,8 +2,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Next Steps
 
-- [ ] Home button on Navbar
-- [ ] Fancy font for logo
 - [ ] Put 3 stores in data.js
 
 ## Available Scripts
