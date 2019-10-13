@@ -22,7 +22,7 @@ const onIndexSelect = (e, index) =>
         <ThemeProvider theme={theme}>
             <Paper
                 style={{
-                paddingTop:66,
+                paddingTop:80,
                 marginTop: 8,
                 marginBottom:5,
                 backgroundColor:"#e0f2f1"

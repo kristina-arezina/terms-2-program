@@ -7,7 +7,7 @@ export class PageJourney extends Component {
         return (
             <Paper>
                 <Typography variant="h5" component="h3" style={{
-                    paddingTop:150,
+                    paddingTop:200,
                     paddingBottom:80,
                     textAlign:"center",
                     textTransform: 'uppercase',

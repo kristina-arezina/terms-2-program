@@ -13,7 +13,7 @@ const headerStyle = {
     color:"#f4f4f4",
     textAlign: "left",
     paddingLeft:"81px",
-    paddingTop:"100px",
+    paddingTop:"150px",
     paddingBottom:"22px",
     fontSize:"60pt",
     fontFamily:"century gothic",
