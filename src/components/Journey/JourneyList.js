@@ -48,8 +48,8 @@ export default ({journeys}) =>
                                                 >
                                                     {description}
                                                         <br/>
-                                                        <Button>
-                                                            <Link rel="noopener" variant="body1" href={link} target="_blank">
+                                                        <Button style={{padding:10, margin:10, border: "1px solid #4db6ac"}}>
+                                                            <Link style={{textDecoration: "none", color: "#4db6ac"}} rel="noopener" variant="body1" href={link} target="_blank">
                                                                 Read Full
                                                             </Link>
                                                         </Button>
