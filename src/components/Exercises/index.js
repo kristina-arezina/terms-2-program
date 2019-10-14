@@ -73,7 +73,7 @@ export default ({
                                         <br/>
                                     {links.map(({linkLists}) =>
                                     <Link rel="noopener" variant="body1" href={linkLists} target="_blank">
-                                        {linkLists}
+                                        <ul><li>{linkLists}</li></ul>
                                     </Link>
                                     )}
                                         <br/>
@@ -81,9 +81,9 @@ export default ({
                                     {videos}
                                         <br/>
                                         <br/>
-                                    {links.map(({videoItem}) =>
-                                        <Link rel="noopener" variant="body1" href={videoItem} target="_blank">
-                                            {videoItem}
+                                    {links.map(({videoLists}) =>
+                                        <Link rel="noopener" variant="body1" href={videoLists} target="_blank">
+                                            <ul><li>{videoLists}</li></ul>
                                         </Link>
                                     )}
                                 </p>
@@ -185,7 +185,7 @@ export default ({
                                         <br/>
                                         {links.map(({linkLists}) =>
                                             <Link rel="noopener" variant="body1" href={linkLists} target="_blank">
-                                                {linkLists}
+                                                <ul><li>{linkLists}</li></ul>
                                             </Link>
                                         )}
                                         <br/>
@@ -193,9 +193,9 @@ export default ({
                                         {videos}
                                         <br/>
                                         <br/>
-                                        {links.map(({videoItem}) =>
-                                            <Link rel="noopener" variant="body1" href={videoItem} target="_blank">
-                                                {videoItem}
+                                        {links.map(({videoLists}) =>
+                                            <Link rel="noopener" variant="body1" href={videoLists} target="_blank">
+                                                <ul><li>{videoLists}</li></ul>
                                             </Link>
                                         )}
                                     </p>
