@@ -194,11 +194,10 @@ export default ({
                                         <br/>
                                         <br/>
                                         {links.map(({videoLists}) =>
-                                        {videoLists.map(({videoItem})
+
                                             <Link rel="noopener" variant="body1" href={videoLists} target="_blank">
                                             <ul><li>{videoLists}</li></ul>
                                         </Link>
-                                        )}
 
                                         )}
                                     </p>
