@@ -31,7 +31,6 @@ const styles = {
 }
 
 export default ({
-     links,
      link: {
         link1=undefined,
         link2=undefined,
