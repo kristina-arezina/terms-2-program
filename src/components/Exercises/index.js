@@ -32,14 +32,8 @@ const styles = {
 
 export default ({
      link: {
-        link1=undefined,
-        link2=undefined,
-        link3=undefined,
-        link4=undefined,
-        video1=undefined,
-        video2=undefined,
-        video3=undefined,
-        video4=undefined,
+         linkLists: [ ] ,
+         videoLists: [ ],
         articles,
         videos
      },
@@ -78,37 +72,21 @@ export default ({
                                     {articles}
                                         <br/>
                                         <br/>
-                                            <Link  rel="noopener" variant="body1" href={link1} target="_blank">
-                                                {link1}
-                                            </Link>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={link2} target="_blank">
-                                                {link2}
-                                            </Link>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={link3} target="_blank">
-                                                {link3}
-                                            </Link>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={link4} target="_blank">
-                                                {link4}
-                                            </Link>
+                                    {this.linkLists.map(({linkItem}) =>
+                                    <Link rel="noopener" variant="body1" href={linkItem} target="_blank">
+                                        {linkItem}
+                                    </Link>
+                                    )}
                                         <br/>
                                         <br/>
                                     {videos}
                                         <br/>
                                         <br/>
-                                            <Link  rel="noopener" variant="body1" href={video1} target="_blank">
-                                                {video1}
-                                            </Link>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={video2} target="_blank">
-                                                {video2}
-                                            </Link>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={video3} target="_blank">
-                                                {video3}
-                                            </Link>
+                                    {this.videoLists.map(({videoItem}) =>
+                                        <Link rel="noopener" variant="body1" href={videoItem} target="_blank">
+                                            {videoItem}
+                                        </Link>
+                                    )}
                                 </p>
                             </Typography>
                         </Paper>
@@ -202,42 +180,26 @@ export default ({
                                     {resourse}
                                 <br/>
                                 <br/>
-                                    <p style={styles.p}>
-                                        {articles}
-                                        <br/>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={link1} target="_blank">
-                                            {link1}
-                                            </Link>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={link2} target="_blank">
-                                                {link2}
-                                            </Link>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={link3} target="_blank">
-                                                {link3}
-                                            </Link>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={link4} target="_blank">
-                                                {link4}
-                                            </Link>
-                                        <br/>
-                                        <br/>
-                                            {videos}
-                                        <br/>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={video1} target="_blank">
-                                                {video1}
-                                            </Link>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={video2} target="_blank">
-                                                {video2}
-                                            </Link>
-                                        <br/>
-                                            <Link  rel="noopener" variant="body1" href={video3} target="_blank">
-                                                {video3}
-                                            </Link>
-                                    </p>
+                                <p style={styles.p}>
+                                    {articles}
+                                    <br/>
+                                    <br/>
+                                    {linkLists.map(({linkItem}) =>
+                                        <Link rel="noopener" variant="body1" href={linkItem} target="_blank">
+                                            {linkItem}
+                                        </Link>
+                                    )}
+                                    <br/>
+                                    <br/>
+                                    {videos}
+                                    <br/>
+                                    <br/>
+                                    {videoLists.map(({videoItem}) =>
+                                        <Link rel="noopener" variant="body1" href={videoItem} target="_blank">
+                                            {videoItem}
+                                        </Link>
+                                    )}
+                                </p>
                             </Typography>
                         </Paper>
                     </Grid>

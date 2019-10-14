@@ -9,7 +9,11 @@ export class Home extends Component {
         exercises,
         exercise: {},
         links,
-        link: {},
+        link: {
+            linkLists: [ ] ,
+            videoLists: [ ],
+
+        },
     }
 
     getExercisesByMuscles(){
