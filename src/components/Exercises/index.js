@@ -33,9 +33,10 @@ const styles = {
 export default ({
      link: {
         articles,
-        videos
+        videos,
+         videoLists,
      },
-    links,
+                    linkLists,
      exercises,
      category,
      onSelect,
@@ -71,7 +72,7 @@ export default ({
                                     {articles}
                                         <br/>
                                         <br/>
-                                    {links.map(({linkLists}) =>
+                                    {linkLists.map(({linkLists}) =>
                                     <Link rel="noopener" variant="body1" href={linkLists} target="_blank">
                                         <ul><li>{linkLists}</li></ul>
                                     </Link>
@@ -81,7 +82,7 @@ export default ({
                                     {videos}
                                         <br/>
                                         <br/>
-                                    {links.map(({videoLists}) =>
+                                    {linkLists.map(({videoLists}) =>
                                         <Link rel="noopener" variant="body1" href={videoLists} target="_blank">
                                             <ul><li>{videoLists}</li></ul>
                                         </Link>
@@ -183,7 +184,7 @@ export default ({
                                         {articles}
                                         <br/>
                                         <br/>
-                                        {links.map(({linkLists}) =>
+                                        {linkLists.map(({linkLists}) =>
                                             <Link rel="noopener" variant="body1" href={linkLists} target="_blank">
                                                 <ul><li>{linkLists}</li></ul>
                                             </Link>
@@ -193,7 +194,7 @@ export default ({
                                         {videos}
                                         <br/>
                                         <br/>
-                                        {links.map(({videoLists}) =>
+                                        {linkLists.map(({videoLists}) =>
 
                                             <Link rel="noopener" variant="body1" href={videoLists} target="_blank">
                                             <ul><li>{videoLists}</li></ul>

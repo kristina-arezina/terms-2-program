@@ -23,7 +23,7 @@ state={
 
     render(){
         const journeys = this.getJourneyByLevel()
-        const{muscles,onExerciseCreate}=this.props;
+        const{muscles}=this.props;
 
         return (
             <div>

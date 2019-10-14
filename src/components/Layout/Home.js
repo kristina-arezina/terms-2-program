@@ -45,8 +45,22 @@ export class Home extends Component {
         )
     }
 
+    getLinkListsByTitle(){
+        return Object.entries(
+            this.state.linkLists.reduce((linkLists,linkList )=>{
+                const {id} = linkList
+
+                linkLists[id] = linkLists[id]
+                    ? [...linkLists[id], linkList]
+                    : [linkList]
+
+                return linkLists
+            }, {}))
+    }
+
     render(){
-        const exercises = this.getExercisesByMuscles(),
+        const exercises = this.getExercisesByMuscles()
+            const linkLists = this.getLinkListsByTitle(),
             {catergory, exercise, link} = this.state
 
         return(
@@ -64,7 +78,7 @@ export class Home extends Component {
                     exercises={exercises}
                     onSelect={this.handleExerciseSelect}
                     link={link}
-                    links={links}
+                    linkLists={linkLists}
                 />
             </nav>
 
