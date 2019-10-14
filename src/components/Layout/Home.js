@@ -10,8 +10,8 @@ export class Home extends Component {
         exercise: {},
         links,
         link: {
-            linkLists: [ ] ,
-            videoLists: [ ],
+            linkLists: { } ,
+            videoLists: { },
 
         },
     }
@@ -64,6 +64,7 @@ export class Home extends Component {
                     exercises={exercises}
                     onSelect={this.handleExerciseSelect}
                     link={link}
+                    links={links}
                 />
             </nav>
 

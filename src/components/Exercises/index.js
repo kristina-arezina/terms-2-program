@@ -32,11 +32,10 @@ const styles = {
 
 export default ({
      link: {
-         linkLists: [ ] ,
-         videoLists: [ ],
         articles,
         videos
      },
+    links,
      exercises,
      category,
      onSelect,
@@ -72,9 +71,9 @@ export default ({
                                     {articles}
                                         <br/>
                                         <br/>
-                                    {this.linkLists.map(({linkItem}) =>
-                                    <Link rel="noopener" variant="body1" href={linkItem} target="_blank">
-                                        {linkItem}
+                                    {links.map(({linkLists}) =>
+                                    <Link rel="noopener" variant="body1" href={linkLists} target="_blank">
+                                        {linkLists}
                                     </Link>
                                     )}
                                         <br/>
@@ -82,7 +81,7 @@ export default ({
                                     {videos}
                                         <br/>
                                         <br/>
-                                    {this.videoLists.map(({videoItem}) =>
+                                    {links.map(({videoItem}) =>
                                         <Link rel="noopener" variant="body1" href={videoItem} target="_blank">
                                             {videoItem}
                                         </Link>
@@ -180,26 +179,26 @@ export default ({
                                     {resourse}
                                 <br/>
                                 <br/>
-                                <p style={styles.p}>
-                                    {articles}
-                                    <br/>
-                                    <br/>
-                                    {linkLists.map(({linkItem}) =>
-                                        <Link rel="noopener" variant="body1" href={linkItem} target="_blank">
-                                            {linkItem}
-                                        </Link>
-                                    )}
-                                    <br/>
-                                    <br/>
-                                    {videos}
-                                    <br/>
-                                    <br/>
-                                    {videoLists.map(({videoItem}) =>
-                                        <Link rel="noopener" variant="body1" href={videoItem} target="_blank">
-                                            {videoItem}
-                                        </Link>
-                                    )}
-                                </p>
+                                    <p style={styles.p}>
+                                        {articles}
+                                        <br/>
+                                        <br/>
+                                        {links.map(({linkLists}) =>
+                                            <Link rel="noopener" variant="body1" href={linkLists} target="_blank">
+                                                {linkLists}
+                                            </Link>
+                                        )}
+                                        <br/>
+                                        <br/>
+                                        {videos}
+                                        <br/>
+                                        <br/>
+                                        {links.map(({videoItem}) =>
+                                            <Link rel="noopener" variant="body1" href={videoItem} target="_blank">
+                                                {videoItem}
+                                            </Link>
+                                        )}
+                                    </p>
                             </Typography>
                         </Paper>
                     </Grid>
