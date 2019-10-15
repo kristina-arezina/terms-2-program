@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import {Header, Footer} from "./HeaderFooter"
 import Exercises from "../Exercises"
 import {exercises, muscles} from "../../store";
@@ -34,7 +34,7 @@ export class Home extends Component {
 
     handleExerciseSelect = id => {
         this.setState(({exercises}) => ({
-            exercise: exercises. find(ex => ex.id ===id) }))
+            exercise: exercises.find(ex => ex.id ===id) }))
         this.setState(({links}) => ({
             link: links.find(ex => ex.id === id)
             })
