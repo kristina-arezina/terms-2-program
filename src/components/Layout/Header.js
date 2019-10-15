@@ -6,6 +6,8 @@ import MediaQuery from 'react-responsive';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import PropTypes from 'prop-types';
 import Slide from '@material-ui/core/Slide';
+import grey from '@material-ui/core/colors/grey';
+
 
 
 
@@ -15,6 +17,7 @@ function HideOnScroll(props) {
     // will default to window.
     // This is only being set here because the demo is in an iframe.
     const trigger = useScrollTrigger({ target: window ? window() : undefined });
+    const color = grey[50];
 
     return (
         <Slide appear={false} direction="down" in={!trigger}>
@@ -47,7 +50,7 @@ export default function Header (props) {
                 {matches =>
                     matches ? (
                         <HideOnScroll {...props}>
-                        <AppBar color="#f4f4f4">
+                        <AppBar color="inherit">
                             <Toolbar>
                                 <Typography variant="h6" style={{flexGrow: 1}}>
                                     <Button href="/" style={{ backgroundColor: "Transparent",  overflow: "hidden",fontFamily: 'Cormorant Garamond',fontSize:"20px", padding:20 }} color="inherit" variant="text"
@@ -62,7 +65,7 @@ export default function Header (props) {
 
                     ) : (
                         <HideOnScroll {...props}>
-                        <AppBar color="#f4f4f4">
+                        <AppBar color="inherit">
                             <Toolbar>
                                 <Typography variant="h6" style={{flexGrow: 1,}}>
                                     <Button href="/" style={{ backgroundColor: "Transparent",  overflow: "hidden", fontSize:"25px", fontFamily: 'Cormorant Garamond', padding:20 }}  color="inherit" variant="text">
