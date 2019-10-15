@@ -74,7 +74,7 @@ export default ({
                                 {resourse}
                             <br/>
                             <br/>
-                                <p style={styles.p}>
+                                <Typography style={styles.p}>
                                     {articles}
                                         <br/>
                                         <br/>
@@ -109,7 +109,7 @@ export default ({
                                             <Link  rel="noopener" variant="body1" href={video3} target="_blank">
                                                 {video3}
                                             </Link>
-                                </p>
+                                </Typography>
                             </Typography>
                         </Paper>
                     </Grid>

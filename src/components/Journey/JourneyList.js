@@ -2,14 +2,17 @@ import React from "react";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {Button, Link, ListItemText, ListItem, List, ExpansionPanelDetails, Paper, Typography, ExpansionPanelSummary, ExpansionPanel} from "@material-ui/core";
 
-export default ({journeys}) =>
+export default ({journeys}) => {
+
+return (
     <Paper>
         {journeys.map(([group,journeys]) =>
-            <ExpansionPanel>
+
+            <ExpansionPanel key={journeys}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon/>}
                 >
-                    <Typography
+                    <Typography key={journeys}
                         variant="h6"
                         style={{textTransform: "uppercase", fontFamily:"courier new"}}
                     >
@@ -20,12 +23,13 @@ export default ({journeys}) =>
                 <ExpansionPanelDetails>
 
                     <List>
-                        {journeys.map(({ title, description, link }) =>
-                            <ListItem alignItems="flex-start"  >
+                        {journeys.map(({ title, description, link, id }) =>
+                            <ListItem alignItems="flex-start"  key={id}>
                                 <Paper style={{backgroundColor:"#e0f2f1", padding:10}}
                                 >
 
                                     <ListItemText
+
                                         primary={
                                             <Typography
                                                 style={{
@@ -65,3 +69,4 @@ export default ({journeys}) =>
             </ExpansionPanel>
         )}
     </Paper>
+)}
