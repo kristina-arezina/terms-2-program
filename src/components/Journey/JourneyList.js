@@ -1,8 +1,42 @@
 import React from "react";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {Button, Link, ListItemText, ListItem, List, ExpansionPanelDetails, Paper, Typography, ExpansionPanelSummary, ExpansionPanel} from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+    typographyJourneys: {
+        textTransform: "uppercase",
+        fontFamily:"courier new"
+    },
+    paperJourney:{
+        backgroundColor:"#e0f2f1",
+        padding:10
+    },
+    listItemTextJourney1:{
+        marginBottom:"1.5%",
+        fontFamily:"century gothic",
+        color:"#000000"
+    },
+    listItemTextJourney2:{
+        fontFamily:"century gothic",
+        color:"#000000",
+        fontWeight: 50,
+        margin:20
+    },
+    button:{
+        padding:10,
+        margin:10,
+        border: "1px solid #4db6ac"
+    },
+    link:{
+        textDecoration: "none",
+        color: "#4db6ac"
+    }
+
+});
 
 export default ({journeys}) => {
+    const classes = useStyles();
 
 return (
     <Paper>
@@ -14,8 +48,7 @@ return (
                 >
                     <Typography key={journeys}
                         variant="h6"
-                        style={{textTransform: "uppercase", fontFamily:"courier new"}}
-                    >
+                        className={classes.typographyJourneys} >
                         {group}
                     </Typography>
                 </ExpansionPanelSummary>
@@ -25,18 +58,14 @@ return (
                     <List>
                         {journeys.map(({ title, description, link, id }) =>
                             <ListItem alignItems="flex-start"  key={id}>
-                                <Paper style={{backgroundColor:"#e0f2f1", padding:10}}
+                                <Paper className={classes.paperJourney}
                                 >
 
                                     <ListItemText
 
                                         primary={
                                             <Typography
-                                                style={{
-                                                    marginBottom:"1.5%",
-                                                    fontFamily:"century gothic",
-                                                    color:"#000000"
-                                                }}
+                                                className={classes.listItemTextJourney1}
                                             >
                                                 {title}
                                             </Typography>
@@ -44,16 +73,12 @@ return (
                                         secondary={
                                             <React.Fragment>
                                                 <Typography
-                                                    style={{fontFamily:"century gothic",
-                                                        color:"#000000",
-                                                        fontWeight: 50,
-                                                        margin:20
-                                                    }}
+                                                    className={classes.listItemTextJourney2}
                                                 >
                                                     {description}
                                                         <br/>
-                                                        <Button style={{padding:10, margin:10, border: "1px solid #4db6ac"}}>
-                                                            <Link style={{textDecoration: "none", color: "#4db6ac"}} rel="noopener" variant="body1" href={link} target="_blank">
+                                                        <Button className={classes.button}>
+                                                            <Link className={classes.link} rel="noopener" variant="body1" href={link} target="_blank">
                                                                 Read Full
                                                             </Link>
                                                         </Button>
