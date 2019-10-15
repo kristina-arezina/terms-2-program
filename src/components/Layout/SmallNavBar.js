@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {IconButton, Drawer, List, Divider, ListItem, ListItemIcon, ListItemText} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import SubjectIcon from '@material-ui/icons/Subject';

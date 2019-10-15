@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import {Toolbar, Typography, Button} from '@material-ui/core';
 import TemporaryDrawer from "./SmallNavBar"
