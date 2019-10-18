@@ -3,7 +3,7 @@ export const groups = [
     "web basics", "software development terms", "languages", "frameworks", "libraries"
 ]
 
-export const exercises = [
+export const items = [
     {
         id: 'why learn web basics?',
         title: 'Why Learn Web Basics?',

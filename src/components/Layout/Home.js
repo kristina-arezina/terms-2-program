@@ -1,27 +1,27 @@
 import React, {Component} from 'react';
 import {Header, Footer} from "./HeaderFooter"
 import Exercises from "../Exercises"
-import {exercises, groups} from "../../store";
+import {items, groups} from "../../store";
 import {links} from "../../storeLink";
 
 export class Home extends Component {
     state = {
-        exercises,
-        exercise: {},
+        items,
+        item: {},
         links,
         link: {},
     }
 
-    getExercisesByMuscles(){
+    getItemsByGroups(){
         return Object.entries(
-            this.state.exercises.reduce((exercises, exercise) => {
-                const {groups} = exercise
+            this.state.items.reduce((items, item) => {
+                const {groups} = item
 
-                exercises[groups] = exercises[groups]
-                    ? [...exercises[groups], exercise]
-                    : [exercise]
+                items[groups] = items[groups]
+                    ? [...items[groups], item]
+                    : [items]
 
-                return exercises
+                return items
             }, {})
         )
     }
@@ -32,9 +32,9 @@ export class Home extends Component {
         })
     }
 
-    handleExerciseSelect = id => {
-        this.setState(({exercises}) => ({
-            exercise: exercises.find(ex => ex.id ===id) }))
+    handleItemSelect = id => {
+        this.setState(({items}) => ({
+            item: items.find(ex => ex.id ===id) }))
         this.setState(({links}) => ({
             link: links.find(ex => ex.id === id)
             })
@@ -42,8 +42,8 @@ export class Home extends Component {
     }
 
     render(){
-        const exercises = this.getExercisesByMuscles(),
-            {catergory, exercise, link} = this.state
+        const items = this.getItemsByGroups(),
+            {catergory, item, link} = this.state
 
         return(
             <nav>
@@ -55,10 +55,10 @@ export class Home extends Component {
                     onSelect={this.handleCategorySelect}
                 />
                 <Exercises
-                    exercise={exercise}
+                    item={item}
                     category={catergory}
-                    exercises={exercises}
-                    onSelect={this.handleExerciseSelect}
+                    items={items}
+                    onSelect={this.handleItemSelect}
                     link={link}
                 />
             </nav>

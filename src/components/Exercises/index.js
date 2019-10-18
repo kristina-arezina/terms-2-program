@@ -43,10 +43,10 @@ export default ({
         articles,
         videos
      },
-     exercises,
+     items,
      category,
      onSelect,
-     exercise: {
+     item: {
          id,
          title = "Welcome!",
          description ="Please select a term from the list on the left inorder to learn more about it.",
@@ -115,7 +115,7 @@ export default ({
                     </Grid>
                     <Grid item xs={12}>
                         <Paper style={styles.Paper2} >
-                            {exercises.map(([group, exercises]) =>
+                            {items.map(([group, items]) =>
                                 !category || category === group
                                     ?   <Fragment key={group}>
                                             <Typography variant={"h6"}
@@ -128,7 +128,7 @@ export default ({
                                                 {group}
                                             </Typography>
                                             <List component="ul" >
-                                                {exercises.map(({id, title}) =>
+                                                {items.map(({id, title}) =>
                                                     <ListItem
                                                         key={id}
                                                         button
@@ -153,7 +153,7 @@ export default ({
                 <Grid container>
                     <Grid item sm={6}>
                         <Paper style={styles.Paper2} >
-                            {exercises.map(([group, exercises]) =>
+                            {items.map(([group, items]) =>
                                 !category || category === group
                                     ?
                                         <Fragment key={group}>
@@ -167,7 +167,7 @@ export default ({
                                                 {group}
                                             </Typography>
                                             <List component="ul" >
-                                                {exercises.map(({id, title}) =>
+                                                {items.map(({id, title}) =>
                                                     <ListItem
                                                         key={id}
                                                         button
