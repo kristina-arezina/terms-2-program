@@ -19,7 +19,7 @@ export class Home extends Component {
 
                 items[groups] = items[groups]
                     ? [...items[groups], item]
-                    : [items]
+                    : [item]
 
                 return items
             }, {})
