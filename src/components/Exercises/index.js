@@ -25,7 +25,7 @@ const styles = {
     link:{
         marginLeft:20
     },
-    p:{
+    text:{
         marginLeft:"5%"
     }
 }
@@ -72,9 +72,10 @@ export default ({
                             <br/>
                                 {description2}
                                 {resourse}
+                            </Typography>
                             <br/>
                             <br/>
-                                <Typography style={styles.p}>
+                                <Typography style={styles.text}>
                                     {articles}
                                         <br/>
                                         <br/>
@@ -110,7 +111,6 @@ export default ({
                                                 {video3}
                                             </Link>
                                 </Typography>
-                            </Typography>
                         </Paper>
                     </Grid>
                     <Grid item xs={12}>
@@ -200,9 +200,10 @@ export default ({
                                 <br/>
                                     {description2}
                                     {resourse}
+                            </Typography>
+                            <br/>
                                 <br/>
-                                <br/>
-                                    <p style={styles.p}>
+                                    <Typography style={styles.text}>
                                         {articles}
                                         <br/>
                                         <br/>
@@ -237,8 +238,7 @@ export default ({
                                             <Link  rel="noopener" variant="body1" href={video3} target="_blank">
                                                 {video3}
                                             </Link>
-                                    </p>
-                            </Typography>
+                                    </Typography>
                         </Paper>
                     </Grid>
             </Grid>
