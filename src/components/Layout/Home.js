@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Header, Footer} from "./HeaderFooter"
 import Exercises from "../Exercises"
-import {exercises, muscles} from "../../store";
+import {exercises, groups} from "../../store";
 import {links} from "../../storeLink";
 
 export class Home extends Component {
@@ -15,10 +15,10 @@ export class Home extends Component {
     getExercisesByMuscles(){
         return Object.entries(
             this.state.exercises.reduce((exercises, exercise) => {
-                const {muscles} = exercise
+                const {groups} = exercise
 
-                exercises[muscles] = exercises[muscles]
-                    ? [...exercises[muscles], exercise]
+                exercises[groups] = exercises[groups]
+                    ? [...exercises[groups], exercise]
                     : [exercise]
 
                 return exercises
@@ -51,7 +51,7 @@ export class Home extends Component {
                 <Footer
                     style={{marginTop: 20}}
                     category={catergory}
-                    muscles={muscles}
+                    groups={groups}
                     onSelect={this.handleCategorySelect}
                 />
                 <Exercises

@@ -3,14 +3,14 @@ import {Paper,Tabs, Tab} from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 
-export default ({muscles, category, onSelect}) => {
+export default ({groups, category, onSelect}) => {
     const index = category
     ?
-        muscles.findIndex(group => group === category) +1
+        groups.findIndex(group => group === category) +1
     : 0
 
 const onIndexSelect = (e, index) =>
-    onSelect (index === 0 ? "" : muscles[index-1]);
+    onSelect (index === 0 ? "" : groups[index-1]);
 
     const theme = createMuiTheme({
         palette: {
@@ -37,7 +37,7 @@ const onIndexSelect = (e, index) =>
                 >
                 <Tab label="All" />
 
-                {muscles.map(group =>
+                {groups.map(group =>
                     <Tab key={group} label={group} />
                 )}
 

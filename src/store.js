@@ -1,5 +1,5 @@
-//Muscle groups
-export const muscles = [
+// groups
+export const groups = [
     "web basics", "software development terms", "languages", "frameworks", "libraries"
 ]
 
@@ -13,7 +13,7 @@ export const exercises = [
             " mean. By no means do you need to memorize every nook and cranny of theses terms, all you need is a " +
             "working understanding in order to be able to follow one's train of thought without getting lost in a sea of " +
             "unknown terms." ,
-        muscles: 'web basics',
+        groups: 'web basics',
     },
     {
         id: 'web server / web host / server',
@@ -23,7 +23,7 @@ export const exercises = [
             "This computer (the server) is always running and connected to the internet. When someone wants to access a " +
             "webpage through their digital device a copy of the webpage is downloaded from the server onto the user's " +
             "machine to be displayed to the person.",
-        muscles: 'web basics',
+        groups: 'web basics',
         resourse:"Here are some resources that can help you learn about this topic:"
     },
     {
@@ -33,7 +33,7 @@ export const exercises = [
             'way that you can understand it. They can be thought of as interpreters of the web. Without them, it ' +
             'would be very hard to make sense of anything on your screen.',
         link: 'https://www.lifewire.com/what-is-a-browser-446234',
-        muscles: 'web basics',
+        groups: 'web basics',
         video:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
         resourse:"Here are some resources that can help you learn about this topic:"
     },
@@ -46,7 +46,7 @@ export const exercises = [
             'systems for smartphones.',
         video:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
         link: 'https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/',
-        muscles: 'web basics',
+        groups: 'web basics',
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
@@ -58,7 +58,7 @@ export const exercises = [
             'programs or data used to operate computers and execute specific tasks.',
         video:"https://www.youtube.com/watch?v=pquPUX1EihM",
         link: 'https://searchapparchitecture.techtarget.com/definition/software',
-        muscles: 'software development terms',
+        groups: 'software development terms',
         resourse:"Here are some resources that can help you learn about this topic:"
     },
     {
@@ -70,7 +70,7 @@ export const exercises = [
             '"Nothing in life is to be feared, it is only to be understood". ',
         link: 'https://medium.com/@webprolific/introducing-the-terminal-for-developers-1f86dfbcd623#targetText=' +
             'A%20terminal%20is%20text%2Dbased,the%20default%20shell%20is%20Bash.',
-        muscles: 'software development terms',
+        groups: 'software development terms',
         video:"https://www.youtube.com/watch?v=5XgBd6rjuDQ",
         resourse:"Here are some resources that can help you learn about this topic:"
 
@@ -82,7 +82,7 @@ export const exercises = [
             'and use to perform specific tasks. These instructions can be written in many different ways and can use ' +
             'different styles. There are hundreds of programming languages that exits however there are a handful of ' +
             'very popular ones.',
-        muscles: 'software development terms',
+        groups: 'software development terms',
         resourse:"This website is a GREAT resource to help you learn about the different types of programming languages! " +
             "To get an overview of the types of programming languages that exist you can view these resources:",
         link: 'https://codinginfinite.com/top-programming-languages-2020-stats-surveys/',
@@ -106,14 +106,14 @@ export const exercises = [
         resourse:"To find out more about what Python can do check out these resources:",
         link: 'https://www.youtube.com/watch?v=Y8Tko2YC5hA',
         video:"https://hackernoon.com/what-is-python-used-for-an-exclusive-answer-1z2xo3xtf",
-        muscles: 'languages',
+        groups: 'languages',
         image: "/Users/milanarezina/code-realm/src/img/Netflix_Logo_PMS.png"
     },
     {
         id: 'java-script',
         title: 'JavaScript',
         description: 'Biceps exercise...',
-        muscles: 'languages',
+        groups: 'languages',
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
@@ -121,7 +121,7 @@ export const exercises = [
         id: 'java',
         title: 'Java',
         description: 'Back and biceps exercise...',
-        muscles: 'languages',
+        groups: 'languages',
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
@@ -129,7 +129,7 @@ export const exercises = [
         id: 'angular',
         title: 'Angular',
         description: 'Delts exercise...',
-        muscles: 'frameworks',
+        groups: 'frameworks',
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
@@ -137,7 +137,7 @@ export const exercises = [
         id: 'vue',
         title: 'Vue',
         description: 'Triceps exercise...',
-        muscles: 'frameworks',
+        groups: 'frameworks',
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
@@ -147,7 +147,7 @@ export const exercises = [
         id: 'react',
         title: 'React',
         description: 'Back and leg exercise...',
-        muscles: 'libraries',
+        groups: 'libraries',
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
