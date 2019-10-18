@@ -8,17 +8,6 @@ const useStyles = makeStyles({
         textTransform: "uppercase",
         fontFamily:"courier new"
     },
-    listItemTextJourney1:{
-        marginBottom:"1.5%",
-        fontFamily:"century gothic",
-        color:"#000000"
-    },
-    listItemTextJourney2:{
-        fontFamily:"century gothic",
-        color:"#000000",
-        fontWeight: 50,
-        margin:20
-    },
     button:{
         padding:10,
         margin:10,
@@ -56,7 +45,8 @@ return (
                             <ListItem alignItems="flex-start"  key={id}>
                                 <Paper style={{
                                     backgroundColor:"#e0f2f1",
-                                    padding:10
+                                    padding:25,
+                                    fontFamily:"century gothic",
                                 }}
                                 >
 
