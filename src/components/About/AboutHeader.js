@@ -1,5 +1,6 @@
 import React from 'react';
 
+//everything for the header on the about page
 function AboutHeader(){
     return (
         <header >

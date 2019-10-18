@@ -4,6 +4,7 @@ import MediaQuery from 'react-responsive';
 import {Header} from "../Layout/HeaderFooter.js"
 import {Grid, Paper } from "@material-ui/core";
 
+//All the content on the About page
 function About(){
     return(
         <div>
