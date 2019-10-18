@@ -32,14 +32,14 @@ const styles = {
 
 export default ({
      link: {
-        link1=undefined,
-        link2=undefined,
-        link3=undefined,
-        link4=undefined,
-        video1=undefined,
-        video2=undefined,
-        video3=undefined,
-        video4=undefined,
+        link1="",
+        link2="",
+        link3="",
+        link4="",
+        video1="",
+        video2="",
+        video3="",
+        video4="",
         articles,
         videos
      },

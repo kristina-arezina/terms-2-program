@@ -50,7 +50,7 @@ export default function Header (props) {
                                 <Typography variant="h6" style={{flexGrow: 1}}>
                                     <Button href="/" style={{ backgroundColor: "Transparent",  overflow: "hidden",fontFamily: 'Cormorant Garamond',fontSize:"20px", padding:20 }} color="inherit" variant="text"
                                             >
-                                        Learn2Program
+                                        Terms2Program
                                     </Button>
                                 </Typography>
                                     <TemporaryDrawer />
@@ -64,7 +64,7 @@ export default function Header (props) {
                             <Toolbar>
                                 <Typography variant="h6" style={{flexGrow: 1,}}>
                                     <Button href="/" style={{ backgroundColor: "Transparent",  overflow: "hidden", fontSize:"25px", fontFamily: 'Cormorant Garamond', padding:20 }}  color="inherit" variant="text">
-                                    Learn2Program
+                                        Terms2Program
                                     </Button>
                                 </Typography>
 
