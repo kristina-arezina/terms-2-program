@@ -8,10 +8,6 @@ const useStyles = makeStyles({
         textTransform: "uppercase",
         fontFamily:"courier new"
     },
-    paperJourney:{
-        backgroundColor:"#e0f2f1",
-        padding:10
-    },
     listItemTextJourney1:{
         marginBottom:"1.5%",
         fontFamily:"century gothic",
@@ -58,23 +54,22 @@ return (
                     <List>
                         {journeys.map(({ title, description, link, id }) =>
                             <ListItem alignItems="flex-start"  key={id}>
-                                <Paper className={classes.paperJourney}
+                                <Paper style={{
+                                    backgroundColor:"#e0f2f1",
+                                    padding:10
+                                }}
                                 >
 
                                     <ListItemText
-
                                         primary={
-                                            <Typography
-                                                className={classes.listItemTextJourney1}
-                                            >
+                                            <React.Fragment >
                                                 {title}
-                                            </Typography>
+                                            </React.Fragment>
                                         }
                                         secondary={
-                                            <React.Fragment>
-                                                <Typography
-                                                    className={classes.listItemTextJourney2}
-                                                >
+                                            <React.Fragment >
+
+
                                                     {description}
                                                         <br/>
                                                         <Button className={classes.button}>
@@ -82,7 +77,6 @@ return (
                                                                 Read Full
                                                             </Link>
                                                         </Button>
-                                                </Typography>
                                             </React.Fragment>
                                         }
                                     />
