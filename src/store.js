@@ -112,7 +112,7 @@ export const items = [
     {
         id: 'java-script',
         title: 'JavaScript',
-        description: 'Biceps exercise...',
+        description: 'Bffer',
         groups: 'languages',
         resourse:"Here are some resources that can help you learn about this topic:"
 
@@ -120,7 +120,7 @@ export const items = [
     {
         id: 'java',
         title: 'Java',
-        description: 'Back and biceps exercise...',
+        description: 'Bffer',
         groups: 'languages',
         resourse:"Here are some resources that can help you learn about this topic:"
 
@@ -128,7 +128,7 @@ export const items = [
     {
         id: 'angular',
         title: 'Angular',
-        description: 'Delts exercise...',
+        description: 'Bffer',
         groups: 'frameworks',
         resourse:"Here are some resources that can help you learn about this topic:"
 
@@ -136,7 +136,7 @@ export const items = [
     {
         id: 'vue',
         title: 'Vue',
-        description: 'Triceps exercise...',
+        description: 'Bffer',
         groups: 'frameworks',
         resourse:"Here are some resources that can help you learn about this topic:"
 
@@ -146,7 +146,7 @@ export const items = [
     {
         id: 'react',
         title: 'React',
-        description: 'Back and leg exercise...',
+        description: 'Bffer',
         groups: 'libraries',
         resourse:"Here are some resources that can help you learn about this topic:"
 
