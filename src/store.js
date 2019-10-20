@@ -143,9 +143,21 @@ export const items = [
 
     },
     {
+        id: 'what-is-a-framework?',
+        title: 'What is a Framework?',
+        description: 'Frameworks provide programmers with reusable abstractions of code wrapped in a well-defined ' +
+            'Application programming interface (API). They can be used to simplify code as they contain prewritten code ' +
+            'that you can use instead of having to write everything from scratch. The code from the framework can be ' +
+            'selectively overridden or specialized by user code providing specific functionality. ',
+        groups: 'frameworks',
+        resourse:"Here are some resources that can help you learn about this topic:"
+
+    },
+    {
         id: 'angular',
         title: 'Angular',
-        description: 'Bffer',
+        description: 'Angular is a javascript framework. It can be used to make dynamic single page dynamic web apps. ' +
+            'Although Angular is a great tool to use it is advisable to learn the basics of JavaScript, HTML, and CSS. ',
         groups: 'frameworks',
         resourse:"Here are some resources that can help you learn about this topic:"
 
@@ -153,7 +165,12 @@ export const items = [
     {
         id: 'vue',
         title: 'Vue',
-        description: 'Bffer',
+        description: 'Vue.js is a javascript framework that allows you to build complex web apps. To get started with ' +
+            'Vue it is recommended to have a basic understanding of JavaScript, HTML, and CSS. Since Vue has a large ' +
+            'collection of libraries and set of tools facilitating development it is popular among javascript ' +
+            'programmers. Additionally, Vue comes with its own DevTools which come in the form of a browser extension. ' +
+            'These DevTools are useful as they simplify application debugging and checking the state and hierarchy of ' +
+            'components. ',
         groups: 'frameworks',
         resourse:"Here are some resources that can help you learn about this topic:"
 
