@@ -32,9 +32,7 @@ export const items = [
         description: 'Browsers “ask” for information and then show the information they get on your screen in a ' +
             'way that you can understand it. They can be thought of as interpreters of the web. Without them, it ' +
             'would be very hard to make sense of anything on your screen.',
-        link: 'https://www.lifewire.com/what-is-a-browser-446234',
         groups: 'web basics',
-        video:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
         resourse:"Here are some resources that can help you learn about this topic:"
     },
     {
@@ -46,8 +44,6 @@ export const items = [
             'Mobile devices such as phones, tablet computers, work differently than personal computers so they use ' +
             'operating systems that are designed specifically for mobile devices. Apple iOS and Google Android are ' +
             'popular mobile operating systems.',
-        video:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
-        link: 'https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/',
         groups: 'web basics',
         resourse:"Here are some resources that can help you learn about this topic:"
 
@@ -58,7 +54,6 @@ export const items = [
         description: 'The process in which someone makes the programs that make a computer do something of interest is ' +
             'called software development. People create software which is the set of instructions, programs or data ' +
             'used to make computers perform specific tasks.',
-        link: 'https://searchapparchitecture.techtarget.com/definition/software',
         groups: 'software development terms',
         resourse:"Here are some resources that can help you learn about this topic:"
     },
@@ -69,10 +64,7 @@ export const items = [
             'important concept to understand as you can use a terminal on any computer. Please note that a terminal ' +
             'appears to be very intimidating to beginners. However, mastering using it can significantly increase your ' +
             'efficiency and effectiveness while programing.',
-        link: 'https://medium.com/@webprolific/introducing-the-terminal-for-developers-1f86dfbcd623#targetText=' +
-            'A%20terminal%20is%20text%2Dbased,the%20default%20shell%20is%20Bash.',
         groups: 'software development terms',
-        video:"https://www.youtube.com/watch?v=5XgBd6rjuDQ",
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
@@ -86,11 +78,6 @@ export const items = [
         groups: 'software development terms',
         resourse:"This website is a great resource to help you learn about the different types of programming languages! " +
             "To get an overview of the types of programming languages that exist you can view these resources:",
-        link: 'https://codinginfinite.com/top-programming-languages-2020-stats-surveys/',
-        video:"https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/" +
-            "programming-intro",
-
-
     },
     {
         id: 'what-language-should-i-learn',
@@ -116,8 +103,6 @@ export const items = [
             "than 50% of U.S. households, uses Python for the bases for their recommendation algorithms and analytics " +
             "engine. ",
         resourse:"To find out more about what Python can do check out these resources:",
-        link: 'https://www.youtube.com/watch?v=Y8Tko2YC5hA',
-        video:"https://hackernoon.com/what-is-python-used-for-an-exclusive-answer-1z2xo3xtf",
         groups: 'languages',
     },
     {
