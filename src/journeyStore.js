@@ -63,24 +63,12 @@ export const journeys = [
     },
     {
         id: 'JavaScript2',
-        title: 'What I’ve Learned from a year of coding',
+        title: 'How I landed my first Javascript Development Job and got 6 figures for it',
         description: 'In high school learned about graphic design. Was programing for one year. ' +
             'Preaches of starting small “nobody can expect to understand coding overnight”. ' +
             'Learned HTML and CSS first. Liked freecodecamp. Recommends to start a programming project ' +
             'when you feel comfortable with the syntax of  language.',
-        link: 'https://www.freecodecamp.org/news/what-ive-learned-from-a-year-of-coding-bf39c5823e9b/',
-        level:"JavaScript"
-    },
-    {
-        id: 'JavaScript3',
-        title: 'Teach Yourself Programming in Ten Years',
-        description: 'This website looks a bit sketchy but if you ignore that it provides invaluable ' +
-            'information about why you should learn to program correctly. The claim made is that you can learn the ' +
-            'basics of programming quickly however, researchers have shown it takes about ten years to develop ' +
-            'expertise in a particular area. Believes you must challenge yourself with a task that is just beyond your ' +
-            'current ability, trying it, analyzing your performance while and after doing it, and correcting any ' +
-            'mistakes. Make programming fun. Learn by doing.',
-        link: 'https://www.norvig.com/21-days.html',
+        link: 'https://ilovecoding.org/blog/6-figure-developer-job',
         level:"JavaScript"
     },
     {
