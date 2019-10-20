@@ -7,12 +7,12 @@ export const items = [
     {
         id: 'why learn web basics?',
         title: 'Why Learn Web Basics?',
-        description: "If you wish to get into programming probably no one will come up to you  and quiz you on these " +
-            "terms. However, while talking to programers and while reading / watching coding tutorials these terms will " +
-            "be used freely. Thus, it is a good idea to get a general understanding of what these terms and concepts" +
-            " mean. By no means do you need to memorize every nook and cranny of theses terms, all you need is a " +
-            "working understanding in order to be able to follow one's train of thought without getting lost in a sea of " +
-            "unknown terms." ,
+        description: "If you wish to get into programming probably no one will come up to you and quiz you on these " +
+            "terms. However, if you talk to other programmers or read / watch coding tutorials these terms will be " +
+            "used constantly and freely. So, it is a good idea to get a general understanding of what these terms and " +
+            "concepts mean. By no means do you need to memorize every nook and cranny of theses terms, all you need" +
+            " is a working understanding of these concepts in order to be able to follow one's train of thought " +
+            "without getting lost in a sea of unknown terms." ,
         groups: 'web basics',
     },
     {
@@ -40,10 +40,12 @@ export const items = [
     {
         id: 'operating system',
         title: 'Operating System',
-        description: 'Every computer needs an operating system. It can be thought of as an extremely powerful ' +
-            'program that controls how the computer works. The most popular operating systems for desktops and ' +
-            'laptops are versions of Microsoft Windows, Apple’s OS X, Linux distributions, and mobile operating ' +
-            'systems for smartphones.',
+        description: 'Every computer needs an operating system. It can be thought of as an extremely powerful program ' +
+            'that controls how the computer works. Operating systems are usually pre-loaded on the computer you buy. ' +
+            'The most popular operating systems for personal computers are Microsoft Windows, macOS, and Linux. ' +
+            'Mobile devices such as phones, tablet computers, work differently than personal computers so they use ' +
+            'operating systems that are designed specifically for mobile devices. Apple iOS and Google Android are ' +
+            'popular mobile operating systems.',
         video:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
         link: 'https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/',
         groups: 'web basics',
@@ -53,10 +55,9 @@ export const items = [
     {
         id: 'software development',
         title: 'Software Development',
-        description: 'The process in which someone makes the programs that make a computer do something of ' +
-            'interest is called software development. People create software which is the set of instructions, ' +
-            'programs or data used to operate computers and execute specific tasks.',
-        video:"https://www.youtube.com/watch?v=pquPUX1EihM",
+        description: 'The process in which someone makes the programs that make a computer do something of interest is ' +
+            'called software development. People create software which is the set of instructions, programs or data ' +
+            'used to make computers perform specific tasks.',
         link: 'https://searchapparchitecture.techtarget.com/definition/software',
         groups: 'software development terms',
         resourse:"Here are some resources that can help you learn about this topic:"
@@ -64,10 +65,10 @@ export const items = [
     {
         id: 'terminal',
         title: 'Terminal',
-        description: 'Many of the tools that you need to use to develop software are run in the terminal. ' +
-            'It is a very important concept to understand as you can use it always and everywhere. Please note ' +
-            'that a terminal appears to be very intimidating to beginners. Just remember what Marie Curie said, ' +
-            '"Nothing in life is to be feared, it is only to be understood". ',
+        description: 'Many of the tools that you need to use to develop software are run in the terminal. It is an ' +
+            'important concept to understand as you can use a terminal on any computer. Please note that a terminal ' +
+            'appears to be very intimidating to beginners. However, mastering using it can significantly increase your ' +
+            'efficiency and effectiveness while programing.',
         link: 'https://medium.com/@webprolific/introducing-the-terminal-for-developers-1f86dfbcd623#targetText=' +
             'A%20terminal%20is%20text%2Dbased,the%20default%20shell%20is%20Bash.',
         groups: 'software development terms',
@@ -83,7 +84,7 @@ export const items = [
             'different styles. There are hundreds of programming languages that exits however there are a handful of ' +
             'very popular ones.',
         groups: 'software development terms',
-        resourse:"This website is a GREAT resource to help you learn about the different types of programming languages! " +
+        resourse:"This website is a great resource to help you learn about the different types of programming languages! " +
             "To get an overview of the types of programming languages that exist you can view these resources:",
         link: 'https://codinginfinite.com/top-programming-languages-2020-stats-surveys/',
         video:"https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/" +
