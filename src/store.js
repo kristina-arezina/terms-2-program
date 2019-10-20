@@ -108,24 +108,25 @@ export const items = [
         id: 'python',
         title: 'Python',
         description: 'Python is one of the most popular programming languages in the world. It is considered to be a ' +
-            'relatively easy programing language to learn as its syntax (the way it is written) is simple. ' +
-            'The notion of simplicity is emphasized with one of the main motos Python uses, ‘simple is better ' +
-            'than complex.',
-        description2:"Although python is simple it is extremely powerful and versatile. These characteristics " +
-            "make many tech giants use Python to develop their products. For example, Dropbox, which had 11.5 " +
-            "million paying users in 2018, used python to create many components of their product. Netflix, that is " +
-            "present in more than 50% of U.S. households, uses Python for the bases for their recommendation " +
-            "algorithms and analytics engine. ",
+            'relatively easy programing language to learn as its syntax (the way it is written) is simple. The ' +
+            'notion of simplicity is emphasized with one of the main mottos Python uses, "simple is better than complex".',
+        description2:"Although Python is simple it is extremely powerful and versatile. These characteristics make many " +
+            "tech giants use Python to develop their products. For example, Dropbox, which had 11.5 million paying " +
+            "users in 2018, used Python to create many components of their product. Netflix, which is present in more " +
+            "than 50% of U.S. households, uses Python for the bases for their recommendation algorithms and analytics " +
+            "engine. ",
         resourse:"To find out more about what Python can do check out these resources:",
         link: 'https://www.youtube.com/watch?v=Y8Tko2YC5hA',
         video:"https://hackernoon.com/what-is-python-used-for-an-exclusive-answer-1z2xo3xtf",
         groups: 'languages',
-        image: "/Users/milanarezina/code-realm/src/img/Netflix_Logo_PMS.png"
     },
     {
         id: 'java-script',
         title: 'JavaScript',
-        description: 'Bffer',
+        description: 'Javascript is a popular programming language as it is extremely versatile. It is commonly used ' +
+            'as a part of web pages as it can update and change both HTML and CSS. Additionally, JavaScript can ' +
+            'calculate, manipulate and validate data. Although javascript can be learned by anyone it is ' +
+            'powerful and therefore used by many large companies such as PayPal, Uber, and eBay.',
         groups: 'languages',
         resourse:"Here are some resources that can help you learn about this topic:"
 
