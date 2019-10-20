@@ -175,12 +175,25 @@ export const items = [
         resourse:"Here are some resources that can help you learn about this topic:"
 
     },
+    {
+        id: 'what-is-a-library?',
+        title: 'What is a Library?',
+        description: 'In software development, a library is a collection of ready to use sections of programs that ' +
+            'can be implemented and resued into your own code. Libraries can speed up the time it takes you to develop ' +
+            'a product as they contain code that was previously written by someone else that you can make use of. ' +
+            'Different programming languages have varying libraries.',
+        groups: 'libraries',
+        resourse:"Here are some resources that can help you learn about this topic:"
 
-
+    },
     {
         id: 'react',
         title: 'React',
-        description: 'Bffer',
+        description: 'React is a JavaScript library that can help you make user interfaces (UI\'s). It allows you to' +
+            ' make the parts of a website / web application that you can see. React helps you create on-screen menus, ' +
+            'search bars and buttons in an organized and simplified manner. React was developed by Facebook to improve ' +
+            'UI development. So, naturally, Facebook uses React but other large companies such as Khan Academy, Yahoo, ' +
+            'and Netflix also use React. ',
         groups: 'libraries',
         resourse:"Here are some resources that can help you learn about this topic:"
 
