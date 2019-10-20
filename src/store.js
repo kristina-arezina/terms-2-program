@@ -93,6 +93,18 @@ export const items = [
 
     },
     {
+        id: 'what-language-should-i-learn',
+        title: 'What Programing Language Should I Learn?',
+        description: 'Once you decide you want to learn to program the first question that comes up is what language ' +
+            'should you learn. It is often an overwhelming question as there are hundreds of languages to chose from ' +
+            'all capable of different things. Additionally, matters become more confusing as many sources have ' +
+            'conflicting ideas of what the best programing language is to learn is. Many factors can contriube ' +
+            'to your decision of what language to learn. ',
+        groups: 'languages',
+        resourse:"Hopefully, these resources can help you decide what language to learn:"
+
+    },
+    {
         id: 'python',
         title: 'Python',
         description: 'Python is one of the most popular programming languages in the world. It is considered to be a ' +

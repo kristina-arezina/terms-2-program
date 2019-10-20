@@ -40,6 +40,7 @@ export default ({
         video2="",
         video3="",
         video4="",
+         video5="",
         articles,
         videos
      },
@@ -114,6 +115,10 @@ export default ({
                                             <Link  rel="noopener" variant="body1" href={video4} target="_blank">
                                                 {video4}
                                             </Link>
+                                    <br/>
+                                    <Link  rel="noopener" variant="body1" href={video5} target="_blank">
+                                        {video5}
+                                    </Link>
                                 </Typography>
                         </Paper>
                     </Grid>
@@ -245,6 +250,10 @@ export default ({
                                         <br/>
                                         <Link  rel="noopener" variant="body1" href={video4} target="_blank">
                                             {video4}
+                                        </Link>
+                                        <br/>
+                                        <Link  rel="noopener" variant="body1" href={video5} target="_blank">
+                                            {video5}
                                         </Link>
                                     </Typography>
                         </Paper>

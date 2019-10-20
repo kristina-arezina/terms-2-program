@@ -66,6 +66,20 @@ export const links = [
         video2:"https://www.youtube.com/watch?v=_zusEe3GOe8",
     },
     {
+        id: 'what-language-should-i-learn',
+        articles: "Articles",
+        videos:"Videos",
+        link1:"https://blog.teamtreehouse.com/choose-programming-language",
+        link2:"https://www.freecodecamp.org/news/how-to-choose-which-programming-language-you-should-learn-in-2019-60abef241012/",
+        link3:"https://medium.com/the-mission/how-to-choose-which-programming-language-to-learn-infographic-46f7874bd02",
+        link4:"https://opensource.com/article/17/1/choosing-your-first-programming-language",
+        video1:"https://www.youtube.com/watch?v=2EaopRDxNrw",
+        video2:"https://www.youtube.com/watch?v=poJfwre2PIs",
+        video3:"https://www.youtube.com/watch?v=iH4JJuoHQHc",
+        video4:"https://www.youtube.com/watch?v=d7nxcC9i6t8",
+        video5:"https://www.youtube.com/watch?v=QUPZvJPKd8A"
+    },
+    {
         id: 'python',
         articles: "Articles",
         videos:"Videos",
