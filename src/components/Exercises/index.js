@@ -69,7 +69,6 @@ export default ({
                             <br/>
                             <br/>
                                 {description2}
-                                {resourse}
                             <br/>
                                 {description2}
                                 {resourse}

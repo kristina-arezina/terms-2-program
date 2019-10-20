@@ -123,10 +123,11 @@ export const items = [
     {
         id: 'java-script',
         title: 'JavaScript',
-        description: 'Javascript is a popular programming language as it is extremely versatile. It is commonly used ' +
-            'as a part of web pages as it can update and change both HTML and CSS. Additionally, JavaScript can ' +
-            'calculate, manipulate and validate data. Although javascript can be learned by anyone it is ' +
-            'powerful and therefore used by many large companies such as PayPal, Uber, and eBay.',
+        description: 'Javascript is a popular programming language as it is extremely versatile. However, it is most ' +
+            'commonly used as a part of web pages as it can update and change both HTML and CSS, allowing for ' +
+            'interactive effects on web pages. Additionally, JavaScript can calculate, manipulate and validate data. ' +
+            'Although javascript can be learned by anyone it is powerful and therefore used by many large companies ' +
+            'such as PayPal, Uber, and eBay.',
         groups: 'languages',
         resourse:"Here are some resources that can help you learn about this topic:"
 
@@ -134,7 +135,9 @@ export const items = [
     {
         id: 'java',
         title: 'Java',
-        description: 'Bffer',
+        description: 'Java is an object-oriented programming (OOP) language that was created in 1995. It is popular as ' +
+            'it is used in many devices and for multiple purposes. It can be used to power Android apps and web ' +
+            'applications, perform big data analysis, make video games and much more. ',
         groups: 'languages',
         resourse:"Here are some resources that can help you learn about this topic:"
 
