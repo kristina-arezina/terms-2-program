@@ -1,5 +1,5 @@
 export const level = [
-    "complete beginner", "react", "C++", "JavaScript"
+    "complete beginner", "react", "Python", "JavaScript"
 ]
 
 export const journeys = [
@@ -64,24 +64,23 @@ export const journeys = [
     {
         id: 'JavaScript2',
         title: 'How I landed my first Javascript Development Job and got 6 figures for it',
-        description: 'In high school learned about graphic design. Was programing for one year. ' +
-            'Preaches of starting small “nobody can expect to understand coding overnight”. ' +
-            'Learned HTML and CSS first. Liked freecodecamp. Recommends to start a programming project ' +
-            'when you feel comfortable with the syntax of  language.',
+        description: 'Aziz Ali decided that he wanted to learn to program and eventually taught himself how to do so.' +
+            ' He overcame his self-imposed belief of "coding is not for me" and learned JavaScript because he wanted to ' +
+            'be able to express his own ideas without relying on other people to write his code. He believes that HTML, ' +
+            'CSS, and JavaScript combination is the most powerful and versatile tech stack. Although Aziz focuses ' +
+            'on getting a job from learning javascript he shares tips on how to learn the language in the first place.',
         link: 'https://ilovecoding.org/blog/6-figure-developer-job',
         level:"JavaScript"
     },
     {
-        id: 'C++1',
-        title: 'Testing',
-        description: 'This website looks a bit sketchy but if you ignore that it provides invaluable ' +
-            'information about why you should learn to program correctly. The claim made is that you can learn the ' +
-            'basics of programming quickly however, researchers have shown it takes about ten years to develop ' +
-            'expertise in a particular area. Believes you must challenge yourself with a task that is just beyond your ' +
-            'current ability, trying it, analyzing your performance while and after doing it, and correcting any ' +
-            'mistakes. Make programming fun. Learn by doing.',
-        link: 'https://www.norvig.com/21-days.html',
-        level:"C++"
+        id: 'Python',
+        title: 'How I learned Python Programming RAPIDLY!',
+        description: 'Chase Childers was programming for 3 years and is now a Full-Stack Python Developer/Programmer. ' +
+            'He started to code because he loves technology, creating and fixing things. Chase used Youtube, ' +
+            'the internet and a mentor to learn Python. He shares the challenges he faced while learning and gives ' +
+            'tips and advice to beginners.',
+        link: 'https://www.codementor.io/cchilders/how-i-learned-python-programming-rapidly-wqnklac0b',
+        level:"Python"
     },
 
 ]

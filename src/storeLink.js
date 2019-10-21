@@ -72,7 +72,7 @@ export const links = [
         link1:"https://blog.teamtreehouse.com/choose-programming-language",
         link2:"https://www.freecodecamp.org/news/how-to-choose-which-programming-language-you-should-learn-in-2019-60abef241012/",
         link3:"https://medium.com/the-mission/how-to-choose-which-programming-language-to-learn-infographic-46f7874bd02",
-        link4:"https://opensource.com/article/17/1/choosing-your-first-programming-language",
+        link4:"https://medium.com/sololearn/warning-your-programming-career-b9579b3a878b",
         video1:"https://www.youtube.com/watch?v=2EaopRDxNrw",
         video2:"https://www.youtube.com/watch?v=poJfwre2PIs",
         video3:"https://www.youtube.com/watch?v=iH4JJuoHQHc",
@@ -102,6 +102,7 @@ export const links = [
         video1:"https://www.youtube.com/watch?v=dlfrWbYk1v0&t=18s",
         video2:"https://www.youtube.com/watch?v=OSWppEa2Zac",
         video3:"https://www.youtube.com/watch?v=upDLs1sn7g4",
+        video4:"https://www.youtube.com/watch?v=0ZA0oJo00uQ",
     },
     {
         id: 'java',
