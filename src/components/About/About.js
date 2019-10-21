@@ -18,7 +18,7 @@ function About(){
                                 <Grid item xs={12}>
                                     <Paper
                                         style={{
-                                            padding: 30,
+                                            padding: 40,
                                             textAlign: 'left',
                                             backgroundColor:"white",
                                             color:"#000000",
@@ -55,7 +55,7 @@ function About(){
                                 <Grid item xs={12}>
                                     <Paper
                                         style={{
-                                            padding:30,
+                                            padding:40,
                                         textAlign: 'left',
                                         backgroundColor:"white",
                                         color:"#000000",
@@ -96,7 +96,7 @@ function About(){
                                 <Grid  item xs={6}>
                                     <Paper
                                         style={{
-                                            padding: 30,
+                                            padding: 40,
                                             textAlign: 'left',
                                             backgroundColor:"white",
                                             color:"#000000",
@@ -124,7 +124,7 @@ function About(){
 
                                 <Grid item xs={6}>
                                     <Paper style={{
-                                        padding: 30,
+                                        padding: 40,
                                         textAlign: 'left',
                                         backgroundColor:"white",
                                         color:"#000000",
