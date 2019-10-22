@@ -11,7 +11,8 @@ const styles = {
         overflowY:"auto",
         overflowWrap:" break-word",
         wordWrap: "break-word",
-        hyphens: "auto"
+        hyphens: "auto",
+        fontFamily:"century gothic"
 },
     Paper2: {
         padding:20,
@@ -20,7 +21,7 @@ const styles = {
         overflowY:"auto",
         overflowWrap:" break-word",
         wordWrap: "break-word",
-        hyphens: "auto"
+        hyphens: "auto",
     },
     link:{
         marginLeft:20
@@ -61,10 +62,10 @@ export default ({
                 <Grid container>
                     <Grid item xs={12} >
                         <Paper style={styles.Paper1}>
-                            <Typography variant="h3" style={{fontFamily:"century gothic"}}>
+                            <Typography variant="h3">
                                 {title}
                             </Typography>
-                            <Typography variant={"body1"} style={{marginTop:20, fontFamily:"century gothic"}}>
+                            <Typography variant={"body1"} style={{marginTop:20}}>
                                 {description}
                             <br/>
                             <br/>
@@ -198,11 +199,11 @@ export default ({
                     <Grid item sm={6}>
                         <Paper style={styles.Paper1} >
 
-                            <Typography variant="h3"style={{ fontFamily:"century gothic",}}>
+                            <Typography variant="h3">
                             {title}
                             </Typography>
 
-                            <Typography variant={"body1"} style={{marginTop:20, fontFamily:"century gothic",}}>
+                            <Typography variant={"body1"} style={{marginTop:20}}>
                             {description}
                                 <br/>
                                 <br/>
