@@ -23,7 +23,6 @@ function About(){
                                             backgroundColor:"white",
                                             color:"#000000",
                                             margin:20,
-                                            fontFamily:"century gothic",
                                             }}
                                     >
                                         <h1
@@ -39,7 +38,8 @@ function About(){
                                         <p
                                             style={{
                                                 fontSize:16,
-                                                lineHeight: 1.6
+                                                lineHeight: 1.6,
+                                                fontFamily:"century gothic"
                                             }}
                                         >
                                             Programing is not difficult but it is complicated. Something is difficult if it requires a lot of skills to accomplish that task. For example, memorizing a huge list of random numbers in 1 minute is difficult as not many people have the capacity to do that. Thankfully, programming is complicated rather than difficult which means anyone can learn to program if they get over the two main barriers that make programming seem difficult.<br/><br/>
@@ -60,7 +60,6 @@ function About(){
                                         backgroundColor:"white",
                                         color:"#000000",
                                         margin:20,
-                                            fontFamily:"century gothic",
                                         }}
                                     >
                                         <h1
@@ -77,7 +76,7 @@ function About(){
                                             style={{
                                                 fontSize:16,
                                                 lineHeight: 1.6,
-
+                                                fontFamily:"century gothic"
                                             }}
                                         >
                                             Programing is not difficult but it is complicated. Something is difficult if it requires a lot of skills to accomplish that task. For example, memorizing a huge list of random numbers in 1 minute is difficult as not many people have the capacity to do that. Thankfully, programming is complicated rather than difficult which means anyone can learn to program if they get over the two main barriers that make programming seem difficult.<br/><br/>
@@ -112,7 +111,9 @@ function About(){
                                         }}
                                         >You Can Program</h1>
                                         <p style={{
-                                            fontFamily:"century gothic", fontSize:16,lineHeight: 1.6
+                                            fontFamily:"century gothic",
+                                            fontSize:16,
+                                            lineHeight: 1.6
                                         }}
                                         >
                                             Programing is not difficult but it is complicated. Something is difficult if it requires a lot of skills to accomplish that task. For example, memorizing a huge list of random numbers in 1 minute is difficult as not many people have the capacity to do that. Thankfully, programming is complicated rather than difficult which means anyone can learn to program if they get over the two main barriers that make programming seem difficult.<br/><br/>
@@ -132,7 +133,6 @@ function About(){
                                     }}
                                     >
                                         <h1 style={{
-
                                             paddingTop: 10,
                                             paddingBottom: 5,
                                             border:1,
