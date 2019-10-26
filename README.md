@@ -14,7 +14,7 @@ simple concepts.
 ## Usage
 ![Screen Shot of Web App](img/explain1.png) | ![Screen Shot of Web App](img/explain2.png)
 ------------ | -------------
-![Screen Shot of Web App](img/explain3.png)
+![Screen Shot of Web App](img/explain3.png) | ![Screen Shot of Web App](img/explain4.png)
 
 ## Next Steps
 
