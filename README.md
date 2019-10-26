@@ -12,8 +12,8 @@ understand basic concepts of programming so they don't feel overwhelmed with the
 simple concepts.  
 
 ## Usage
-![Screen Shot of Web App](img/explain1.png)
-![Screen Shot of Web App](img/explain2.png)
+![Screen Shot of Web App](img/explain1.png) | ![Screen Shot of Web App](img/explain2.png)
+------------ | -------------
 ![Screen Shot of Web App](img/explain3.png)
 
 ## Next Steps
