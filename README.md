@@ -12,9 +12,9 @@ understand basic concepts of programming so they don't feel overwhelmed with the
 simple concepts.  
 
 ## Usage
-![alt text](img/Screen Shot 2019-10-25 at 10.32.22 PM.png)
-![alt text](img/Screen Shot 2019-10-25 at 10.32.39 PM.png)
-![alt text](img/Screen Shot 2019-10-25 at 10.33.12 PM.png)
+![Screen Shot of Web App](img/Screen Shot 2019-10-25 at 10.32.22 PM.png)
+![Screen Shot of Web App](img/Screen Shot 2019-10-25 at 10.32.39 PM.png)
+![Screen Shot of Web App](img/Screen Shot 2019-10-25 at 10.33.12 PM.png)
 
 ## Next Steps
 
