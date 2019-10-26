@@ -1,9 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##Terms2Program
+Terms2Program is a web application with two features:
+- The HOME page gives beginners an introduction to the world of programing,
+before you know what basic concepts you should be familiar with. 
+- The PROGRAMING JOURNEYS page allows you to learn from the programing experiences successful programmers had when they were beginners. 
+
 ## Next Steps
 
-- [ ] Put 3 stores in data.js
-- [ ] Fix link logic
+- [ ] Put 3 stores in one file called data.js
+- [ ] Make the link logic work with a loop to remove unnecessary white space 
 
 ## Available Scripts
 
