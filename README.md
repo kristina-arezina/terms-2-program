@@ -1,8 +1,8 @@
 ## Terms2Program
 Terms2Program is a web application with two features:
-- The HOME page gives beginners an introduction to the world of programing,
+- The **HOME** page gives beginners an introduction to the world of programing,
 before you know what basic concepts you should be familiar with. 
-- The PROGRAMING JOURNEYS page allows you to learn from the programing experiences successful programmers had when they were beginners. 
+- The **PROGRAMING JOURNEYS** page allows you to learn from the programing experiences successful programmers had when they were beginners. 
 
 ## Motivation
 A year ago I decided I wanted to learn to program. Unfortunately getting started was difficult as I was confused 
