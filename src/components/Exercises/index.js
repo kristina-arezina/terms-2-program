@@ -45,6 +45,8 @@ export default ({
         articles,
         videos,
          link1Name,
+         link2Name,
+         link3Name
      },
      items,
      category,
@@ -86,11 +88,11 @@ export default ({
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={link2} target="_blank">
-                                                {link2}
+                                                {link2Name}
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={link3} target="_blank">
-                                                {link3}
+                                                {link3Name}
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={link4} target="_blank">
@@ -222,11 +224,11 @@ export default ({
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={link2} target="_blank">
-                                                {link2}
+                                                {link2Name}
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={link3} target="_blank">
-                                                {link3}
+                                                {link3Name}
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={link4} target="_blank">
