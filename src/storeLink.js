@@ -54,10 +54,15 @@ export const links = [
         articles: "Articles",
         videos:"Videos",
         link1:'https://searchapparchitecture.techtarget.com/definition/software',
+        link1Name: "Software is defined by Margaret Rouse on WhatIs.com",
         link2:"https://www.ibm.com/topics/software-development",
+        link2Name: "Software development is defined by IBM",
         video1:"https://www.youtube.com/watch?v=ilgO5TdRf_M",
+        video1Name:"The Power of Programming / Software is showcased by Make School",
         video2:"https://www.youtube.com/watch?v=FCMxA3m_Imc",
+        video2Name:"Introduction to what is programing by Khan Academy Computing",
         video3:"https://www.youtube.com/watch?v=6tZz6gr1h9E",
+        video3Name: "Exploring the difference between programming and coding with Hitesh Choudhary"
     },
     {
         id: 'terminal',
