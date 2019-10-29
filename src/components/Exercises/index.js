@@ -47,6 +47,7 @@ export default ({
          link1Name,
          link2Name,
          link3Name,
+         link4Name,
          video1Name,
          video2Name,
          video3Name
@@ -99,7 +100,7 @@ export default ({
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={link4} target="_blank">
-                                                {link4}
+                                                {link4Name}
                                             </Button>
                                         <br/>
                                         <br/>
@@ -235,7 +236,7 @@ export default ({
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={link4} target="_blank">
-                                                {link4}
+                                                {link4Name}
                                             </Button>
                                         <br/>
                                         <br/>
