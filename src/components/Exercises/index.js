@@ -1,6 +1,6 @@
 import React, {Fragment} from "react"
 import { Grid, Paper, Typography } from "@material-ui/core"
-import {List, ListItem, ListItemText, Link } from '@material-ui/core';
+import {List, ListItem, ListItemText, Link, Button } from '@material-ui/core';
 import MediaQuery from 'react-responsive';
 
 const styles = {
@@ -43,7 +43,8 @@ export default ({
         video4="",
          video5="",
         articles,
-        videos
+        videos,
+         link1Name,
      },
      items,
      category,
@@ -81,7 +82,7 @@ export default ({
                                         <br/>
                                         <br/>
                                             <Link  rel="noopener" variant="body1" href={link1} target="_blank">
-                                                {link1}
+                                                {link1Name}
                                             </Link>
                                         <br/>
                                             <Link  rel="noopener" variant="body1" href={link2} target="_blank">
@@ -216,9 +217,9 @@ export default ({
                                         {articles}
                                         <br/>
                                         <br/>
-                                            <Link  rel="noopener" variant="body1" href={link1} target="_blank">
-                                            {link1}
-                                            </Link>
+                                            <Button  rel="noopener" variant="body1" href={link1} target="_blank">
+                                                {link1Name}
+                                            </Button>
                                         <br/>
                                             <Link  rel="noopener" variant="body1" href={link2} target="_blank">
                                                 {link2}

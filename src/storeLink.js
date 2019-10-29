@@ -7,6 +7,7 @@ export const links = [
         articles: "Articles",
         videos:"Videos",
         link1:'https://whatis.techtarget.com/definition/Web-server',
+        link1Name: "whatis.com definition of a web server",
         link2:"https://economictimes.indiatimes.com/definition/web-server",
         link3:"https://www.webopedia.com/TERM/W/Web_server.html",
         video1:"https://www.khanacademy.org/computing/computer-science/internet-intro/internet-works-intro/v/the-internet-http-and-html",
