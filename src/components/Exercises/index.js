@@ -46,7 +46,10 @@ export default ({
         videos,
          link1Name,
          link2Name,
-         link3Name
+         link3Name,
+         video1Name,
+         video2Name,
+         video3Name
      },
      items,
      category,
@@ -104,11 +107,11 @@ export default ({
                                         <br/>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={video1} target="_blank">
-                                                {video1}
+                                                {video1Name}
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={video2} target="_blank">
-                                                {video2}
+                                                {video2Name}
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={video3} target="_blank">
@@ -240,15 +243,15 @@ export default ({
                                         <br/>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={video1} target="_blank">
-                                                {video1}
+                                                {video1Name}
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={video2} target="_blank">
-                                                {video2}
+                                                {video2Name}
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={video3} target="_blank">
-                                                {video3}
+                                                {video3Name}
                                             </Button>
                                         <br/>
                                         <Button  rel="noopener" variant="body1" href={video4} target="_blank">
