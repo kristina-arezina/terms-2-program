@@ -85,11 +85,18 @@ export const links = [
         articles: "Articles",
         videos:"Videos",
         link1:"https://www.programmingforbeginnersbook.com/blog/what_is_programming_coding/",
+        link1Name: "What is Programming/Coding? explored with Tom Dalling",
         link2:"https://searchsoftwarequality.techtarget.com/definition/program",
+        link2Name: "A program is defined by Margaret Rouse on WhatIs.com",
         link3:"https://www.webopedia.com/TERM/P/programming_language.html",
+        link3Name: "Webopedia defines what a programming language is",
         link4:"https://techterms.com/definition/programming_language",
+        link4Name: "Programming Language Definition by techterms.com",
         video1:"https://www.youtube.com/watch?v=fbZ4ZhzCeR4",
+        video1Name:"Computer Science for Everyone - 5 - Types of programming languages by teclado",
         video2:"https://www.youtube.com/watch?v=_zusEe3GOe8",
+        video2Name:"Understand Programming Languages by Dave Xiang",
+
     },
     {
         id: 'what-language-should-i-learn',
