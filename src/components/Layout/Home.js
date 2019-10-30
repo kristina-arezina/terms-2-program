@@ -36,14 +36,23 @@ export class Home extends Component {
         this.setState(({items}) => ({
             item: items.find(ex => ex.id ===id) }))
         this.setState(({links}) => ({
-            link: links.find(ex => ex.id === id)
-            })
+            link: links.find(ex => ex.id === id)})
         )
     }
 
     render(){
         const items = this.getItemsByGroups(),
             {catergory, item, link} = this.state
+
+        if(this.props.link  !== "") {
+            return (
+                <div>
+                    <h1>{this.props.number}</h1>
+                </div>
+            );
+        } else {
+            return null;
+        }
 
         return(
             <nav>

@@ -89,7 +89,7 @@ export default ({
                                     {articles}
                                         <br/>
                                         <br/>
-                                            <Button  variant="contained" rel="noopener" variant="outlined" href={link1} target="_blank" >
+                                            <Button rel="noopener" variant="outlined" href={link1} target="_blank" >
                                                 {link1Name}
                                             </Button>
                                         <br/>
