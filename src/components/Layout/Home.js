@@ -44,15 +44,6 @@ export class Home extends Component {
         const items = this.getItemsByGroups(),
             {catergory, item, link} = this.state
 
-        if(this.props.link  !== "") {
-            return (
-                <div>
-                    <h1>{this.props.number}</h1>
-                </div>
-            );
-        } else {
-            return null;
-        }
 
         return(
             <nav>

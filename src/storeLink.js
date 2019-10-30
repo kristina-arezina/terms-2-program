@@ -12,8 +12,13 @@ export const links = [
         link2Name: "The Economic Times definition of a web server",
         link3:"https://www.webopedia.com/TERM/W/Web_server.html",
         link3Name: "Webopedia's definition of a web server",
+        link4: "",
         video1:"https://www.khanacademy.org/computing/computer-science/internet-intro/internet-works-intro/v/the-internet-http-and-html",
         video1Name: "Khan Academy's introduction to how the internet works",
+        video2: "",
+        video3: "",
+        video4: "",
+        video5: ""
     },
     {
         id: 'browsers',
@@ -25,12 +30,15 @@ export const links = [
         link2Name: "Computerhope.com defines what a browser is",
         link3: "https://techterms.com/definition/web_browser",
         link3Name: "techterms.com illustrates what a browser is",
+        link4:"",
         video1:"https://www.youtube.com/watch?v=BrXPcaRlBqo",
         video1Name: "Google explains what a browser is",
         video2:"https://www.youtube.com/watch?v=z0HN-fG6oT4",
         video2Name: "OpenCanvas explains the process behind a web browser",
         video3:"https://www.youtube.com/watch?v=AGGWCbMvOxA",
         video3Name: "The difference between a browser and a search engine by Silicon Direct.",
+        video4: "",
+        video5: ""
     },
     {
         id: 'operating system',
@@ -44,10 +52,14 @@ export const links = [
         link3Name: "Introduction to operating systems by GeeksforGeeks",
         link4:"https://www.computerhope.com/jargon/o/os.htm",
         link4Name:"Computer Hope explains what an operating system is",
+        link5:"",
         video1:"https://www.youtube.com/watch?v=GjNp0bBrjmU",
         video1Name:"How Do Operating Systems Work? by ClickView",
         video2:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
         video2Name:"Computer Basics: Understanding Operating Systems by GCFLearnFree.org",
+        video3: "",
+        video4: "",
+        video5: ""
     },
     {
         id: 'software development',
@@ -57,12 +69,16 @@ export const links = [
         link1Name: "Software is defined by Margaret Rouse on WhatIs.com",
         link2:"https://www.ibm.com/topics/software-development",
         link2Name: "Software development is defined by IBM",
+        link3: "",
+        link4:"",
         video1:"https://www.youtube.com/watch?v=ilgO5TdRf_M",
         video1Name:"The Power of Programming / Software is showcased by Make School",
         video2:"https://www.youtube.com/watch?v=FCMxA3m_Imc",
         video2Name:"Introduction to what is programing by Khan Academy Computing",
         video3:"https://www.youtube.com/watch?v=6tZz6gr1h9E",
-        video3Name: "Exploring the difference between programming and coding with Hitesh Choudhary"
+        video3Name: "Exploring the difference between programming and coding with Hitesh Choudhary",
+        video4: "",
+        video5: ""
     },
     {
         id: 'terminal',
@@ -78,6 +94,10 @@ export const links = [
         link4Name: "Command Line Basics and Useful Tricks With the Terminal by Vardhan Agrawal",
         video1:"https://www.youtube.com/watch?v=5XgBd6rjuDQ&t=2s",
         video1Name:"How to use the Command Line | Terminal Basics for Beginners by Jesse Showalter",
+        video2: "",
+        video3: "",
+        video4:"",
+        video5:""
 
     },
     {
@@ -96,7 +116,9 @@ export const links = [
         video1Name:"Computer Science for Everyone - 5 - Types of programming languages by teclado",
         video2:"https://www.youtube.com/watch?v=_zusEe3GOe8",
         video2Name:"Understand Programming Languages by Dave Xiang",
-
+        video3:"",
+        video4:"",
+        video5:""
     },
     {
         id: 'what-language-should-i-learn',
@@ -139,7 +161,8 @@ export const links = [
         video2Name:"What Can You Do with Python? - The 3 Main Applications",
         video3:"https://www.youtube.com/watch?v=HNrMjH9Yuv4",
         video3Name:"#FiveThings You Didn't Know Python Could Do by Microsoft Developer",
-
+        video4:"",
+        video5:""
     },
     {
         id: 'java-script',
@@ -161,6 +184,7 @@ export const links = [
         video3Name:"What is JavaScript? by Programming with Mosh",
         video4:"https://www.youtube.com/watch?v=0ZA0oJo00uQ",
         video4Name:"Why is It Important to Learn JavaScript? by edutechional",
+        video5:""
     },
     {
         id: 'java',
@@ -180,7 +204,8 @@ export const links = [
         video2Name:"Java Programming Tutorial 1 - Introduction to Java by Caleb Curry",
         video3:"https://www.youtube.com/watch?v=5Zny77JOWks",
         video3Name:"Java Essentials: Introduction to Programming with Java by CBT Nuggets",
-
+        video4:"",
+        video5:""
     },
     {
         id: 'what-is-a-framework?',
@@ -200,6 +225,8 @@ export const links = [
         video2Name:"What Is a Framework in Programming? | Why Is It Useful? by The Learn Programming Channel",
         video3:"https://www.youtube.com/watch?v=sXA1zpv4DhA",
         video3Name:"What is the difference between a Library and a Framework by Hitesh Choudhary",
+        video4:"",
+        video5:""
 
     },
     {
@@ -222,6 +249,7 @@ export const links = [
         video3Name:"What's so great about the Angular framework? by Vue Mastery",
         video4:"https://www.youtube.com/watch?v=-NEIfsnEGQY",
         video4Name:"Angular - Common Questions (and Answers!) by Academind",
+        video5:""
     },
     {
         id: 'vue',
@@ -243,6 +271,7 @@ export const links = [
         video3Name:"Why 43% of Front-End Developers want to learn Vue.js by Vue Mastery",
         video4:"https://www.youtube.com/watch?v=Ozllfl-03c8",
         video4Name:"Vue.js - Common Questions (and Answers!) by Academind",
+        video5:""
     },
     {
         id: 'what-is-a-library?',
@@ -254,12 +283,15 @@ export const links = [
         link2Name: "Software Framework vs Library by GeeksforGeeks",
         link3:"https://www.computerhope.com/jargon/s/softlibr.htm",
         link3Name: "Software library definition by Computer Hope",
+        link4:"",
         video1:"https://www.youtube.com/watch?v=-vp9cFQCQCo",
         video1Name:"Static vs. Shared Libraries by Dave Xiang",
         video2:"https://www.youtube.com/watch?v=LimOOe6I4eo",
         video2Name:"What are Libraries and Frameworks? by Codecademy",
         video3:"https://www.youtube.com/watch?v=D_MO9vIRBcA",
         video3Name:"What is the difference between a framework and a library? by Sherif Ramadan",
+        video4:"",
+        video5:""
     },
     {
         id: 'react',
@@ -281,6 +313,7 @@ export const links = [
         video3Name:"What Is React? by LevelUpTuts",
         video4:"https://www.youtube.com/watch?v=7K2rDNOlEes",
         video4Name:"JS Explained - What is React.js? by Dev Material",
+        video5:""
     },
 
 ]
