@@ -32,19 +32,22 @@ export class Home extends Component {
         })
     }
 
+    renderInputField() {
+        if(this.link === '') {
+            return null;
+        } else {
+            return (
+                this.link
+            );
+        }
+    }
+
     handleItemSelect = id => {
         this.setState(({items}) => ({
             item: items.find(ex => ex.id ===id) }))
         this.setState(({links}) => ({
-            link: links.find(ex => ex.id === id)})
-            if(this.link === '') {
-                    return null;
-                } else {
-                    return (
-                        this.link
-                    );
-                }
-            )
+            link: links.find(ex => ex.id === id)}),
+         renderInputField()
 
     }
 
