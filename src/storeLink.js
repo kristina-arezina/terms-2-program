@@ -282,18 +282,5 @@ export const links = [
         video4:"https://www.youtube.com/watch?v=7K2rDNOlEes",
         video4Name:"JS Explained - What is React.js? by Dev Material",
     },
-    {
-        id: 'c++-libraries',
-        articles: "Articles",
-        videos:"Videos",
-        link1:'https://searchapparchitecture.techtarget.com/definition/software',
-        link2:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",
-        link3:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",
-        link4:"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/",
-        video1:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
-        video2:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
-        video3:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
-        video4:"https://www.youtube.com/watch?v=pTdSs8kQqSA",
-    },
 
 ]

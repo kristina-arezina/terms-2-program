@@ -89,19 +89,19 @@ export default ({
                                     {articles}
                                         <br/>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={link1} target="_blank">
+                                            <Button  variant="contained" rel="noopener" variant="outlined" href={link1} target="_blank" >
                                                 {link1Name}
                                             </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={link2} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={link2} target="_blank">
                                                 {link2Name}
                                             </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={link3} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={link3} target="_blank">
                                                 {link3Name}
                                             </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={link4} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={link4} target="_blank">
                                                 {link4Name}
                                             </Button>
                                         <br/>
@@ -109,23 +109,23 @@ export default ({
                                     {videos}
                                         <br/>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={video1} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={video1} target="_blank">
                                                 {video1Name}
                                             </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={video2} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={video2} target="_blank">
                                                 {video2Name}
                                             </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={video3} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={video3} target="_blank">
                                                 {video3Name}
                                             </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={video4} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={video4} target="_blank">
                                                 {video4Name}
                                             </Button>
                                     <br/>
-                                    <Button  rel="noopener" variant="body1" href={video5} target="_blank">
+                                    <Button  rel="noopener" variant="outlined" href={video5} target="_blank">
                                         {video5Name}
                                     </Button>
                                 </Typography>
@@ -225,19 +225,19 @@ export default ({
                                         {articles}
                                         <br/>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={link1} target="_blank">
-                                                {link1Name}
-                                            </Button>
+                                        <Button rel="noopener" variant="outlined" href={link1} target="_blank" >
+                                            {link1Name}
+                                        </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={link2} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={link2} target="_blank">
                                                 {link2Name}
                                             </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={link3} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={link3} target="_blank">
                                                 {link3Name}
                                             </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={link4} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={link4} target="_blank">
                                                 {link4Name}
                                             </Button>
                                         <br/>
@@ -245,23 +245,23 @@ export default ({
                                             {videos}
                                         <br/>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={video1} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={video1} target="_blank">
                                                 {video1Name}
                                             </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={video2} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={video2} target="_blank">
                                                 {video2Name}
                                             </Button>
                                         <br/>
-                                            <Button  rel="noopener" variant="body1" href={video3} target="_blank">
+                                            <Button  rel="noopener" variant="outlined" href={video3} target="_blank">
                                                 {video3Name}
                                             </Button>
                                         <br/>
-                                        <Button  rel="noopener" variant="body1" href={video4} target="_blank">
+                                        <Button  rel="noopener" variant="outlined" href={video4} target="_blank">
                                             {video4Name}
                                         </Button>
                                         <br/>
-                                        <Button  rel="noopener" variant="body1" href={video5} target="_blank">
+                                        <Button  rel="noopener" variant="outlined" href={video5} target="_blank">
                                             {video5Name}
                                         </Button>
                                     </Typography>
