@@ -37,14 +37,14 @@ export class Home extends Component {
             item: items.find(ex => ex.id ===id) }))
         this.setState(({links}) => ({
             link: links.find(ex => ex.id === id)})
-        if(this.link === '') {
-                return null;
-            } else {
-                return (
-                    this.link
-                );
-            }
-        )
+            if(this.link === '') {
+                    return null;
+                } else {
+                    return (
+                        this.link
+                    );
+                }
+            )
 
     }
 
