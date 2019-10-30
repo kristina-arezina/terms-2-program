@@ -50,7 +50,9 @@ export default ({
          link4Name,
          video1Name,
          video2Name,
-         video3Name
+         video3Name,
+         video4Name,
+         video5Name,
      },
      items,
      category,
@@ -116,15 +118,15 @@ export default ({
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={video3} target="_blank">
-                                                {video3}
+                                                {video3Name}
                                             </Button>
                                         <br/>
                                             <Button  rel="noopener" variant="body1" href={video4} target="_blank">
-                                                {video4}
+                                                {video4Name}
                                             </Button>
                                     <br/>
                                     <Button  rel="noopener" variant="body1" href={video5} target="_blank">
-                                        {video5}
+                                        {video5Name}
                                     </Button>
                                 </Typography>
                         </Paper>
@@ -256,11 +258,11 @@ export default ({
                                             </Button>
                                         <br/>
                                         <Button  rel="noopener" variant="body1" href={video4} target="_blank">
-                                            {video4}
+                                            {video4Name}
                                         </Button>
                                         <br/>
                                         <Button  rel="noopener" variant="body1" href={video5} target="_blank">
-                                            {video5}
+                                            {video5Name}
                                         </Button>
                                     </Typography>
                         </Paper>
