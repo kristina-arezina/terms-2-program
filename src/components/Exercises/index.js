@@ -1,6 +1,6 @@
 import React, {Fragment} from "react"
 import { Grid, Paper, Typography } from "@material-ui/core"
-import {List, ListItem, ListItemText, Link, Button } from '@material-ui/core';
+import {List, ListItem, ListItemText, Button } from '@material-ui/core';
 import MediaQuery from 'react-responsive';
 
 const styles = {
@@ -33,15 +33,15 @@ const styles = {
 
 export default ({
      link: {
-        link1="",
-        link2="",
-        link3="",
-        link4="",
-        video1="",
-        video2="",
-        video3="",
-        video4="",
-         video5="",
+        link1,
+        link2,
+        link3,
+        link4,
+        video1,
+        video2,
+        video3,
+        video4,
+         video5,
         articles,
         videos,
          link1Name,
