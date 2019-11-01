@@ -42,8 +42,8 @@ export default ({
         video3,
         video4,
          video5,
-        articles,
-        videos,
+        articles="Articles",
+        videos="Videos",
          link1Name,
          link2Name,
          link3Name,
@@ -58,9 +58,14 @@ export default ({
      category,
      onSelect,
      item: {
-         id,
-         title = "Welcome!",
-         description ="Please select a term from the list on the left inorder to learn more about it.",
+         id="why learn web basics?",
+         title="Why Learn Web Basics?",
+         description="If you wish to get into programming probably no one will come up to you and quiz you on these " +
+         "terms. However, if you talk to other programmers or read / watch coding tutorials these terms will be " +
+         "used constantly and freely. So, it is a good idea to get a general understanding of what these terms and " +
+         "concepts mean. By no means do you need to memorize every nook and cranny of theses terms, all you need" +
+         " is a working understanding of these concepts in order to be able to follow one's train of thought " +
+         "without getting lost in a sea of unknown terms.",
          resourse,
          description2,
      },
@@ -71,6 +76,7 @@ export default ({
                 <Grid container>
                     <Grid item xs={12} >
                         <Paper style={styles.Paper1}>
+
                             <Typography variant="h3">
                                 {title}
                             </Typography>

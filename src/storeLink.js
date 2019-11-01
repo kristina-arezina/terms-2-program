@@ -1,6 +1,8 @@
 export const links = [
     {
         id: 'why learn web basics?',
+        articles: "Articles",
+        videos:"Videos",
     },
     {
         id: 'web server / web host / server',
