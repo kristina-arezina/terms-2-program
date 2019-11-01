@@ -47,7 +47,7 @@ export class Home extends Component {
             item: items.find(ex => ex.id ===id) }))
         this.setState(({links}) => ({
             link: links.find(ex => ex.id === id)}),
-         renderInputField()
+         renderInputField();
 
     }
 
