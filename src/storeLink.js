@@ -112,8 +112,10 @@ export const links = [
         video2Name:"Introduction to what is programing by Khan Academy Computing",
         video3:"https://www.youtube.com/watch?v=6tZz6gr1h9E",
         video3Name: "Exploring the difference between programming and coding with Hitesh Choudhary",
-        video4: "",
-        video5: ""
+        video4: "https://www.youtube.com/watch?v=xfBWk4nw440",
+        video4Name: "You Should Learn to Program: Christian Genco at TEDxSMU",
+        video5: "https://www.youtube.com/watch?v=N7ZmPYaXoic",
+        video5Name: "What is Coding? by TExplaiNations",
     },
     {
         id: 'terminal',
@@ -203,8 +205,10 @@ export const links = [
         video2Name:"What Can You Do with Python? - The 3 Main Applications",
         video3:"https://www.youtube.com/watch?v=HNrMjH9Yuv4",
         video3Name:"#FiveThings You Didn't Know Python Could Do by Microsoft Developer",
-        video4:"",
-        video5:""
+        video4:"https://www.youtube.com/watch?v=-67hh86N42Q",
+        video4Name:"What is Python Used For? by Treehouse",
+        video5:"#1 Python Tutorial for Beginners | Introduction to Python",
+        video5Name:"#1 Python Tutorial for Beginners | Introduction to Python by Telusko",
     },
     {
         id: 'java-script',
@@ -226,7 +230,8 @@ export const links = [
         video3Name:"What is JavaScript? by Programming with Mosh",
         video4:"https://www.youtube.com/watch?v=0ZA0oJo00uQ",
         video4Name:"Why is It Important to Learn JavaScript? by edutechional",
-        video5:""
+        video5:"https://www.youtube.com/watch?v=nItSSTwBvSU",
+        video5Name:"What is JavaScript?",
     },
     {
         id: 'java',
@@ -246,7 +251,8 @@ export const links = [
         video2Name:"Java Programming Tutorial 1 - Introduction to Java by Caleb Curry",
         video3:"https://www.youtube.com/watch?v=5Zny77JOWks",
         video3Name:"Java Essentials: Introduction to Programming with Java by CBT Nuggets",
-        video4:"",
+        video4:"https://www.youtube.com/watch?v=eX7VnkcXMdM",
+        video4Name:"The History of the Java Programming Language by SyntaxByte",
         video5:""
     },
     {
@@ -325,7 +331,8 @@ export const links = [
         link2Name: "Software Framework vs Library by GeeksforGeeks",
         link3:"https://www.computerhope.com/jargon/s/softlibr.htm",
         link3Name: "Software library definition by Computer Hope",
-        link4:"",
+        link4:"https://medium.com/@StueyGK/static-libraries-vs-dynamic-libraries-af78f0b5f1e4",
+        link4Name: "Static Libraries vs. Dynamic Libraries by Stuart Kuredjian",
         video1:"https://www.youtube.com/watch?v=-vp9cFQCQCo",
         video1Name:"Static vs. Shared Libraries by Dave Xiang",
         video2:"https://www.youtube.com/watch?v=LimOOe6I4eo",
