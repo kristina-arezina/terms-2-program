@@ -253,7 +253,8 @@ export const links = [
         video3Name:"Java Essentials: Introduction to Programming with Java by CBT Nuggets",
         video4:"https://www.youtube.com/watch?v=eX7VnkcXMdM",
         video4Name:"The History of the Java Programming Language by SyntaxByte",
-        video5:""
+        video5:"https://www.youtube.com/watch?v=rdkEKdmIKvc",
+        video5Name:"2. What is Java? by WebDevMentors",
     },
     {
         id: 'what-is-a-framework?',
@@ -273,8 +274,10 @@ export const links = [
         video2Name:"What Is a Framework in Programming? | Why Is It Useful? by The Learn Programming Channel",
         video3:"https://www.youtube.com/watch?v=sXA1zpv4DhA",
         video3Name:"What is the difference between a Library and a Framework by Hitesh Choudhary",
-        video4:"",
-        video5:""
+        video4:"https://www.youtube.com/watch?v=IF_021eJ5SA",
+        video4Name:"Everything You Need To Know About JavaScript Frameworks 2018 | #devsLife by Chris Sean",
+        video5:"https://www.youtube.com/watch?v=KoQY8f3bepk&t=329s",
+        video5Name:"Web Development Framework Pros & Cons by Traversy Media",
 
     },
     {
@@ -297,7 +300,8 @@ export const links = [
         video3Name:"What's so great about the Angular framework? by Vue Mastery",
         video4:"https://www.youtube.com/watch?v=-NEIfsnEGQY",
         video4Name:"Angular - Common Questions (and Answers!) by Academind",
-        video5:""
+        video5:"https://www.youtube.com/watch?v=sU934oGMaOM",
+        video5Name:"Should you Learn Angular in 2018? by Stefan Mischook",
     },
     {
         id: 'vue',
@@ -319,7 +323,8 @@ export const links = [
         video3Name:"Why 43% of Front-End Developers want to learn Vue.js by Vue Mastery",
         video4:"https://www.youtube.com/watch?v=Ozllfl-03c8",
         video4Name:"Vue.js - Common Questions (and Answers!) by Academind",
-        video5:""
+        video5:"https://www.youtube.com/watch?v=ccVrP6hSW8o",
+        video5Name:"Top 10 Tips For New Vue.js Developers by Program With Erik",
     },
     {
         id: 'what-is-a-library?',
@@ -339,8 +344,11 @@ export const links = [
         video2Name:"What are Libraries and Frameworks? by Codecademy",
         video3:"https://www.youtube.com/watch?v=D_MO9vIRBcA",
         video3Name:"What is the difference between a framework and a library? by Sherif Ramadan",
-        video4:"",
-        video5:""
+        video4:"https://www.youtube.com/watch?v=uq7omoxwA7A",
+        video4Name:"JavaScript Tutorial For Beginners #45 - JavaScript Libraries by The Net Ninja",
+        video5:"https://www.youtube.com/watch?v=MqeO9lQemmQ",
+        video5Name:"Top 14 MOST famous Python libraries & frameworks by Yasoob Khalid"
+
     },
     {
         id: 'react',
@@ -362,7 +370,8 @@ export const links = [
         video3Name:"What Is React? by LevelUpTuts",
         video4:"https://www.youtube.com/watch?v=7K2rDNOlEes",
         video4Name:"JS Explained - What is React.js? by Dev Material",
-        video5:""
+        video5:"Introduction to ReactJS by CBT Nuggets",
+        video5Name:"JS Explained - What is React.js? by Dev Material",
     },
 
 ]
