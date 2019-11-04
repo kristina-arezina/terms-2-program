@@ -14,6 +14,8 @@ export const items = [
             " is a working understanding of these concepts in order to be able to follow one's train of thought " +
             "without getting lost in a sea of unknown terms." ,
         groups: 'web basics',
+        resourse:"Learn more about web basics with these resources:"
+
     },
     {
         id: 'web server / web host / server',
