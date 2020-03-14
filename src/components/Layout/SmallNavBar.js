@@ -3,6 +3,7 @@ import {IconButton, Drawer, List, Divider, ListItem, ListItemIcon, ListItemText}
 import MenuIcon from '@material-ui/icons/Menu';
 import SubjectIcon from '@material-ui/icons/Subject';
 import HelpIcon from '@material-ui/icons/Help';
+import FaceIcon from '@material-ui/icons/Face';
 
 
 function ListItemLink(props) {
@@ -33,6 +34,10 @@ export default function TemporaryDrawer() {
                     <ListItemLink href="/journey">
                         <ListItemIcon > <SubjectIcon /></ListItemIcon>
                         <ListItemText  primary={"Programing Journeys"} />
+                    </ListItemLink>
+                    <ListItemLink href="/women-in-tech">
+                        <ListItemIcon> <FaceIcon /></ListItemIcon>
+                        <ListItemText  primary={"Women In Technology"} />
                     </ListItemLink>
                     <ListItemLink href="/about">
                         <ListItemIcon> <HelpIcon /></ListItemIcon>
