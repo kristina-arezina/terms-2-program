@@ -7,7 +7,14 @@ export class WomenInTech extends Component {
     return (
       <div>
       <Header/>
-      <NestedGrid/>
+      <NestedGrid style={{
+          paddingTop:500,
+          paddingBottom:80,
+          textAlign:"center",
+          textTransform: 'uppercase',
+          backgroundColor:"#f4f4f4",
+          fontFamily:"courier new",
+      }}/>
 
       </div>
     )
