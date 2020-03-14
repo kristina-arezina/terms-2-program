@@ -30,7 +30,7 @@ export default class extends Component {
                                 <Journey />
                             </React.Fragment>
                         )}/>
-                        <Route path="/journey" render={props => (
+                        <Route path="/women-in-tech" render={props => (
                             <React.Fragment>
                                 <WomenInTech />
                             </React.Fragment>
