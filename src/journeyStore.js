@@ -1,5 +1,5 @@
 export const level = [
-    "complete beginner", "react", "Python", "JavaScript"
+    "complete beginner", "Women In Technology", "Python", "JavaScript"
 ]
 
 export const journeys = [
@@ -81,6 +81,16 @@ export const journeys = [
             'tips and advice to beginners.',
         link: 'https://www.codementor.io/cchilders/how-i-learned-python-programming-rapidly-wqnklac0b',
         level:"Python"
+    },
+    {
+        id: 'Women In Technology',
+        title: 'How I learned Python Programming RAPIDLY!',
+        description: 'Chase Childers was programming for 3 years and is now a Full-Stack Python Developer/Programmer. ' +
+            'He started to code because he loves technology, creating and fixing things. Chase used Youtube, ' +
+            'the internet and a mentor to learn Python. He shares the challenges he faced while learning and gives ' +
+            'tips and advice to beginners.',
+        link: 'https://www.codementor.io/cchilders/how-i-learned-python-programming-rapidly-wqnklac0b',
+        level:"Women In Technology"
     },
 
 ]
