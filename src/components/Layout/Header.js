@@ -80,6 +80,18 @@ export default function Header (props) {
                                             >
                                         Programing Journeys
                                     </Button>
+                                    <Button href="/WomenInTech" color="inherit" variant="text"
+                                            style={{
+                                                color:"#f4f4f4",
+                                                backgroundColor: "#00867d",
+                                                textTransform: "uppercase",
+                                                borderRadius: "1px",
+                                                margin:"5px",
+                                                height: 48,
+                                            }}
+                                            >
+                                        Women In Technology
+                                    </Button>
                                     <Button href="/about" color="inherit" variant="text"
                                             style={{
                                                 color:"#f4f4f4",

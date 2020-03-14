@@ -4,6 +4,7 @@ import Journey from "./Journey/Journey.js"
 import CssBaseline from '@material-ui/core/CssBaseline';
 import About from "./About/About.js";
 import Home from "./Layout/Home.js";
+import WomenInTech from "./WomenInTech/WomenInTech.js";
 
 export default class extends Component {
 
@@ -27,6 +28,11 @@ export default class extends Component {
                         <Route path="/journey" render={props => (
                             <React.Fragment>
                                 <Journey />
+                            </React.Fragment>
+                        )}/>
+                        <Route path="/journey" render={props => (
+                            <React.Fragment>
+                                <WomenInTech />
                             </React.Fragment>
                         )}/>
                     </Fragment>
