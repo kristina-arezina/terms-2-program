@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
-import {Header} from "../Layout/HeaderFooter.js"
-
+import {Header} from "../Layout/HeaderFooter.js";
+import NestedGrid from "./Grid.js"
 
 export class WomenInTech extends Component {
   render(){
     return (
       <div>
-        <p>Hello Women in Tech</p>
+      <Header/>
+      <NestedGrid/>
+
       </div>
     )
   }
