@@ -6,48 +6,39 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    paddingTop:200,
-    paddingLeft: 20
+    marginLeft:20,
+    marginRight:20,
   },
   paper: {
-    padding: theme.spacing(1),
+    padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-    padding: 40,
-
   },
 }));
 
-export default function NestedGrid() {
+export default function FullWidthGrid() {
   const classes = useStyles();
-
-  function FormRow() {
-    return (
-      <React.Fragment>
-        <Grid item xs={12} md={3}>
-          <Paper className={classes.paper}>item</Paper>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <Paper className={classes.paper}>item</Paper>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <Paper className={classes.paper}>item</Paper>
-        </Grid>
-      </React.Fragment>
-    );
-  }
 
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid container item xs={12} spacing={3}>
-          <FormRow />
+      <Grid item xs={12} sm={6}>
+        <Paper className={classes.paper}>xs=12 sm=6</Paper>
+      </Grid>
+      <Grid item xs={12} sm={6}>
+        <Paper className={classes.paper}>xs=12 sm=6</Paper>
+      </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>xs=12 sm=6</Paper>
         </Grid>
-        <Grid container item xs={12} spacing={3}>
-          <FormRow />
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>xs=12 sm=6</Paper>
         </Grid>
-        <Grid container item xs={12} spacing={3}>
-          <FormRow />
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>xs=12 sm=6</Paper>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>xs=12 sm=6</Paper>
         </Grid>
       </Grid>
     </div>
