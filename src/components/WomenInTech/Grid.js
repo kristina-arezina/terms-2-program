@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function FullWidthGrid() {
+export default ({womenJourney}) => {
   const classes = useStyles();
 
   return (
@@ -44,47 +44,51 @@ export default function FullWidthGrid() {
             fontFamily:"century gothic",
         }}
         >
-
+        {womenJourney.map(({ title, description, link, id }) =>
+            <ListItem alignItems="flex-start"  key={id}>
+                <Paper style={{
+                    backgroundColor:"#e0f2f1",
+                    padding:25,
+                    fontFamily:"century gothic",
+                }}>
             <ListItemText
                 primary={
                     <React.Fragment >
-                      Hello
+                      {title}
                     </React.Fragment>
                 }
                 secondary={
                     <React.Fragment >
-
-
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-
+                      {description}
 
                                 <br/>
                                 <Button className={classes.button}>
-                                    <Link className={classes.link} rel="noopener" variant="body1" href="https://www.blindtextgenerator.com/lorem-ipsum" target="_blank">
+                                    <Link className={classes.link} rel="noopener" variant="body1" href={link} target="_blank">
                                         Read Full
                                     </Link>
                                 </Button>
                     </React.Fragment>
-                }
-            />
+                }>
+            </ListItemText>
         </Paper>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12 sm=6</Paper>
-        </Grid>
-          <Grid item xs={12} sm={6}>
-            <Paper className={classes.paper}>xs=12 sm=6</Paper>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Paper className={classes.paper}>xs=12 sm=6</Paper>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Paper className={classes.paper}>xs=12 sm=6</Paper>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Paper className={classes.paper}>xs=12 sm=6</Paper>
-          </Grid>
-      </Grid>
-    </div>
-  );
-}
+</ListItem>
+      //   <Grid item xs={12} sm={6}>
+      //     <Paper className={classes.paper}>xs=12 sm=6</Paper>
+      //   </Grid>
+      //     <Grid item xs={12} sm={6}>
+      //       <Paper className={classes.paper}>xs=12 sm=6</Paper>
+      //     </Grid>
+      //     <Grid item xs={12} sm={6}>
+      //       <Paper className={classes.paper}>xs=12 sm=6</Paper>
+      //     </Grid>
+      //     <Grid item xs={12} sm={6}>
+      //       <Paper className={classes.paper}>xs=12 sm=6</Paper>
+      //     </Grid>
+      //     <Grid item xs={12} sm={6}>
+      //       <Paper className={classes.paper}>xs=12 sm=6</Paper>
+      //     </Grid>
+
+
+
+  ,
+)}

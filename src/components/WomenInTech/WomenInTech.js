@@ -2,9 +2,13 @@ import React, {Component} from 'react';
 import {Header} from "../Layout/HeaderFooter.js";
 import NestedGrid from "./Grid.js";
 import ImageHeader from "./ImageHeader.js"
+import {womenJourney} from "../../storeWomenInTech.js"
 
 
 export class WomenInTech extends Component {
+  state={
+      womenJourney
+  }
 
   render(){
     return (
@@ -15,7 +19,9 @@ export class WomenInTech extends Component {
           textAlign:"center",
           textTransform: 'uppercase',
           fontFamily:"courier new",
-      }}/>
+      }}
+      womenJourney={womenJourney}
+      />
       </div>
     )
   }
