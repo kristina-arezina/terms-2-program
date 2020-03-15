@@ -50,3 +50,35 @@ export const womenJourney = [
             link: 'https://hashnode.com/post/zero-to-one-how-i-mastered-javascript-and-how-you-can-too-ciuwmrw9j00r50q539clhhdj7',
     },
 ]
+
+export const womenJourney2 = [
+  {
+      id: 1,
+      title: 'A Self Taught Programmer’s Journey',
+      description: "In this article, a civil engineer Amit Shekhar, explains how he changed career paths by learning " +
+          "to program on his own time. Amit was drawn to programming as he loves to problem solve. Some of his advice " +
+          "for beginner programmers is to learn through the “Learn and Implement” pattern and to stay consistent with " +
+          "programming. Also, he thinks one of the best ways to learn programming is by reading other people's code.",
+      link: 'https://medium.com/mindorks/a-self-taught-programmers-journey-6899cff1aef0',
+  },
+  {
+      id: 2,
+      title: 'What I’ve Learned from a year of coding',
+      description: "Charles Scheuer was programing for one year and is amazed at what he learned autonomously for that " +
+          "short period of time. He encourages new programmers to start small and simple as “nobody can expect to " +
+          "understand coding overnight”. Charles learned HTML and CSS first and recommends FreeCodeCamp.org to learn. " +
+          "Additionally, he recommends starting a programming project once you feel comfortable with the syntax of a" +
+          " programming language as it is one of the most efficient ways to learn.",
+  link: 'https://www.freecodecamp.org/news/what-ive-learned-from-a-year-of-coding-bf39c5823e9b/',
+  },
+  {
+      id: 3,
+      title: 'Landing Your Dream Job 5 tips on becoming a self-taught programmer',
+      description: "This man took a 360 in his career by switching from doing an undergraduate in marketing followed " +
+          "by a master's in International Business in college. In the article, he gives 5 tips on how to start " +
+          "programming and what resources can help you along the way. Also, he explains what programming languages " +
+          "he learned first. He advanced from learning about HTML, CSS, and Javascript to more complex topics such " +
+          "as git, functional programming and object-oriented design.",
+      link: 'https://www.wunderlist.com/blog/Landing-your-dream-job/',
+  },
+]

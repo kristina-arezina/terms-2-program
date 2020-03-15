@@ -31,13 +31,13 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default ({womenJourney}) => {
+export default ({womenJourney, womenJourney2}) => {
   const classes = useStyles();
 
     return (
       <div className={classes.root}>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6}>
+          <Grid item sm={6}>
               {womenJourney.map(({ title, description, link, id }) =>
                 <ListItem alignItems="flex-start"  key={womenJourney}>
                     <Paper style={{
@@ -68,15 +68,17 @@ export default ({womenJourney}) => {
 
       )}
       </Grid>
-      <Grid item xs={12} sm={6}>
-          {womenJourney.map(({ title, description, link, id }) =>
-            <ListItem alignItems="flex-start"  key={womenJourney}>
+
+      
+      <Grid item sm={6}>
+          {womenJourney2.map(({ title, description, link, id }) =>
+            <ListItem alignItems="flex-start"  key={womenJourney2}>
                 <Paper style={{
                     backgroundColor:"#fffff",
                     padding:25,
                     fontFamily:"century gothic",
                 }}>
-            <ListItemText key={womenJourney}
+            <ListItemText key={womenJourney2}
                 primary={
                     <React.Fragment >
                       {title}
@@ -99,6 +101,6 @@ export default ({womenJourney}) => {
 
   )}
   </Grid>
-      </Grid>
+</Grid>
       </div>
 )}
