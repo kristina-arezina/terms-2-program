@@ -38,12 +38,6 @@ export default ({womenJourney}) => {
       <div className={classes.root}>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6}>
-            <Paper style={{
-                backgroundColor:"#fffff",
-                padding:25,
-                fontFamily:"century gothic",
-            }}
-            >
               {womenJourney.map(({ title, description, link, id }) =>
                 <ListItem alignItems="flex-start"  key={womenJourney}>
                     <Paper style={{
@@ -73,7 +67,6 @@ export default ({womenJourney}) => {
         </ListItem>
 
       )}
-      </Paper>
       </Grid>
       </Grid>
       </div>
