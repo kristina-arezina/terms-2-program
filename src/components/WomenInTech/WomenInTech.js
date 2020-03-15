@@ -5,6 +5,7 @@ import ImageHeader from "./ImageHeader.js"
 
 
 export class WomenInTech extends Component {
+
   render(){
     return (
       <div style={{backgroundColor:"#f4f4f4"}}>
@@ -20,4 +21,4 @@ export class WomenInTech extends Component {
   }
 }
 
-  export default WomenInTech;
+export default WomenInTech;

@@ -22,11 +22,10 @@ export default function ImageHeader() {
   const classes = useStyles();
   return (
     <React.Fragment>
-    <Grid item xs alignItems="center" container justify="center"
->
-<paper className={classes.paper}><img src={WordArt}></img></paper>
-
-    </Grid>
+      <Grid item xs alignItems="center" container justify="center"
+      >
+        <paper className={classes.paper}><img src={WordArt}></img></paper>
+      </Grid>
     </React.Fragment>
   );
 }
