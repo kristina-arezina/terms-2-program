@@ -10,6 +10,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   paper: {
+    paddingTop:30,
     itemAlign:"center",
     textTransform: 'uppercase',
     backgroundColor:"#f4f4f4",

@@ -13,7 +13,6 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-    padding:25,
     fontFamily:"century gothic",
   },
   typographyJourneys: {
@@ -69,7 +68,7 @@ export default ({womenJourney, womenJourney2}) => {
       )}
       </Grid>
 
-      
+
       <Grid item sm={6}>
           {womenJourney2.map(({ title, description, link, id }) =>
             <ListItem alignItems="flex-start"  key={womenJourney2}>
