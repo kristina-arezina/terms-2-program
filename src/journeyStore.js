@@ -1,5 +1,5 @@
 export const level = [
-    "complete beginner", "Women In Technology", "Python", "JavaScript"
+    "complete beginner", "Node.js", "Python", "JavaScript"
 ]
 
 export const journeys = [
@@ -83,13 +83,13 @@ export const journeys = [
         level:"Python"
     },
     {
-        id: 'Women In Technology',
+        id: 'Node',
         title: 'The Secret History of Women in Coding',
         description: 'Chase Childers was programming for 3 years and is now a Full-Stack Python Developer/Programmer. ' +
         'He started to code because he loves technology, creating and fixing things. Chase used Youtube, the internet and' +
          'a mentor to learn Python. He shares the challenges he faced while learning and gives tips and advice to beginners.',
         link: 'https://www.nytimes.com/2019/02/13/magazine/women-coding-computer-programming.html',
-        level:"Women In Technology"
+        level:"Node.js"
     },
 
 ]
