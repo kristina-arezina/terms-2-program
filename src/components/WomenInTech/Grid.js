@@ -68,6 +68,37 @@ export default ({womenJourney}) => {
 
       )}
       </Grid>
+      <Grid item xs={12} sm={6}>
+          {womenJourney.map(({ title, description, link, id }) =>
+            <ListItem alignItems="flex-start"  key={womenJourney}>
+                <Paper style={{
+                    backgroundColor:"#fffff",
+                    padding:25,
+                    fontFamily:"century gothic",
+                }}>
+            <ListItemText key={womenJourney}
+                primary={
+                    <React.Fragment >
+                      {title}
+                    </React.Fragment>
+                }
+                secondary={
+                    <React.Fragment >
+                      {description}
+                <br/>
+                      <Button className={classes.button}>
+                          <Link className={classes.link} rel="noopener" variant="body1" href={link} target="_blank">
+                                Read Full
+                          </Link>
+                      </Button>
+                    </React.Fragment>
+                }>
+          </ListItemText>
+    </Paper>
+    </ListItem>
+
+  )}
+  </Grid>
       </Grid>
       </div>
 )}
