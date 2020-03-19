@@ -1,24 +1,27 @@
 export const womenJourney = [
     {
         id: 1,
-        title: 'Why Learn Web Basics?',
-        description: "If you wish to get into programming probably no one will come up to you and quiz you on these " +
-            "terms. However, if you talk to other programmers or read / watch coding tutorials these terms will be " +
-            "used constantly and freely. So, it is a good idea to get a general understanding of what these terms and " +
-            "concepts mean. By no means do you need to memorize every nook and cranny of theses terms, all you need" +
-            " is a working understanding of these concepts in order to be able to follow one's train of thought " +
-            "without getting lost in a sea of unknown terms." ,
-            link: 'https://medium.com/mindorks/a-self-taught-programmers-journey-6899cff1aef0',
+        title: 'How I Got Into Web Design - Amber Smith',
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit." +
+        "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque" +
+        "penatibus et magnis dis parturient montes, nascetur ridiculus mus." +
+      "  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. " +
+        "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet " +
+        "nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a," +
+        "venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+            link: './src/WomenInTechOutreach.html',
 
     },
     {
         id: 2,
-        title: 'Web Server / Web Host / Server',
-        description: "Web server, web host and server are terms used interchangeably to describe the same concept. " +
-            "Every website that is viewed through one's computer is located on a separate computer called a web server. " +
-            "This computer (the server) is always running and connected to the internet. When someone wants to access a " +
-            "webpage through their digital device a copy of the webpage is downloaded from the server onto the user's " +
-            "machine to be displayed to the person.",
+        title: 'Why I Love Working With AI - Jennifer Adams',
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit." +
+        "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque" +
+        "penatibus et magnis dis parturient montes, nascetur ridiculus mus." +
+      "  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. " +
+        "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet " +
+        "nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a," +
+        "venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
             link: 'https://www.freecodecamp.org/news/what-ive-learned-from-a-year-of-coding-bf39c5823e9b/',
     },
     {
@@ -54,21 +57,26 @@ export const womenJourney = [
 export const womenJourney2 = [
   {
       id: 1,
-      title: 'A Self Taught Programmer’s Journey',
-      description: "In this article, a civil engineer Amit Shekhar, explains how he changed career paths by learning " +
-          "to program on his own time. Amit was drawn to programming as he loves to problem solve. Some of his advice " +
-          "for beginner programmers is to learn through the “Learn and Implement” pattern and to stay consistent with " +
-          "programming. Also, he thinks one of the best ways to learn programming is by reading other people's code.",
+      title: 'Why I Love My Career Developing Security Software - Ananya Agate',
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit." +
+      "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque" +
+      "penatibus et magnis dis parturient montes, nascetur ridiculus mus." +
+    "  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. " +
+      "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet " +
+      "nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a," +
+      "venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       link: 'https://medium.com/mindorks/a-self-taught-programmers-journey-6899cff1aef0',
   },
   {
       id: 2,
-      title: 'What I’ve Learned from a year of coding',
-      description: "Charles Scheuer was programing for one year and is amazed at what he learned autonomously for that " +
-          "short period of time. He encourages new programmers to start small and simple as “nobody can expect to " +
-          "understand coding overnight”. Charles learned HTML and CSS first and recommends FreeCodeCamp.org to learn. " +
-          "Additionally, he recommends starting a programming project once you feel comfortable with the syntax of a" +
-          " programming language as it is one of the most efficient ways to learn.",
+      title: "It's Never Too Late To Start A Career In High Tech - Katerina Becker",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit." +
+      "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque" +
+      "penatibus et magnis dis parturient montes, nascetur ridiculus mus." +
+    "  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. " +
+      "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet " +
+      "nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a," +
+      "venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
   link: 'https://www.freecodecamp.org/news/what-ive-learned-from-a-year-of-coding-bf39c5823e9b/',
   },
   {
